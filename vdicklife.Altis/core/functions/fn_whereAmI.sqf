@@ -1,5 +1,5 @@
 /*
-    File: fn_mine.sqf
+    File: fn_whereAmI.sqf
     Author: Dardo
 
     Description:
@@ -10,15 +10,15 @@
     nothing
 */
 
-private["_zonem", "_zone", "_mine", "_zoneSize", "_resource", "_nothing"];
+private ["_zonem", "_zone", "_mine", "_zoneSize", "_resource", "_nothing"];
 _resourceCfg = missionConfigFile >> "CfgGather" >> "Minerals";
-_zoneSize = (getNumber(missionConfigFile >> "CfgGather" >> "zoneSize"));
 
 for "_i" from 0 to count(_resourceCfg)-1 do {
-    private["_curConfig", "_resourceZones", "_requiredItem"];
+    private ["_curConfig", "_resourceZones", "_requiredItem"];
     _zonem = "";
     _curConfig = _resourceCfg select _i;
     _resourceZones = getArray(_curConfig >> "zones");
+    _zoneSize = getNumber(_curConfig >> "zoneSize");
     {
         if ((player distance(getMarkerPos _x)) < _zoneSize) exitWith {
             _zonem = _x;
@@ -36,7 +36,7 @@ if (_zonem != "") exitWith {
 
 _resourceCfg = missionConfigFile >> "CfgGather" >> "Resources";
 for "_i" from 0 to count(_resourceCfg)-1 do {
-    private["_curConfig", "_resourceZones", "_requiredItem"];
+    private ["_curConfig", "_resourceZones", "_requiredItem"];
     _zone = "";
     _curConfig = _resourceCfg select _i;
     _resourceZones = getArray(_curConfig >> "zones");

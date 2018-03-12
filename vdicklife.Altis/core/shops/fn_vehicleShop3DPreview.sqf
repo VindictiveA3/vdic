@@ -1,13 +1,13 @@
 /**
  * Bibliothèque de fonctions permettant la visualisation 3D d'objets
- * 
+ *
  * Copyright (C) 2014 Team ~R3F~
- * 
+ *
  * This program is free software under the terms of the GNU General Public License version 3.
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
- 
+
  /*
     File: fn_vehicleShop3DPreview.sqf
     Modified By: NiiRoZz
@@ -16,8 +16,8 @@
     Called when a new selection is made in the list box and
     displays the new vehicle selected.
 */
- 
- 
+
+
 private ["_classView","_object","_id"];
 
 if (isNil "life_preview_3D_vehicle_cam") then
@@ -38,15 +38,13 @@ if (_classView != "" && {isClass (configFile >> "CfgVehicles" >> _classView) && 
         if (!life_pos_exist) then {
             life_pos_attach = [[5000, 5000, 0]] call life_fnc_searchPosEmpty;
             life_pos_exist = true;
-            life_preview_light = "#lightpoint" createVehicle life_pos_attach;
+            life_preview_light = "#lightpoint" createVehicleLocal life_pos_attach;
             life_preview_light setLightBrightness 0.5;
             life_preview_light setLightColor [1,1,1];
             life_preview_light setLightAmbient [1,1,1];
         };
-        _object = _classView createVehicle life_pos_attach;
-        _id = player getVariable["life_clientID",-1];
-        [_object] remoteExecCall ["life_fnc_hideObj",-_id];
-        [life_preview_light] remoteExecCall ["life_fnc_hideObj",-_id];
+        _object = _classView createVehicleLocal life_pos_attach;
+        _id = player getVariable ["life_clientID",-1];
         [_object] call life_fnc_clearVehicleAmmo;
         _object attachTo [life_attachment_point, life_pos_attach];
 

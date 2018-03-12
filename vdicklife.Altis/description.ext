@@ -1,9 +1,10 @@
-disableChannels[]={0,1,2};
+disableChannels[] = {{0,true,true},{1,true,true},{2,true,true}};    // Disabled text and voice for global, side, and command channels. Syntax: disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
+overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the overviewPicture on the mission selection screen when the mission is available to play.
 
-#include "Config_Spyglass.hpp"
+#include "config\Config_SpyGlass.hpp"
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
-#include "Config_Master.hpp"
+#include "config\Config_Master.hpp"
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -27,21 +28,21 @@ class CfgFunctions {
 
 class CfgSounds {
     sounds[] = {};
-    class SirenLong {
-        name = "SirenLong";
-        sound[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
+    class sirenLong {
+        name = "sirenLong";
+        sound[] = {"\sounds\sirenLong.ogg", 1.0, 1};
         titles[] = {};
     };
 
     class medicSiren {
         name = "medicSiren";
-        sound[] = {"\sounds\medic_siren.ogg", 1.0, 1};
+        sound[] = {"\sounds\medicSiren.ogg", 1.0, 1};
         titles[] = {};
     };
 
-    class tazersound {
-        name = "Tazersound";
-        sound[] = {"\sounds\tazer.ogg", 0.25, 1};
+    class tazerSound {
+        name = "tazerSound";
+        sound[] = {"\sounds\tazer.ogg", 0.5, 1};
         titles[] = {};
     };
 
@@ -63,15 +64,15 @@ class CfgSounds {
         titles[] = {};
     };
 
-    class LockCarSound {
-        name = "LockCarSound";
-        sound[] = {"\sounds\car_lock.ogg", 0.25, 1};
+    class lockCarSound {
+        name = "lockCarSound";
+        sound[] = {"\sounds\carLock.ogg", 1.0, 1};
         titles[] = {};
     };
 
-    class UnlockCarSound {
-        name = "UnlockCarSound";
-        sound[] = {"\sounds\unlock.ogg", 0.25, 1};
+    class unlockCarSound {
+        name = "unlockCarSound";
+        sound[] = {"\sounds\carUnlock.ogg", 0.75, 1};
         titles[] = {};
     };
 };
@@ -96,9 +97,9 @@ class CfgDebriefing {
     };
 
     class SpyGlass {
-        title = $STR_SpyDetect_Title;
-        subTitle = $STR_SpyDetect_SubTitle;
-        description = $STR_SpyDetect_Descript;
+        title = "$STR_SpyDetect_Title";
+        subTitle = "$STR_SpyDetect_SubTitle";
+        description = "$STR_SpyDetect_Descript";
         pictureBackground = "";
         picture = "";
         pictureColor[] = {0,0.3,0.6,1};

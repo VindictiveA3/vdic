@@ -11,6 +11,16 @@ class Socket_Reciever {
     };
 };
 
+class SpyGlass {
+    tag = "SPY";
+    class Functions {
+        file = "SpyGlass";
+        class cookieJar{};
+        class notifyAdmins{};
+        class observe{};
+    };
+};
+
 class Life_Client_Core {
     tag = "life";
 
@@ -40,6 +50,7 @@ class Life_Client_Core {
         class healHospital {};
         class impoundAction {};
         class mine {};
+        class newsBroadcast {};
         class packupSpikes {};
         class pickupItem {};
         class pickupMoney {};
@@ -159,12 +170,14 @@ class Life_Client_Core {
         class wireTransfer {};
     };
 
-    class Functions    {
+    class Functions {
         file = "core\functions";
+        class AAN {};
         class accType {};
         class actionKeyHandler {};
         class animSync {};
         class calWeightDiff {};
+        class checkMap {};
         class clearVehicleAmmo {};
         class dropItems {};
         class escInterupt {};
@@ -193,6 +206,7 @@ class Life_Client_Core {
         class onTakeItem {};
         class playerSkins {};
         class playerTags {};
+        class postNewsBroadcast {};
         class pullOutVeh {};
         class pushObject {};
         class receiveItem {};
@@ -202,12 +216,11 @@ class Life_Client_Core {
         class searchPosEmpty {};
         class simDisable {};
         class stripDownPlayer {};
-        class tazeSound {};
         class teleport {};
         class whereAmI {};
     };
 
-    class Gangs    {
+    class Gangs {
         file = "core\gangs";
         class createGang {};
         class gangCreated {};
@@ -226,6 +239,7 @@ class Life_Client_Core {
     class Housing {
         file = "core\housing";
         class buyHouse {};
+        class buyHouseGarage {};
         class containerMenu {};
         class copBreakDoor {};
         class copHouseOwner {};
@@ -241,9 +255,10 @@ class Life_Client_Core {
         class PlayerInBuilding {};
         class raidHouse {};
         class sellHouse {};
+        class sellHouseGarage {};
     };
 
-    class Items    {
+    class Items {
         file = "core\items";
         class blastingCharge {};
         class boltcutter {};
@@ -286,7 +301,6 @@ class Life_Client_Core {
 
     class Player_Menu {
         file = "core\pmenu";
-        class altisPhone {};
         class cellphone {};
         class giveItem {};
         class giveMoney {};
@@ -309,7 +323,7 @@ class Life_Client_Core {
         class wantedMenu {};
     };
 
-    class Shops    {
+    class Shops {
         file = "core\shops";
         class atmMenu {};
         class buyClothes {};
@@ -321,6 +335,7 @@ class Life_Client_Core {
         class clothingMenu {};
         class fuelLBchange {};
         class fuelStatOpen {};
+        class levelCheck {};
         class vehicleShop3DPreview {};
         class vehicleShopBuy {};
         class vehicleShopEnd3DPreview {};

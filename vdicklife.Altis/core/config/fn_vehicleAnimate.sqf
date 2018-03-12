@@ -5,7 +5,7 @@
     Description:
     Pass what you want to be animated.
 */
-private["_vehicle","_animate","_state"];
+private ["_vehicle","_animate","_state"];
 _vehicle = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 if (isNull _vehicle) exitWith {}; //FUCK
 _animate = [_this,1,"",["",[]]] call BIS_fnc_param;
@@ -49,14 +49,14 @@ if (!_preset) then
         case "med_offroad":
         {
             _vehicle animate ["HidePolice", 0];
-            _vehicle setVariable["lights",false,true];
+            _vehicle setVariable ["lights",false,true];
         };
 
         case "cop_offroad":
         {
             _vehicle animate ["HidePolice", 0];
             _vehicle animate ["HideBumper1", 0];
-            _vehicle setVariable["lights",false,true];
+            _vehicle setVariable ["lights",false,true];
         };
     };
 };

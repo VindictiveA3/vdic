@@ -6,7 +6,7 @@
     Description:
     Buys the current set of clothes and closes out of the shop interface.
 */
-private["_price"];
+private ["_price"];
 if ((lbCurSel 3101) isEqualTo -1) exitWith {titleText[localize "STR_Shop_NoClothes","PLAIN"];};
 
 _price = 0;
@@ -18,6 +18,7 @@ _price = 0;
 
 if (_price > CASH) exitWith {titleText[localize "STR_Shop_NotEnoughClothes","PLAIN"];};
 CASH = CASH - _price;
+[0] call SOCK_fnc_updatePartial;
 
 life_clothesPurchased = true;
 [] call life_fnc_playerSkins;

@@ -1,10 +1,10 @@
 #include "..\..\script_macros.hpp"
 /*
-    File : containerMenu.sqf
+    File: fn_containerMenu.sqf
     Author: NiiRoZz
 
     Description:
-    Container interaction menu
+    Container interaction menu.
 */
 #define Btn1 37450
 #define Btn2 37451
@@ -16,9 +16,9 @@
 #define Btn8 37457
 #define Title 37401
 
-private["_container","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8"];
+private ["_container","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8"];
 disableSerialization;
-_container = param [0,ObjNull,[ObjNull]];
+_container = param [0,objNull,[objNull]];
 if (isNull _container) exitWith {}; //Bad target
 
 if (!dialog) then {

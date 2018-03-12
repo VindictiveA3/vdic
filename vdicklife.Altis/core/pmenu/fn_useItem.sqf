@@ -62,13 +62,13 @@ switch (true) do {
     };
 
     case (_item isEqualTo "fuelFull"): {
-        if (vehicle player != player) exitWith {hint localize "STR_ISTR_RefuelInVehicle"};
+        if !(isNull objectParent player) exitWith {hint localize "STR_ISTR_RefuelInVehicle"};
         [] spawn life_fnc_jerryRefuel;
         closeDialog 0;
     };
 
     case (_item isEqualTo "fuelEmpty"): {
-        [] spawn life_fnc_jerrycanRefuel;
+        [] spawn life_fnc_jerryCanRefuel;
         closeDialog 0;
     };
 

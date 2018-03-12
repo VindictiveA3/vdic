@@ -5,8 +5,8 @@
     Description:
     Makes the target jump.
 */
-private["_unit","_vel","_dir","_v1","_v2","_anim","_oldpos"];
-_unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+private ["_unit","_vel","_dir","_v1","_v2","_anim","_oldpos"];
+_unit = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 _oldpos = getPosATL _unit;
 
 if (isNull _unit) exitWith {}; //Bad data

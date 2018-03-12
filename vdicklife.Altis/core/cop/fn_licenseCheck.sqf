@@ -6,8 +6,8 @@
     Description:
     Returns the licenses to the cop.
 */
-private["_cop","_licenses","_licensesConfigs"];
-_cop = param [0,ObjNull,[ObjNull]];
+private ["_cop","_licenses","_licensesConfigs"];
+_cop = param [0,objNull,[objNull]];
 if (isNull _cop) exitWith {}; //Bad entry
 
 _licenses = "";

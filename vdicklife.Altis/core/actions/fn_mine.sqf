@@ -7,9 +7,9 @@
         Description:
         Same as fn_gather,but it allows use of probabilities for mining.
     */
-private["_maxGather", "_resource", "_amount", "_requiredItem", "_mined"];
+private ["_maxGather", "_resource", "_amount", "_requiredItem", "_mined"];
 if (life_action_inUse) exitWith {};
-if ((vehicle player) != player) exitWith {};
+if !(isNull objectParent player) exitWith {};
 if (player getVariable "restrained") exitWith {
     hint localize "STR_NOTF_isrestrained";
 };
@@ -20,7 +20,6 @@ if (player getVariable "playerSurrender") exitWith {
 life_action_inUse = true;
 _zone = "";
 _requiredItem = "";
-_zoneSize = (getNumber(missionConfigFile >> "CfgGather" >> "zoneSize"));
 
 _resourceCfg = missionConfigFile >> "CfgGather" >> "Minerals";
 _percent = (floor random 100) + 1; //Make sure it's not 0
@@ -29,6 +28,7 @@ for "_i" from 0 to count(_resourceCfg)-1 do {
     _curConfig = _resourceCfg select _i;
     _resources = getArray(_curConfig >> "mined");
     _maxGather = getNumber(_curConfig >> "amount");
+    _zoneSize = getNumber(_curConfig >> "zoneSize");
     _resourceZones = getArray(_curConfig >> "zones");
     _requiredItem = getText(_curConfig >> "item");
     _mined = "";
@@ -87,7 +87,8 @@ if (_diff isEqualTo 0) exitWith {
     hint localize "STR_NOTF_InvFull";
     life_action_inUse = false;
 };
-player say3D "mining";
+
+[player,"mining",35,1] remoteExecCall ["life_fnc_say3D",RCLIENT];
 
 for "_i" from 0 to 4 do {
     player playMoveNow "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
@@ -99,7 +100,7 @@ for "_i" from 0 to 4 do {
 
 if (([true, _mined, _diff] call life_fnc_handleInv)) then {
     _itemName = M_CONFIG(getText, "VirtualItems", _mined, "displayName");
-    titleText[format[localize "STR_NOTF_Gather_Success", (localize _itemName), _diff], "PLAIN"];
+    titleText[format [localize "STR_NOTF_Mine_Success", (localize _itemName), _diff], "PLAIN"];
 };
 
 sleep 2.5;
