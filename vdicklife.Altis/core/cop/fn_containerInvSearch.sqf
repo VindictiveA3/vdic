@@ -7,7 +7,7 @@
     Description:
     Searches the container for illegal items.
 */
-private["_container","_containerInfo","_value"];
+private ["_container","_containerInfo","_value"];
 _container = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 if (isNull _container) exitWith {};
 
@@ -34,6 +34,7 @@ _value = _illegalValue;
 if (_value > 0) then {
     [0,"STR_NOTF_ContainerContraband",true,[[_value] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
     BANK = BANK + _value;
+    [1] call SOCK_fnc_updatePartial;
     _container setVariable ["Trunk",[[],0],true];
     [_container] remoteExecCall ["TON_fnc_updateHouseTrunk",2];
 } else {

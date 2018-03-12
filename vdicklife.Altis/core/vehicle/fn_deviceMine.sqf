@@ -6,8 +6,8 @@
     Description:
     Starts automated mining of resource from the tempest device. Not integrated with percents.
 */
-private["_vehicle","_resourceZones","_zone","_weight","_resource","_vInv","_itemIndex","_items","_sum","_itemWeight","_amount","_isMineral"];
-_vehicle = param [0,ObjNull,[ObjNull]];
+private ["_vehicle","_resourceZones","_zone","_weight","_resource","_vInv","_itemIndex","_items","_sum","_itemWeight","_isMineral"];
+_vehicle = param [0,objNull,[objNull]];
 _isMineral = true;
 if (isNull _vehicle) exitWith {};
 
@@ -30,14 +30,13 @@ if ((_weight select 1) >= (_weight select 0)) exitWith {
 
 //check if we are in the resource zone for any of the resources
 _zone = "";
-_zoneSize = (getNumber(missionConfigFile >> "CfgGather" >> "zoneSize"));
 
 _resourceCfg = missionConfigFile >> "CfgGather" >> "Resources";
 for "_i" from 0 to count(_resourceCfg)-1 do {
     _curConfig = (_resourceCfg select _i);
     _resource = configName(_curConfig);
     _resourceZones = getArray(_curConfig >> "zones");
-    _amount = getNumber(_curConfig >> "amount");
+    _zoneSize = getNumber(_curConfig >> "zoneSize");
 
     {
         if ((player distance (getMarkerPos _x)) < _zoneSize) exitWith {
@@ -56,6 +55,7 @@ for "_i" from 0 to count(_resourceCfg)-1 do {
     _curConfig = (_resourceCfg select _i);
     _resources = getArray(_curConfig >> "mined");
     _resourceZones = getArray(_curConfig >> "zones");
+    _zoneSize = getNumber(_curConfig >> "zoneSize");
 
     if (!(_resources select 0 isEqualType [])) then {
         _mined = _resources select 0;
@@ -99,7 +99,7 @@ for "_i" from 0 to 1 step 0 do {
     //Wait for 27 seconds with a 'delta-time' wait.
     waitUntil {
         if ((isEngineOn _vehicle) || ((speed _vehicle) > 5)) exitWith {
-            _vehicle setVariable["mining",nil,true];
+            _vehicle setVariable ["mining",nil,true];
             titleText[localize "STR_NOTF_MiningStopped","PLAIN"];
             true
         };
@@ -109,7 +109,7 @@ for "_i" from 0 to 1 step 0 do {
         };
 
         if (fuel _vehicle < 0.1) exitWith {
-            _vehicle setVariable["mining",nil,true];
+            _vehicle setVariable ["mining",nil,true];
             titleText[localize "STR_NOTF_OutOfFuel","PLAIN"];
             true
         };
@@ -119,12 +119,12 @@ for "_i" from 0 to 1 step 0 do {
     };
 
     if ((isEngineOn _vehicle) || ((speed _vehicle) > 5)) exitWith {
-        _vehicle setVariable["mining",nil,true];
+        _vehicle setVariable ["mining",nil,true];
         titleText[localize "STR_NOTF_MiningStopped","PLAIN"];
     };
 
     _vehicle_data = _vehicle getVariable ["Trunk",[[],0]];
-    _inv = (_vehicle_data select 0);
+    _inv = +(_vehicle_data select 0);
     _space = (_vehicle_data select 1);
     _itemIndex = [_resource,_inv] call TON_fnc_index;
     _weight = [_vehicle] call life_fnc_vehicleWeight;
@@ -133,7 +133,7 @@ for "_i" from 0 to 1 step 0 do {
 
     if (_sum < 1) exitWith {
         titleText[localize "STR_NOTF_DeviceFull","PLAIN"];
-        _vehicle setVariable["mining",nil,true];
+        _vehicle setVariable ["mining",nil,true];
     };
 
     if (_itemIndex isEqualTo -1) then {
@@ -144,7 +144,7 @@ for "_i" from 0 to 1 step 0 do {
     };
 
     if (fuel _vehicle < 0.1) exitWith {
-        _vehicle setVariable["mining",nil,true];
+        _vehicle setVariable ["mining",nil,true];
         titleText[localize "STR_NOTF_OutOfFuel","PLAIN"];
     };
 
@@ -157,18 +157,18 @@ for "_i" from 0 to 1 step 0 do {
 
     if (fuel _vehicle < 0.1) exitWith {
         titleText[localize "STR_NOTF_OutOfFuel","PLAIN"];
-        _vehicle setVariable["mining",nil,true];
+        _vehicle setVariable ["mining",nil,true];
     };
 
     _itemName = M_CONFIG(getText,"VirtualItems",_resource,"displayName");
-    titleText[format[localize "STR_NOTF_DeviceMined",_sum,(localize _itemName)],"PLAIN"];
+    titleText[format [localize "STR_NOTF_DeviceMined",_sum,(localize _itemName)],"PLAIN"];
     _itemWeight = ([_resource] call life_fnc_itemWeight) * _sum;
-    _vehicle setVariable["Trunk",[_inv,_space + _itemWeight],true];
+    _vehicle setVariable ["Trunk",[_inv,_space + _itemWeight],true];
     _weight = [_vehicle] call life_fnc_vehicleWeight;
     _sum = [_resource,_random,(_weight select 1),(_weight select 0)] call life_fnc_calWeightDiff; //Get a sum base of the remaining weight..
 
     if (_sum < 1) exitWith {
-        _vehicle setVariable["mining",nil,true];
+        _vehicle setVariable ["mining",nil,true];
         titleText[localize "STR_NOTF_DeviceFull","PLAIN"];
     };
 

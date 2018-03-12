@@ -1,6 +1,6 @@
 /*
     File: fn_welcomeNotification.sqf
-    Author:
+    Author: Bryan "Tonic" Boardwine
 
     Description:
     Called upon first spawn selection and welcomes our player.
@@ -25,11 +25,15 @@ _textSpoiler = _display displayCtrl 1101;
 _text2 = _display displayCtrl 1102;
 
 _message = "";
-_message = _message + "<t align='center' size='8' shadow='0'><img image='textures\armalife.jpg' /></t><br /><br />";
-_message = _message + "Useful Links (click on the links to open your browser)<br /><br />";
-_message = _message + " <a href='https://github.com/ArmaLife/Framework' color='#56BDD6'>ArmaLife</a> -- Our Website, check it out for the latest news and updates.<br /><br />";
-_message = _message + "TeamSpeak 3 Address: ADDRESS HERE  <br /><br />";
-
+_message = _message + "<t align='center' size='8' shadow='0'>AsYetUntitled</t><br /><br />";
+_message = _message + "AsYetUntitled, formerly Altis Life RPG and ARMARPGLIFE is a roleplay framework for ArmA III originally made by TAW_Tonic.<br /><br />";
+_message = _message + "Useful links for server owners:<br /><br />";
+_message = _message + "<a color='#00DFFF'>•</a> Github: <a href='https://github.com/AsYetUntitled/Framework' color='#56BDD6'> https://github.com/AsYetUntitled/Framework</a><br />";
+_message = _message + "<a color='#00DFFF'>•</a> Wiki: <a href='https://github.com/AsYetUntitled/Framework/wiki' color='#56BDD6'> https://github.com/AsYetUntitled/Framework/wiki</a><br />";
+_message = _message + "<a color='#00DFFF'>•</a> Releases (Stable Builds): <a href='https://github.com/AsYetUntitled/Framework/releases' color='#56BDD6'> https://github.com/AsYetUntitled/Framework/releases</a><br />";
+_message = _message + "<a color='#00DFFF'>•</a> Discord: <a href='https://discord.gg/EaB7Jgw' color='#56BDD6'> https://discord.gg/EaB7Jgw</a><br /><br />";
+_message = _message + "Thanks for joining and enjoy your stay, <a color='#B000FF'>YourServerName</a> Staff Team.<br />";
+_message = _message + "You can edit the text displayed in this box by modifying Altis_Life.Altis/core/fn_welcomeNotification.sqf";
 
 //Fill only the first text
 _text1 ctrlSetStructuredText (parseText _message);

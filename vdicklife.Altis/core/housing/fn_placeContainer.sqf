@@ -7,9 +7,9 @@
     Description:
     Check container if are in house and if house are owner of player and if all this conditions are true add container in database
 */
-private["_container","_isFloating","_type","_house","_containers","_houseCfg","_message","_isPlaced"];
+private ["_container","_isFloating","_type","_house","_containers","_houseCfg","_message","_isPlaced"];
 params [
-        ["_container",ObjNull,[ObjNull]],
+        ["_container",objNull,[objNull]],
         ["_isFloating",true,[true]]
 ];
 
@@ -26,7 +26,7 @@ _message = 0;
 _isPlaced = false;
 if (!isNull _house) then {
     _message = 1;
-    if (([player] call life_fnc_PlayerInBuilding) && {([_container] call life_fnc_PlayerInBuilding)}) then {
+    if (([player] call life_fnc_playerInBuilding) && {([_container] call life_fnc_playerInBuilding)}) then {
         _message = 2;
         if ((_house in life_vehicles) && !(isNil {_house getVariable "house_owner"})) then {
             _message = 3;
@@ -45,9 +45,8 @@ if (!isNull _house) then {
                     _container setVariable ["Trunk",[[],0],true];
                     _container setVariable ["container_owner",[_uid],true];
                     _containers pushBack _container;
-                    _house setVariable["containers",_containers,true];
+                    _house setVariable ["containers",_containers,true];
                     sleep 1;
-                    [_container] remoteExecCall ["life_fnc_simDisable",RANY];
                 };
             };
         };

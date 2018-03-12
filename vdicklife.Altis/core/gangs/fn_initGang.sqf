@@ -4,10 +4,10 @@
     Author: Bryan "Tonic" Boardwine
 
     Description:
-    Main initialization for gangs?
+    Main initialization for gangs.
 */
-private["_exitLoop","_group","_wait"];
-if (playerSide != civilian) exitWith {}; //What in the hell?
+private ["_exitLoop","_group","_wait"];
+if !(playerSide isEqualTo civilian) exitWith {}; //What in the hell?
 [player] join (createGroup civilian);
 if (count life_gangData isEqualTo 0) exitWith {}; //Dafuq?
 

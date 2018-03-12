@@ -1,12 +1,12 @@
 /*
-    File: fn_calVehWeight.sqf
+    File: fn_vehicleWeight.sqf
     Author: Bryan "Tonic" Boardwine
 
     Description:
-    Starting to lose track on shit I wrote a year ago..
+    Calculates Vehicle Weight.
 */
-private["_vehicle","_weight","_used"];
-_vehicle = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+private ["_vehicle","_weight","_used"];
+_vehicle = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 if (isNull _vehicle) exitWith {};
 
 _weight = -1;

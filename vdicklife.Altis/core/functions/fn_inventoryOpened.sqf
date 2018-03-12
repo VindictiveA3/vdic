@@ -6,7 +6,7 @@
     Description:
     For the mean time it blocks the player from opening another persons backpack
 */
-private["_container","_unit","_list"];
+private ["_container","_unit","_list"];
 if (count _this isEqualTo 1) exitWith {false};
 _unit = _this select 0;
 _container = _this select 1;
@@ -27,7 +27,7 @@ if ((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) exitWith {
 
 _list = ["LandVehicle","Ship","Air"];
 if (KINDOF_ARRAY(_container,_list)) exitWith {
-    if (!(_container in life_vehicles) && (_container getVariable ["locked",true])) exitWith {
+    if (!(_container in life_vehicles) && {locked _container isEqualTo 2}) exitWith {
         hint localize "STR_MISC_VehInventory";
         true;
     };

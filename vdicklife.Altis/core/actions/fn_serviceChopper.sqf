@@ -8,7 +8,7 @@
 */
 private ["_serviceCost"];
 disableSerialization;
-private["_search","_ui","_progress","_cP","_pgText"];
+private ["_search","_ui","_progress","_cP","_pgText"];
 if (life_action_inUse) exitWith {hint localize "STR_NOTF_Action"};
 
 _serviceCost = LIFE_SETTINGS(getNumber,"service_chopper");
@@ -18,19 +18,19 @@ if (count _search isEqualTo 0) exitWith {hint localize "STR_Service_Chopper_NoAi
 if (CASH < _serviceCost) exitWith {hint localize "STR_Serive_Chopper_NotEnough"};
 
 life_action_inUse = true;
-5 cutRsc ["life_progress","PLAIN"];
+"progressBar" cutRsc ["life_progress","PLAIN"];
 _ui = uiNamespace getVariable "life_progress";
 _progress = _ui displayCtrl 38201;
 _pgText = _ui displayCtrl 38202;
-_pgText ctrlSetText format[localize "STR_Service_Chopper_Servicing","waiting..."];
+_pgText ctrlSetText format [localize "STR_Service_Chopper_Servicing","waiting..."];
 _progress progressSetPosition 0.01;
 _cP = 0.01;
 
 for "_i" from 0 to 1 step 0 do {
-    sleep  0.2;
+    uiSleep  0.2;
     _cP = _cP + 0.01;
     _progress progressSetPosition _cP;
-    _pgText ctrlSetText format[localize "STR_Service_Chopper_Servicing",round(_cP * 100)];
+    _pgText ctrlSetText format [localize "STR_Service_Chopper_Servicing",round(_cP * 100)];
     if (_cP >= 1) exitWith {};
 };
 
@@ -45,6 +45,6 @@ if (!local (_search select 0)) then {
 
 (_search select 0) setDamage 0;
 
-5 cutText ["","PLAIN"];
+"progressBar" cutText ["","PLAIN"];
 titleText [localize "STR_Service_Chopper_Done","PLAIN"];
 life_action_inUse = false;

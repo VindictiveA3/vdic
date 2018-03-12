@@ -1,4 +1,4 @@
-waitUntil {!isNull player && player isEqualTo player};
+waitUntil {!isServer && !isNull player && player isEqualTo player};
 if (player diarySubjectExists "controls") exitWith {};
 
 player createDiarySubject ["credits","Credits"];
@@ -25,18 +25,18 @@ TEXT HERE<br/><br/>
 
     player createDiaryRecord ["credits",
         [
-            "ArmaLife",
+            "AsYetUntitled",
                 "
-ArmaLife is a GitHub project which aims to update and keep adding new features to the original 'Altis Life RPG' by Tonic.<br/><br/>
+AsYetUntitled (formerly ArmaLife) is a GitHub project which aims to update and keep adding new features to the original 'Altis Life RPG' by Tonic.<br/><br/>
                 "
         ]
     ];
 
-    player createDiaryRecord["changelog",
+    player createDiaryRecord ["changelog",
         [
             "Altis Life Changelog",
                 "
-The official changelog can be found in ArmaLife github. https://git.io/vVkhe<br/><br/>
+The full changelog can be found on the AsYetUntitled/Framework repository on GitHub. https://github.com/AsYetUntitled/Framework/<br/><br/>
 v4.4 release 3!<br/>
 By: danielstuart14<br/>
 Date: 31. May 2016<br/><br/>
@@ -62,7 +62,7 @@ Date: 19. January 2016<br/><br/>
         ]
     ];
 
-    player createDiaryRecord["changelog",
+    player createDiaryRecord ["changelog",
         [
             "Server Change Log",
                 "
@@ -85,7 +85,7 @@ These are considered exploits, and you will not be kicked, but banned.<br/><br/>
         ]
     ];
 
-    player createDiaryRecord["safezones",
+    player createDiaryRecord ["safezones",
         [
             "Safe Zones",
                 "
@@ -98,7 +98,6 @@ Rebel Outposts<br/><br/>
         ]
     ];
 
-
     player createDiaryRecord ["serverrules",
         [
             "Bannable Offenses",
@@ -107,7 +106,7 @@ Consider this your one and only warning.<br/><br/>
 1. Hacking<br/>
 2. Cheating<br/>
 3. Exploiting (See 'Exploits')<br/>
-4. Being kicked 2 or more times.<br/><br/>
+4. Being kicked 3 or more times.<br/><br/>
                 "
         ]
     ];
@@ -145,7 +144,7 @@ Items on this list may result in your removal from the server and/or ban, based 
 Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
 1. Purposefully ramming a helicopter into anything. Other helicopters, vehicles, buildings.<br/>
 2. Flying below 150m over the city constantly. Once is illegal, more than that you risk crashing into the city, thus against server rules.<br/>
-3. Stealing helicopters without proper warning and significant time for the driver to lock the vehicle. If they land and run away without locking, fine, if they just get out and you get in before they get a chance to lock it, no.<br/><br/>
+3. Stealing helicopters without proper warning and significant time for the driver to lock the vehicle. If they land and run away without locking, fine, if they just get out and you get in before they get a chance to lock it, no no.<br/><br/>
                 "
         ]
     ];
@@ -194,6 +193,7 @@ These are all judged by admins on a case by case basis.<br/><br/>
                 "
         ]
     ];
+
     player createDiaryRecord ["serverrules",
         [
             "New Life Rule",
@@ -226,16 +226,17 @@ This rule may be invoked at an admin's discretion.<br/><br/>
         [
             "Crisis Negotiation",
                 "
-Crisis Negotiation must be handled by a SWAT Officer. If one is not available, the person with the highest rank must handle the situation.<br/><br/>
+Crisis Negotiation must be handled by a Sergeant. If one is not available, the person with the next highest rank must handle the situation.<br/><br/>
                 "
         ]
     ];
+
     player createDiaryRecord ["policerules",
         [
             "The Federal Reserve",
                 "
 1. The Federal Reserve is illegal for civilians to enter, unless they have been given authorization. If civilians enter without authorization they are to be escorted off-site or arrested if they persist.
-2. Helicopters flying over the Federal Reserve may be asked to leave and disabled or shot down if they refuse.<br/>
+2. Helicopters flying over the Federal Reserve may be asked to leave and disabled if they refuse.<br/>
 3. If the Federal Reserve is getting robbed, it is encouraged that all available officers move in to stop it.<br/>
 4. Nearby officers should immediately head to the Federal Reserve to assist. Petty crimes can be dropped during a robbery.<br/>
 5. Lethal force on bank robbers may be used if no other alternative is available. Every option to taze and arrest the person should be made first.<br/>
@@ -246,19 +247,21 @@ Crisis Negotiation must be handled by a SWAT Officer. If one is not available, t
                 "
         ]
     ];
+
     player createDiaryRecord ["policerules",
         [
             "Aviation",
                 "
 1. No helicopter can land within city limits without authorization from the highest ranking officer online. (Exceptions being what is listed below.)<br/>
-Kavala: The hospital helipad WITH authorization (037129) or docks (031128).<br/>
+Kavala: The hospital helipad (037129) or docks (031128).<br/>
 Athira: The sports field (138185) or behind the DMV (140188).<br/>
 Pyrgos: The fields North/East of DMV (170127)<br/>
 Sofia: Opposite the car shop (258214) or the fields Southeast of the garage (257212)<br/>
 Small towns: An appropriate location may be chosen. This is to be judged by officers on a case by case basis.<br/><br/>
 2. Helicopters may not land on roads.<br/>
 3. Police may temporarily forbid landing at  but it cannot remain closed for a long period of time.<br/>
-4. Helicopters cannot fly below 150m over the city without authorization.<br/><br/>
+4. Helicopters cannot fly below 150m over the city without authorization.<br/>
+5. Helicopters cannot hover over the city. Cops may only hover over the city if there is an active police operation going on.<br/><br/>
                 "
         ]
     ];
@@ -464,8 +467,6 @@ Cops in game who are not enrolled/accepted into the SPD are the lowest tier and 
         ]
     ];
 
-
-
 // Illegal Items Section
     player createDiaryRecord ["illegalitems",
         [
@@ -480,6 +481,7 @@ A rebel is one who rises in armed resistance against a government. In this case 
                 "
         ]
     ];
+
     player createDiaryRecord ["illegalitems",
         [
             "Gang Rules",
@@ -493,6 +495,7 @@ A rebel is one who rises in armed resistance against a government. In this case 
                 "
         ]
     ];
+
     player createDiaryRecord ["illegalitems",
         [
             "Illegal Vehicles",
@@ -505,6 +508,7 @@ A civilian in control of the following prohibited vehicles is subject to the con
                 "
         ]
     ];
+
     player createDiaryRecord ["illegalitems",
         [
             "Illegal Weapons",
@@ -522,6 +526,7 @@ A civilian in possession of the following is subject to the consequences as defi
                 "
         ]
     ];
+
     player createDiaryRecord ["illegalitems",
         [
             "Illegal Items",
@@ -535,7 +540,6 @@ The following items are illegal to posses:<br/><br/>
                 "
         ]
     ];
-
 
 // Controls Section
 
