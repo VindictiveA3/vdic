@@ -9,6 +9,7 @@
 private ["_display","_list"];
 disableSerialization;
 if !(playerSide isEqualTo west) exitWith {};
+if !(call life_coplevel >= 3) exitWith { hint "Senior Patrol or Higher Only!"; };  //Should probably, mostly, likely, work. I think. - Wolfe
 
 _display = findDisplay 2400;
 _list = _display displayCtrl 2402;
