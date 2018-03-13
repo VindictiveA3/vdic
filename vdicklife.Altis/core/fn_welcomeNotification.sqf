@@ -25,15 +25,12 @@ _textSpoiler = _display displayCtrl 1101;
 _text2 = _display displayCtrl 1102;
 
 _message = "";
-_message = _message + "<t align='center' size='8' shadow='0'>AsYetUntitled</t><br /><br />";
-_message = _message + "AsYetUntitled, formerly Altis Life RPG and ARMARPGLIFE is a roleplay framework for ArmA III originally made by TAW_Tonic.<br /><br />";
-_message = _message + "Useful links for server owners:<br /><br />";
-_message = _message + "<a color='#00DFFF'>•</a> Github: <a href='https://github.com/AsYetUntitled/Framework' color='#56BDD6'> https://github.com/AsYetUntitled/Framework</a><br />";
-_message = _message + "<a color='#00DFFF'>•</a> Wiki: <a href='https://github.com/AsYetUntitled/Framework/wiki' color='#56BDD6'> https://github.com/AsYetUntitled/Framework/wiki</a><br />";
-_message = _message + "<a color='#00DFFF'>•</a> Releases (Stable Builds): <a href='https://github.com/AsYetUntitled/Framework/releases' color='#56BDD6'> https://github.com/AsYetUntitled/Framework/releases</a><br />";
-_message = _message + "<a color='#00DFFF'>•</a> Discord: <a href='https://discord.gg/EaB7Jgw' color='#56BDD6'> https://discord.gg/EaB7Jgw</a><br /><br />";
-_message = _message + "Thanks for joining and enjoy your stay, <a color='#B000FF'>YourServerName</a> Staff Team.<br />";
-_message = _message + "You can edit the text displayed in this box by modifying Altis_Life.Altis/core/fn_welcomeNotification.sqf";
+_message = _message + "<t align='center' size='8' shadow='0'><img image='textures\adverts\welcome_sign.paa' /></t><br /><br />";//Need to added file in /textures/adverts
+_message = _message + "Welcome To Vendictive Gammnig <br /><br />";
+_message = _message + "<a color='#00DFFF'>•</a> TeamSpeak: vs29.tserverhq.com:7049  </a><br />";
+_message - _message + "Web Site <a href ='https://vgcommunity.enjin.com/'>Vendictive Gaming</a><br />";
+_message = _message + "Thanks for joining and enjoy your stay, <a color='#B000FF'>Vendictive Gammnig</a> <br />";
+
 
 //Fill only the first text
 _text1 ctrlSetStructuredText (parseText _message);
