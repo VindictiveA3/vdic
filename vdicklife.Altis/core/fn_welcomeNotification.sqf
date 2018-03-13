@@ -25,7 +25,7 @@ _textSpoiler = _display displayCtrl 1101;
 _text2 = _display displayCtrl 1102;
 
 _message = "";
-_message = _message + "<t align='center' size='8' shadow='0'><img image='textures\adverts\welcome_sign.paa' /></t><br /><br />";//Need to added file in /textures/adverts
+_message = _message + "<t align='center' size='8' shadow='0'><img image='textures\advert_textures\welcome_sign.paa' /></t><br /><br />";//Need to added file in /textures/adverts
 _message = _message + "Welcome To Vendictive Gammnig <br /><br />";
 _message = _message + "<a color='#00DFFF'>•</a> TeamSpeak: vs29.tserverhq.com:7049  </a><br />";
 _message - _message + "Web Site <a href ='https://vgcommunity.enjin.com/'>Vendictive Gaming</a><br />";
