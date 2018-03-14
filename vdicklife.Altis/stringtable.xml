@@ -10727,6 +10727,12 @@
             <Portuguese>Flashbang</Portuguese>
             <Polish>Flashbang</Polish>
         </Key>
+         <Key ID="STR_W_items_TearGas">
+            <Original>Tear Gas</Original>
+        </Key>
+         <Key ID="STR_W_items_TearGasL">
+            <Original>Tear Gas GL</Original>
+        </Key>       
         <Key ID="STR_W_items_StunPistol">
             <Original>Stun Pistol</Original>
             <Czech>Stun Pistol</Czech>

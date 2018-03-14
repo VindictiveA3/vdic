@@ -180,6 +180,7 @@ class Clothing {
             { "B_FieldPack_cbr", "", 500, "" },
             { "B_AssaultPack_cbr", "", 700, "" },
             { "B_Kitbag_cbr", "", 800, "" },
+            { "B_ViperHarness_blk_F", "", 800, "" },
             { "B_Bergen_sgg", "", 2500, "" },
             { "B_Carryall_cbr", "", 3500, "" }
         };
@@ -267,7 +268,10 @@ class Clothing {
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
-            { "G_Shades_Blue", "", 10, "" }
+            { "G_Shades_Blue", "", 10, "" },
+            { "G_Respirator_Blue_F", "", 10, "" },
+            { "G_Respirator_Yellow_F", "", 10, "" },
+            { "G_Respirator_White_F", "", 10, "" }
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" }
@@ -329,7 +333,8 @@ class Clothing {
             { "G_Bandanna_oli", "", 150, "" },
             { "G_Bandanna_shades", "", 150, "" },
             { "G_Bandanna_sport", "", 150, "" },
-            { "G_Bandanna_tan", "", 150, "" }
+            { "G_Bandanna_tan", "", 150, "" },
+            { "G_Respirator_White_F", "", 1000, "" }
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
