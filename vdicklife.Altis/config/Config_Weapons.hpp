@@ -154,7 +154,7 @@ class WeaponShops {
             { "Binocular", "", 150, 75, "" },
             { "ItemGPS", "", 100, 50, "" },
             { "FirstAidKit", "", 150, 75, "" },
-            { "NVGoggles", "", 2000, 1000, "" },
+            { "O_NVGoggles_urb_F", "", 2000, 1000, "" },
             { "hgun_P07_snds_F", $STR_W_items_StunPistol, 2000, 1000, "" },
             { "arifle_SDAR_F", $STR_W_items_TaserRifle, 20000, 10000, "" },
             { "hgun_P07_F", "", 7500, 3750, "" },
@@ -167,10 +167,10 @@ class WeaponShops {
             { "arifle_SPAR_03_blk_F", "", 30000, 15000, "call life_coplevel >= 4" },
             { "HandGrenade_Stone", $STR_W_items_Flashbang, 1700, 850, "call life_coplevel >= 4" },
             { "SmokeShellYellow", $STR_W_items_TearGas, 1700, 850, "call life_coplevel >= 4" },
-            { "3Rnd_SmokeYellow_Grenade_shell", $STR_W_items_TearGasL, 1700, 850, "call life_coplevel >= 4" },
             { "srifle_DMR_02_F", "", 30000, 15000, "call life_coplevel >= 5" },
             { "arifle_MX_GL_Black_F", "", 30000, 15000, "call life_coplevel >= 5" }, 
             { "arifle_ARX_blk_F", "", 60000, 15000, "call life_coplevel >= 5" },            
+            { "10Rnd_50BW_Mag_F", "", 400, 65, "call life_coplevel >= 5" },
             { "hgun_Pistol_heavy_01_F", "", 9500, 4750, "call life_coplevel >= 5" },
             { "arifle_MX_SW_Black_F", "", 60000, 15000, "call life_coplevel >= 5" },
             { "arifle_SPAR_03_blk_F", "", 60000, 15000, "call life_coplevel >= 5" },
@@ -186,7 +186,7 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "", 130, 65, "call life_coplevel >= 2" },
             { "9Rnd_45ACP_Mag", "", 200, 100, "call life_coplevel >= 3" },
             { "20Rnd_762x51_Mag", "", 200, 100, "call life_coplevel >= 4" },
-            { "3Rnd_SmokeYellow_Grenade_shell", "", 200, 100, "call life_coplevel >= 5" },
+            { "3Rnd_SmokeYellow_Grenade_shell", $STR_W_items_TearGasL, 200, 100, "call life_coplevel >= 4" },
             { "10Rnd_338_Mag", "", 200, 100, "call life_coplevel >= 5" },
             { "11Rnd_45ACP_Mag", "", 130, 65, "call life_coplevel >= 5" },
             { "30Rnd_65x39_caseless_green", "", 130, 65, "call life_coplevel >= 5" },
@@ -216,7 +216,7 @@ class WeaponShops {
             { "ItemGPS", "", 100, 50, "" },
             { "Binocular", "", 150, 75, "" },
             { "FirstAidKit", "", 150, 75, "" },
-            { "NVGoggles", "", 1200, 600, "" }
+            { "O_NVGoggles_urb_F", "", 1200, 600, "" }
         };
         mags[] = {};
         accs[] = {};

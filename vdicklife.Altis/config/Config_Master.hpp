@@ -92,7 +92,7 @@ class Life_Settings {
     restrict_clothingPickup = true; //Set to false to allow civilians to pickup/take any uniform (ground/crates/vehicles)
     restrict_weaponPickup = true; //Set to false to allow civilians to pickup/take any weapon (ground/crates/vehicles)
     restricted_uniforms[] = { "U_Rangemaster", "U_B_CombatUniform_mcam_tshirt", "U_B_CombatUniform_mcam_worn", "U_B_survival_uniform" };
-    restricted_weapons[] = { "hgun_P07_snds_F", "arifle_SPAR_01_blk_F", "arifle_MXC_Black_F", "arifle_MX_Black_F", "hgun_ACPC2_F", "arifle_SPAR_03_blk_F", "srifle_DMR_02_F", "arifle_MX_GL_Black_F", "LMG_Mk200_BI_F", "srifle_DMR_07_blk_F" };
+    restricted_weapons[] = { "hgun_P07_snds_F", "arifle_SPAR_01_blk_F", "arifle_MXC_Black_F", "arifle_MX_Black_F", "arifle_SPAR_03_blk_F", "srifle_DMR_02_F", "arifle_MX_GL_Black_F", "LMG_Mk200_BI_F", "srifle_DMR_07_blk_F" };
 
     /* Jail System Configurations */
     jail_seize_vItems[] = { "spikeStrip","lockpick","goldbar","blastingcharge","boltcutter","defusekit","heroin_unprocessed","heroin_processed","cannabis","marijuana","cocaine_unprocessed","cocaine_processed","turtle_raw" }; //Define VIRTUAL items you want to be removed from players upon jailing here. Use "jail_seize_inventory" for Arma inventory items.
@@ -112,9 +112,9 @@ class Life_Settings {
     bank_civ = 2500000; //Amount of cash in bank for new civillians
     bank_med = 2500000; //Amount of cash in bank for new medics
 
-    paycheck_cop = 550; //Payment for cops
-    paycheck_civ = 325; //Payment for civillians
-    paycheck_med = 550; //Payment for medics
+    paycheck_cop = 2500; //Payment for cops
+    paycheck_civ = 2000; //Payment for civillians
+    paycheck_med = 2250; //Payment for medics
 
     paycheck_period = 5; //Scaled in minutes
     bank_transferTax = .05; //Tax that player pays when transferring money from ATM. Tax = Amount * multiplier
@@ -124,7 +124,7 @@ class Life_Settings {
     fuelTank_winMultiplier = 1; //Win Multiplier in FuelTank Missions. Increase for greater payout. Default = 1
 
     /* Search & Seizure System Configurations */
-    seize_exempt[] = { "Binocular", "ItemWatch", "ItemCompass", "ItemGPS", "ItemMap", "NVGoggles", "FirstAidKit", "ToolKit", "Chemlight_red", "Chemlight_yellow", "Chemlight_green", "Chemlight_blue", "optic_ACO_grn_smg" }; //Arma items that will not get seized from player inventories
+    seize_exempt[] = {"hgun_PDW2000_F", "SMG_05_F", "hgun_Pistol_heavy_02_F", "hgun_Pistol_01_F", "hgun_Rook40_F", "hgun_ACPC2_F", "Binocular", "ItemWatch", "ItemCompass", "ItemGPS", "ItemMap", "NVGoggles", "FirstAidKit", "ToolKit", "Chemlight_red", "Chemlight_yellow", "Chemlight_green", "Chemlight_blue", "optic_ACO_grn_smg" }; //Arma items that will not get seized from player inventories
     seize_uniform[] = { "U_Rangemaster" }; //Any specific uniforms you want to be seized from players
     seize_vest[] = { "V_TacVest_blk_POLICE" }; //Any specific vests you want to be seized from players
     seize_headgear[] = { "H_Cap_police" }; //Any hats or helmets you want seized from players
