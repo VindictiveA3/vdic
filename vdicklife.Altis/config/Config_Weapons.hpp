@@ -155,26 +155,46 @@ class WeaponShops {
             { "ItemGPS", "", 100, 50, "" },
             { "FirstAidKit", "", 150, 75, "" },
             { "NVGoggles", "", 2000, 1000, "" },
-            { "HandGrenade_Stone", $STR_W_items_Flashbang, 1700, 850, "" },
             { "hgun_P07_snds_F", $STR_W_items_StunPistol, 2000, 1000, "" },
             { "arifle_SDAR_F", $STR_W_items_TaserRifle, 20000, 10000, "" },
             { "hgun_P07_F", "", 7500, 3750, "" },
-            { "hgun_P07_khk_F", "", 7500, 3750, "" }, //Apex DLC
-            { "hgun_Pistol_heavy_01_F", "", 9500, 4750, "call life_coplevel >= 1" },
-            { "SMG_02_ACO_F", "", 30000, 15000, "call life_coplevel >= 2" },
-            { "arifle_MX_F", "", 35000, 17500, "call life_coplevel >= 2" },
-            { "hgun_ACPC2_F", "", 17500, 8750, "call life_coplevel >= 3" },
-            { "arifle_MXC_F", "", 30000, 15000, "call life_coplevel >= 3" },
-            { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 3" } //Apex DLC Sniper
+            { "hgun_P07_khk_F", "", 7500, 3750, "" }, //Apex DLC            
+            { "SMG_02_ACO_F", "", 30000, 15000, "" },
+            { "arifle_SPAR_01_blk_F", "", 35000, 17500, "call life_coplevel >= 2" },
+            { "arifle_MX_Black_F", "", 35000, 17500, "call life_coplevel >= 3" },
+            { "arifle_MXC_Black_F", "", 35000, 17500, "call life_coplevel >= 3" },
+            { "hgun_ACPC2_F", "", 17500, 8750, "call life_coplevel >= 3" },            
+            { "arifle_SPAR_03_blk_F", "", 30000, 15000, "call life_coplevel >= 4" },
+            { "HandGrenade_Stone", $STR_W_items_Flashbang, 1700, 850, "call life_coplevel >= 4" },
+            { "SmokeShellYellow", $STR_W_items_TearGas, 1700, 850, "call life_coplevel >= 4" },
+            { "3Rnd_SmokeYellow_Grenade_shell", $STR_W_items_TearGasL, 1700, 850, "call life_coplevel >= 4" },
+            { "srifle_DMR_02_F", "", 30000, 15000, "call life_coplevel >= 5" },
+            { "arifle_MX_GL_Black_F", "", 30000, 15000, "call life_coplevel >= 5" }, 
+            { "arifle_ARX_blk_F", "", 60000, 15000, "call life_coplevel >= 5" },            
+            { "hgun_Pistol_heavy_01_F", "", 9500, 4750, "call life_coplevel >= 5" },
+            { "arifle_MX_SW_Black_F", "", 60000, 15000, "call life_coplevel >= 5" },
+            { "arifle_SPAR_03_blk_F", "", 60000, 15000, "call life_coplevel >= 5" },
+            { "LMG_Mk200_BI_F", "", 60000, 15000, "call life_coplevel >= 6" },
+            { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 7" } //Apex DLC Sniper
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, 60, "" },
+            { "30Rnd_9x21_Mag", "", 250, 125, "" },
             { "20Rnd_556x45_UW_mag", $STR_W_mags_TaserRifle, 125, 60, "" },
-            { "11Rnd_45ACP_Mag", "", 130, 65, "call life_coplevel >= 1" },
+            { "30Rnd_556x45_Stanag", "", 130, 65, "call life_coplevel >= 2" },
+            { "30Rnd_556x45_Stanag_green", "", 130, 65, "call life_coplevel >= 2" },
             { "30Rnd_65x39_caseless_mag", "", 130, 65, "call life_coplevel >= 2" },
-            { "30Rnd_9x21_Mag", "", 250, 125, "call life_coplevel >= 2" },
             { "9Rnd_45ACP_Mag", "", 200, 100, "call life_coplevel >= 3" },
-            { "20Rnd_650x39_Cased_Mag_F", "", 200, 100, "call life_coplevel >= 3" } //Apex DLC
+            { "20Rnd_762x51_Mag", "", 200, 100, "call life_coplevel >= 4" },
+            { "3Rnd_SmokeYellow_Grenade_shell", "", 200, 100, "call life_coplevel >= 5" },
+            { "10Rnd_338_Mag", "", 200, 100, "call life_coplevel >= 5" },
+            { "11Rnd_45ACP_Mag", "", 130, 65, "call life_coplevel >= 5" },
+            { "30Rnd_65x39_caseless_green", "", 130, 65, "call life_coplevel >= 5" },
+            { "10Rnd_50BW_Mag_F", "", 400, 65, "call life_coplevel >= 5" },
+            { "20Rnd_762x51_Mag", "", 400, 65, "call life_coplevel >= 5" },
+            { "100Rnd_65x39_caseless_mag_Tracer", "", 400, 65, "call life_coplevel >= 5" },
+            { "200Rnd_65x39_cased_Box_Tracer", "", 500, 65, "call life_coplevel >= 6" },
+            { "20Rnd_650x39_Cased_Mag_F", "", 200, 100, "call life_coplevel >= 7" } //Apex DLC
         };
         accs[] = {
             { "muzzle_snds_L", "", 650, 325, "" },

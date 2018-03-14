@@ -170,6 +170,8 @@ life_hideoutBuildings = [];
     false
 } count ["gang_area_1","gang_area_2","gang_area_3"];
 
+    [] execVM "core\cop\teargas.sqf";
+
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format ["               End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
 diag_log "----------------------------------------------------------------------------------------------------";
