@@ -41,9 +41,11 @@ playerNearGas=false;
         waituntil {playerNearGas}; // Wait till a Gas Grenade is near player
 
 
-        if (headgear player != "H_CrewHelmetHeli_B" && goggles player != "G_Respirator_White_F" && goggles player != "G_Respirator_Yellow_F" && goggles player != "G_Respirator_Blue_F") then {antidote1 = 2583}; // Player has no Suit
-        if (headgear player == "H_CrewHelmetHeli_B") then {antidote1 = 2581}; // Player carries the Gas Suit
-
+        if (headgear player != "H_CrewHelmetHeli_B") then {antidote1 = 2583}; // Player has no Suit
+        if (goggles player != "G_Respirator_White_F") then {antidote1 = 2583};
+        if (goggles player != "G_Respirator_Yellow_F") then {antidote1 = 2583};
+        if (goggles player != "G_Respirator_Blue_F") then {antidote1 = 2583};
+        
         if (antidote1 == 2583) then {
          "dynamicBlur" ppEffectEnable true; // enables ppeffect
          "dynamicBlur" ppEffectAdjust [20]; // intensity of blur
