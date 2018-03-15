@@ -41,11 +41,23 @@ playerNearGas=false;
         waituntil {playerNearGas}; // Wait till a Gas Grenade is near player
 
 
-        if (headgear player != "H_CrewHelmetHeli_B") then {antidote1 = 2583}; // Player has no Suit
-        if (goggles player != "G_Respirator_White_F") then {antidote1 = 2583};
-        if (goggles player != "G_Respirator_Yellow_F") then {antidote1 = 2583};
-        if (goggles player != "G_Respirator_Blue_F") then {antidote1 = 2583};
-        
+        if (headgear player != "H_CrewHelmetHeli_B") then {antidote1 = 2583} else {
+            if (goggles player != "G_Respirator_White_F") then {antidote1 = 2583} else {
+                if (goggles player != "G_Respirator_Yellow_F") then {antidote1 = 2583} else {
+                     if (goggles player != "G_Respirator_Blue_F") then {antidote1 = 2583};  
+                };
+            };
+        };
+
+         if (headgear player == "H_CrewHelmetHeli_B") then {antidote1 = 2588} else {
+            if (goggles player == "G_Respirator_White_F") then {antidote1 = 2588} else {
+                if (goggles player == "G_Respirator_Yellow_F") then {antidote1 = 2588} else {
+                     if (goggles player == "G_Respirator_Blue_F") then {antidote1 = 2588};  
+                };
+            };
+        };
+
+            noesckey = (findDisplay 46) displayAddEventHandler ["KeyDown", "if ((_this select 1) == 1) then { true }"]; 
         if (antidote1 == 2583) then {
          "dynamicBlur" ppEffectEnable true; // enables ppeffect
          "dynamicBlur" ppEffectAdjust [20]; // intensity of blur
@@ -57,5 +69,6 @@ playerNearGas=false;
         };
 
     uiSleep 1;
+    (findDisplay 46) displayRemoveEventHandler ["KeyDown", noesckey];
     };
 };
