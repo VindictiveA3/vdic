@@ -25,12 +25,12 @@ _textSpoiler = _display displayCtrl 1101;
 _text2 = _display displayCtrl 1102;
 
 _message = "";
-_message = _message + "<t align='center' size='8' shadow='0'><img image='textures\adverts\welcome_sign.paa' /></t><br /><br />";//Need to added file in /textures/adverts
-_message = _message + "Welcome To Vendictive Gammnig <br /><br />";
-_message = _message + "<a color='#00DFFF'>•</a> TeamSpeak: vs29.tserverhq.com:7049  </a><br />";
-_message - _message + "Web Site <a href ='https://vgcommunity.enjin.com/'>Vendictive Gaming</a><br />";
-_message = _message + "Thanks for joining and enjoy your stay, <a color='#B000FF'>Vendictive Gammnig</a> <br />";
-
+_message = _message + "<t align='center' size='9.5' shadow='0'><img image='textures\adverts\welcome_diag.paa' /></t><br /><br />"; //add texture for welcome_diag.paa
+_message = _message + "<t align='center' size='1' color='#FFFFFF'>All Officers have to be active in teamspeak at all times!</t><br />";
+_message = _message + "<t align='center' size='1' color='#FFFFFF'>This is a roleplay server, this means RDM/VDM are NOT allowed.</t><br />";
+_message = _message + "<t align='center' size='1.7' color='#ffbe00'>» <a href='https://vgcommunity.enjin.com/'>Vindictive Gaming</a></t><br />";
+_message = _message + "<t align='center' size='1.5' Thanks for joining and enjoy your stay, <a color='#BA5C00'>Vindictive Gamnig</a></t><br />";
+_message = _message + "<t align='center' size='1.7' color='#ffbe00'>TS3 Address: vs29.tserverhq.com:7049</t><br /><br />";
 
 //Fill only the first text
 _text1 ctrlSetStructuredText (parseText _message);

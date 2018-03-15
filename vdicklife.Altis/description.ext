@@ -5,6 +5,7 @@ overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the ov
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
+#include "infiSTAR_AdminMenu.hpp"
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -20,10 +21,12 @@ class RscTitles {
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
+    #include "maverick\talent-tree-modular\gui\_masterTitles.cpp"
 };
 
 class CfgFunctions {
     #include "Functions.hpp"
+    #include "maverick\maverick_functions_master.cpp"
 };
 
 class CfgSounds {
@@ -171,3 +174,4 @@ class CfgNotifications {
         priority = 5;
     };
 };
+#include "maverick\maverick_master.cpp"
