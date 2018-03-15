@@ -13,6 +13,36 @@ class VehicleLockpicked {
 	message = "Vehicle Lockpicked";
 };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class Example {
     expToAdd = 100;
 	message = "Customizable Message";
