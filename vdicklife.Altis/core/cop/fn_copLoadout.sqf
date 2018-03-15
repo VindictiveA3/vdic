@@ -31,6 +31,7 @@ player addItemToBackpack "H_CrewHelmetHeli_B";
 player addItemToBackpack "FirstAidKit"; 
 player addItemToBackpack "FirstAidKit";
 player addItemToBackpack "FirstAidKit";
+player addItemToBackpack "Rangefinder";
 player addItemToBackpack "O_NVGoggles_urb_F"; 
 
 /* ITEMS */
