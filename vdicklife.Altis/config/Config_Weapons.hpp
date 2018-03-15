@@ -155,27 +155,27 @@ class WeaponShops {
             { "ItemGPS", "", 100, 50, "" },
             { "FirstAidKit", "", 150, 75, "" },
             { "O_NVGoggles_urb_F", "", 2000, 1000, "" },
-            { "hgun_P07_snds_F", $STR_W_items_StunPistol, 2000, 1000, "" },
-            { "arifle_SDAR_F", $STR_W_items_TaserRifle, 20000, 10000, "" },
-            { "hgun_P07_F", "", 7500, 3750, "" },
-            { "hgun_P07_khk_F", "", 7500, 3750, "" }, //Apex DLC            
-            { "SMG_02_ACO_F", "", 30000, 15000, "" },
-            { "arifle_SPAR_01_blk_F", "", 35000, 17500, "call life_coplevel >= 2" },
-            { "arifle_MX_Black_F", "", 35000, 17500, "call life_coplevel >= 3" },
-            { "arifle_MXC_Black_F", "", 35000, 17500, "call life_coplevel >= 3" },
-            { "hgun_ACPC2_F", "", 17500, 8750, "call life_coplevel >= 3" },            
-            { "arifle_SPAR_03_blk_F", "", 30000, 15000, "call life_coplevel >= 4" },
-            { "HandGrenade_Stone", $STR_W_items_Flashbang, 1700, 850, "call life_coplevel >= 4" },
-            { "SmokeShellYellow", $STR_W_items_TearGas, 1700, 850, "call life_coplevel >= 4" },
-            { "srifle_DMR_02_F", "", 30000, 15000, "call life_coplevel >= 5" },
-            { "arifle_MX_GL_Black_F", "", 30000, 15000, "call life_coplevel >= 5" }, 
-            { "arifle_ARX_blk_F", "", 60000, 15000, "call life_coplevel >= 5" },            
+            { "hgun_P07_snds_F", $STR_W_items_StunPistol, 200, 100, "" },
+            { "arifle_SDAR_F", $STR_W_items_TaserRifle, 2000, 1000, "" },
+            { "hgun_P07_F", "", 750, 375, "" },
+            { "hgun_P07_khk_F", "", 750, 375, "" }, //Apex DLC            
+            { "SMG_02_ACO_F", "", 3000, 1500, "" },
+            { "arifle_SPAR_01_blk_F", "", 3500, 1750, "call life_coplevel >= 2" },
+            { "arifle_MX_Black_F", "", 3500, 1750, "call life_coplevel >= 3" },
+            { "arifle_MXC_Black_F", "", 3500, 1750, "call life_coplevel >= 3" },
+            { "hgun_ACPC2_F", "", 1750, 875, "call life_coplevel >= 3" },            
+            { "arifle_SPAR_03_blk_F", "", 3000, 1500, "call life_coplevel >= 4" },
+            { "HandGrenade_Stone", $STR_W_items_Flashbang, 170, 85, "call life_coplevel >= 4" },
+            { "SmokeShellYellow", $STR_W_items_TearGas, 170, 85, "call life_coplevel >= 4" },
+            { "srifle_DMR_02_F", "", 3000, 1500, "call life_coplevel >= 5" },
+            { "arifle_MX_GL_Black_F", "", 3000, 1500, "call life_coplevel >= 5" }, 
+            { "arifle_ARX_blk_F", "", 6000, 1500, "call life_coplevel >= 5" },            
             { "10Rnd_50BW_Mag_F", "", 400, 65, "call life_coplevel >= 5" },
-            { "hgun_Pistol_heavy_01_F", "", 9500, 4750, "call life_coplevel >= 5" },
-            { "arifle_MX_SW_Black_F", "", 60000, 15000, "call life_coplevel >= 5" },
-            { "arifle_SPAR_03_blk_F", "", 60000, 15000, "call life_coplevel >= 5" },
-            { "LMG_Mk200_BI_F", "", 60000, 15000, "call life_coplevel >= 6" },
-            { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 7" } //Apex DLC Sniper
+            { "hgun_Pistol_heavy_01_F", "", 950, 475, "call life_coplevel >= 5" },
+            { "arifle_MX_SW_Black_F", "", 6000, 1500, "call life_coplevel >= 5" },
+            { "arifle_SPAR_03_blk_F", "", 6000, 1500, "call life_coplevel >= 5" },
+            { "LMG_Mk200_BI_F", "", 6000, 1500, "call life_coplevel >= 6" },
+            { "srifle_DMR_07_blk_F", "", 3200, 1600, "call life_coplevel >= 7" } //Apex DLC Sniper
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, 60, "" },
@@ -200,9 +200,9 @@ class WeaponShops {
             { "muzzle_snds_L", "", 650, 325, "" },
             { "optic_MRD", "", 2750, 1375, "call life_coplevel >= 1" },
             { "acc_flashlight_pistol", "", 250, 125, "call life_coplevel >= 1" },//Pistol Flashlight
-            { "acc_flashlight", "", 750, 375, "call life_coplevel >= 2" },
-            { "optic_Holosight", "", 1200, 600, "call life_coplevel >= 2" },
-            { "optic_Arco", "", 2500, 1250, "call life_coplevel >= 2" },
+            { "acc_flashlight", "", 75, 37, "call life_coplevel >= 2" },
+            { "optic_Holosight", "", 120, 60, "call life_coplevel >= 2" },
+            { "optic_Arco", "", 250, 125, "call life_coplevel >= 2" },
             { "muzzle_snds_H", "", 2750, 1375, "call life_coplevel >= 2" }
         };
     };

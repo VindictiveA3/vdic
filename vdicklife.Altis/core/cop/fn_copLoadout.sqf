@@ -12,7 +12,7 @@ waitUntil {scriptDone _handle};
 
 //Load player with default cop gear.
 player addUniform "U_Rangemaster";
-player addVest "V_PlateCarrier1_rgr";
+player addVest "V_PlateCarrier2_rgr";
 player addBackpack "B_Carryall_cbr";
 player addHeadgear "H_Cap_police";
 
@@ -31,6 +31,7 @@ player addItemToBackpack "H_CrewHelmetHeli_B";
 player addItemToBackpack "FirstAidKit"; 
 player addItemToBackpack "FirstAidKit";
 player addItemToBackpack "FirstAidKit";
+player addItemToBackpack "Rangefinder";
 player addItemToBackpack "O_NVGoggles_urb_F"; 
 
 /* ITEMS */
