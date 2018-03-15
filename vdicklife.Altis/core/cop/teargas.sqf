@@ -48,6 +48,15 @@ playerNearGas=false;
                 };
             };
         };
+
+         if (headgear player == "H_CrewHelmetHeli_B") then {antidote1 = 2588} else {
+            if (goggles player == "G_Respirator_White_F") then {antidote1 = 2588} else {
+                if (goggles player == "G_Respirator_Yellow_F") then {antidote1 = 2588} else {
+                     if (goggles player == "G_Respirator_Blue_F") then {antidote1 = 2588};  
+                };
+            };
+        };
+
             noesckey = (findDisplay 46) displayAddEventHandler ["KeyDown", "if ((_this select 1) == 1) then { true }"]; 
         if (antidote1 == 2583) then {
          "dynamicBlur" ppEffectEnable true; // enables ppeffect
