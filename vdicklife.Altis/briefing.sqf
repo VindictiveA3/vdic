@@ -84,20 +84,6 @@ These are considered exploits, and you will not be kicked, but banned.<br/><br/>
                 "
         ]
     ];
-
-    player createDiaryRecord ["safezones",
-        [
-            "Safe Zones",
-                "
-If bombing (bombing can be intentionally exploding a vehicle), robbing, or killing occurs around these or in these areas it is punishable by ban.<br/><br/>
-Any vehicle spawn (shop or garage)<br/>
-Any weapon shop<br/>
-All Police HQs<br/>
-Rebel Outposts<br/><br/>
-                "
-        ]
-    ];
-
     player createDiaryRecord ["serverrules",
         [
             "Bannable Offenses",
