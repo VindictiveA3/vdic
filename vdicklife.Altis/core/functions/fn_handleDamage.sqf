@@ -43,6 +43,15 @@ if (!isNull _source) then {
                 _damage = 0;
             };
         };
+            //ANTI VDM
+                private["_vehicle"];
+                _vehicle = vehicle _source;
+                if((vehicle _source isKindOf "LandVehicle") && ((driver _vehicle) == _source)) then {
+                    if(_source != _unit AND {alive _unit} AND {isPlayer _source}) then {
+                        _damage = 0;
+                    };
+                };
+    
     };
 };
 
