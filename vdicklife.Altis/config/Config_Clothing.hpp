@@ -35,7 +35,7 @@ class Clothing {
             { "U_C_HunterBody_grn", "", 1500, "" },
             { "U_C_WorkerCoveralls", "", 2500, "" },
             { "U_NikosBody", "", 3000, "" },
-            { "U_NikosAgedBody", $STR_C_Civ_Niko, 5000, "" },
+           // { "U_NikosAgedBody", $STR_C_Civ_Niko, 5000, "" },
             { "U_C_Man_casual_1_F", "", 5000, "" }, //Apex DLC
             { "U_C_Man_casual_2_F", "", 5000, "" }, //Apex DLC
             { "U_C_Man_casual_3_F", "", 5000, "" }, //Apex DLC
