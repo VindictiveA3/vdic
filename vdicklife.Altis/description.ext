@@ -186,4 +186,3 @@ class CfgNotifications {
         priority = 5;
     };
 };
-#include "maverick\maverick_master.cpp"
