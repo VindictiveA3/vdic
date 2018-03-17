@@ -81,6 +81,18 @@ class CfgSounds {
     };
 };
 
+   class RubberBulletHit {
+        name = "RubberBulletHit";
+        sound[] = {"\sounds\RubberBulletHit.ogg", 0.75, 1};
+        titles[] = {};
+    };
+};
+
+
+
+
+
+
 class CfgDebriefing {
     class NotWhitelisted {
         title = "$STR_NotWhitelisted_Title";

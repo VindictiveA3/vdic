@@ -3760,6 +3760,9 @@
             <Portuguese>%1 foi eletrocutado por %2</Portuguese>
             <Polish>%1 został potraktowany paralizatorem przez %2</Polish>
         </Key>
+        <Key ID="STR_NOTF_Rubber">
+            <Original>%1 was downed by %2</Original>
+        </Key>
         <Key ID="STR_NOTF_VehContraband">
             <Original>A vehicle was searched and has $%1 worth of drugs / contraband.</Original>
             <Czech>Vozidlo byl prohledán a má $%1 v hodnotě drog / kontrabandu.</Czech>
