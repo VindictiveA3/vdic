@@ -79,7 +79,6 @@ class CfgSounds {
         sound[] = {"\sounds\carUnlock.ogg", 0.75, 1};
         titles[] = {};
     };
-};
 
    class RubberBulletHit {
         name = "RubberBulletHit";
