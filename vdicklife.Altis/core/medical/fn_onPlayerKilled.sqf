@@ -58,8 +58,18 @@ _unit spawn {
         _maxTime = time + LIFE_SETTINGS(getNumber,"respawn_timer");
     };
     _RespawnBtn ctrlEnable false;
-    waitUntil {_Timer ctrlSetText format [localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
-    round(_maxTime - time) <= 0 || isNull _this};
+
+    // added 3/17/18 this will increase the time for respawn to 6 min if player hits the request Medic button
+         waitUntil {_Timer ctrlSetText format [localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
+         round(_maxTime - time) <= 0 || isNull _this || life_request_timer};
+
+     if (life_request_timer) then {
+        _maxTime = time + (LIFE_SETTINGS(getNumber,"respawn_timer") * 6); //multiples the respawn time set in the master config file by 5, to create the new respawn time!
+        waitUntil {_Timer ctrlSetText format [localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
+        round(_maxTime - time) <= 0 || isNull _this};
+    };
+
+    life_request_timer = false; //resets increased respawn timer
     _RespawnBtn ctrlEnable true;
     _Timer ctrlSetText localize "STR_Medic_Respawn_2";
 };
