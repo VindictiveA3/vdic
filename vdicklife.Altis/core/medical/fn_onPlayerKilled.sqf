@@ -63,8 +63,8 @@ _unit spawn {
          waitUntil {_Timer ctrlSetText format [localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
          round(_maxTime - time) <= 0 || isNull _this || life_request_timer};
 
-     if (life_request_timer) then {
-        _maxTime = time + (LIFE_SETTINGS(getNumber,"respawn_timer") * 6); //multiples the respawn time set in the master config file by 5, to create the new respawn time!
+     if (life_request_timer) then {                                  // this used to set it to 12 min lol
+        _maxTime = time + (LIFE_SETTINGS(getNumber,"respawn_timer") * 3); //multiples the respawn time set in the master config file by 5, to create the new respawn time!
         waitUntil {_Timer ctrlSetText format [localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
         round(_maxTime - time) <= 0 || isNull _this};
     };
