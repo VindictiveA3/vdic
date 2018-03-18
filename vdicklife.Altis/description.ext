@@ -79,7 +79,6 @@ class CfgSounds {
         sound[] = {"\sounds\carUnlock.ogg", 0.75, 1};
         titles[] = {};
     };
-};
 
    class RubberBulletHit {
         name = "RubberBulletHit";
@@ -187,4 +186,3 @@ class CfgNotifications {
         priority = 5;
     };
 };
-#include "maverick\maverick_master.cpp"
