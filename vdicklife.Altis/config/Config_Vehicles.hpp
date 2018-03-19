@@ -797,7 +797,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             }, "" },
 			{ "EMS Blue", "med", {
-                "textures\medic_textures\medic_vehicles"
+                "textures\medic_textures\medic_vehicles\emsbird.paa"
             }, "" },
             { "EMS White", "med", {
                 "#(argb,8,8,3)color(1,1,1,0.8)"
@@ -828,7 +828,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             }, "" },
 			{ "EMS Blue", "med", {
-                "textures\medic_textures\medic_vehicles\emsbird.jpg"
+                "textures\medic_textures\medic_vehicles\emsbird.paa"
             }, "" },
             { "EMS White", "med", {
                 "#(argb,8,8,3)color(1,1,1,0.8)"
@@ -842,7 +842,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 		price = 35000;
 		textures[] = {
 			{ "EMS Blue", "med", {
-				"textures\medic_textures\medic_vehicles\vanbutforEMS.jpg"
+				"textures\medic_textures\medic_vehicles\vanbutforEMS.paa"
 			}, "" }
 		};
 	};
