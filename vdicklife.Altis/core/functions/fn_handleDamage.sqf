@@ -46,9 +46,10 @@ if (!isNull _source) then {
     };
 };
 
+
 //Rubberbullets
 //Type 115 rifle being Used
-    if (currentWeapon _source in ["arifle_ARX_blk_F"] && (_source getVariable ["nonLethals",true]) && _projectile in ["B_50BW_Ball_F "]) then {
+    if (primaryWeaponMagazine _source in ["10Rnd_50BW_Mag_F"] && (_source getVariable ["nonLethals",true]) && _projectile in ["B_50BW_Ball_F "]) then {
             if (side _source isEqualTo west && playerSide isEqualTo civilian) then {
                 _damage = 0;
                 if (alive player && !life_isdowned && !life_isknocked && !(_unit getVariable ["restrained",false])) then {
