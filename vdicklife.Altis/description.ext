@@ -16,12 +16,13 @@ class CfgServer {
     Disabled: If HeadlessSupport is set to 0 (disabled), the connection of a Headless Client will make no difference. This option will increase server performance a TINY but negligible amount.
     */
 };
-
+#include "maverick\maverick_master.cpp"
 class RscTitles {
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
     #include "maverick\talent-tree-modular\gui\_masterTitles.cpp"
+	#include "maverick\maverick_titles_master.cpp"
 };
 
 class CfgFunctions {
@@ -78,7 +79,18 @@ class CfgSounds {
         sound[] = {"\sounds\carUnlock.ogg", 0.75, 1};
         titles[] = {};
     };
+
+   class RubberBulletHit {
+        name = "RubberBulletHit";
+        sound[] = {"\sounds\RubberBulletHit.ogg", 0.75, 1};
+        titles[] = {};
+    };
 };
+
+
+
+
+
 
 class CfgDebriefing {
     class NotWhitelisted {
@@ -174,4 +186,3 @@ class CfgNotifications {
         priority = 5;
     };
 };
-#include "maverick\maverick_master.cpp"

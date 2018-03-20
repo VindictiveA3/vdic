@@ -20,11 +20,11 @@ if (!isNull _source) then {
     if (_source != _unit) then {
         if (currentWeapon _source in ["hgun_P07_snds_F","arifle_SDAR_F"] && _projectile in ["B_9x21_Ball","B_556x45_dual"]) then {
             if (side _source isEqualTo west && playerSide isEqualTo civilian) then {
-                _damage = 0;
+                _damage = 0.51;
                 if (alive player && !life_istazed && !life_isknocked && !(_unit getVariable ["restrained",false])) then {
                     private ["_distance"];
                     _distance = 35;
-                    if (_projectile == "B_556x45_dual") then {_distance = 100;};
+                    //if (_projectile == "B_556x45_dual") then {_distance = 100;};
                     if (_unit distance _source < _distance) then {
                         if !(isNull objectParent player) then {
                             if (typeOf (vehicle player) == "B_Quadbike_01_F") then {
@@ -40,11 +40,47 @@ if (!isNull _source) then {
 
             //Temp fix for super tasers on cops.
             if (side _source isEqualTo west && (playerSide isEqualTo west || playerSide isEqualTo independent)) then {
-                _damage = 0;
+                _damage = 0.51;
             };
         };
     };
 };
 
+
+//Rubberbullets
+//Type 115 rifle being Used
+     if (_projectile ==  "B_50BW_Ball_F") then {
+            if (side _source isEqualTo west && playerSide isEqualTo civilian) then {
+                _damage = 0.51;
+                if (alive player && !life_isdowned && !life_isknocked && !(_unit getVariable ["restrained",false])) then {
+                    private ["_distance"];
+                    _distance = 300;
+                    if (_unit distance _source < _distance) then {
+                        if !(isNull objectParent player) then {
+                            if (typeOf (vehicle player) == "B_Quadbike_01_F") then {
+                                player action ["Eject",vehicle player];
+                                [_unit,_source] spawn life_fnc_tazedRubber; //change this too
+                            };
+                        } else {
+                            [_unit,_source] spawn life_fnc_tazedRubber; // here too
+                        };
+                    };
+                };
+            };
+
+            //Temp fix for super tasers on cops.
+            if (side _source isEqualTo west && (playerSide isEqualTo west || playerSide isEqualTo independent)) then {
+                _damage = 0.51;
+            };
+        };
+
+           //ANTI VDM
+             if(vehicle _source isKindOf "LandVehicle") then {
+                 if(_source != _unit AND {alive _unit} AND {isPlayer _source}) then {
+                   _damage = 0.001;
+                 };
+            };
+
 [] spawn life_fnc_hudUpdate;
+
 _damage;

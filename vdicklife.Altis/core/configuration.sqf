@@ -50,6 +50,7 @@ life_markers = false;
 life_markers_active = false;
 life_canpay_bail = true;
 life_storagePlacing = scriptNull;
+Life_request_timer = false;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];
@@ -85,6 +86,7 @@ life_hunger = 100;
 CASH = 0;
 
 life_istazed = false;
+life_isdowned = false;
 life_isknocked = false;
 life_vehicles = [];
 

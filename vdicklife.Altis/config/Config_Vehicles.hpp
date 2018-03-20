@@ -100,9 +100,8 @@ class CarShops {
         conditions = "";
         vehicles[] = {
             { "C_Offroad_01_F", "" },
-            { "I_Truck_02_medical_F", "" },
-            { "O_Truck_03_medical_F", "" },
-            { "B_Truck_01_medical_F", "" }
+            { "C_Van_02_medevac_F", "" } //LOW DLC
+            
         };
     };
 
@@ -796,6 +795,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Digi Green", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             }, "" },
+			{ "EMS Blue", "med", {
+                "textures\medic_textures\medic_vehicles\emsbird.paa"
+            }, "" },
             { "EMS White", "med", {
                 "#(argb,8,8,3)color(1,1,1,0.8)"
             }, "" }
@@ -824,11 +826,25 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Desert Digi", "reb", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             }, "" },
+			{ "EMS Blue", "med", {
+                "textures\medic_textures\medic_vehicles\emsbird.paa"
+            }, "" },
             { "EMS White", "med", {
                 "#(argb,8,8,3)color(1,1,1,0.8)"
             }, "" }
         };
     };
+	
+	class C_Van_02_medevac_F {
+		vItemSpace = 350;
+		conditions = "{(playerSide isEqualTo med)}";
+		price = 35000;
+		textures[] = {
+			{ "EMS Blue", "med", {
+				"textures\medic_textures\medic_vehicles\vanbutforEMS.paa"
+			}, "" }
+		};
+	};
 
     class B_SDV_01_F {
         vItemSpace = 50;

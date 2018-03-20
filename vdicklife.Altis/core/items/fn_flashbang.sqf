@@ -8,7 +8,7 @@
 private ["_pos","_eyeDir","_pPos","_impactPos","_norm","_angle","_blurEffect","_ppEffect"];
 _pos = [_this,0,[],[[]]] call BIS_fnc_param;
 if (_pos isEqualTo []) exitWith {}; //Badddd
-if (player distance _pos > 25) exitWith {}; //Bad again.
+if (player distance _pos > 10) exitWith {}; //Bad again.   changed the distance to 10 meters
 
 _pos set[2,(_pos select 2)+0.2];
 if (lineIntersects [eyePos player, ATLtoASL _pos,player]) exitWith {};
@@ -34,7 +34,7 @@ if (_angle < 90) then {
     _blurEffect ppEffectAdjust [3];
     _blurEffect ppEffectCommit 0.2;
     23 fadeSound 0.1;
-    sleep 13;
+    sleep 7;
 
     _ppEffect ppEffectAdjust [1, 1, -0.02, [4.5, 3.5, 1.6, -0.02],[1.8, 1.6, 1.6, 1],[-1.5,0,-0.2,1]];
     _ppEffect ppEffectCommit 10;

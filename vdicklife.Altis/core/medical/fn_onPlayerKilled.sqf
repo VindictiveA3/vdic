@@ -58,8 +58,18 @@ _unit spawn {
         _maxTime = time + LIFE_SETTINGS(getNumber,"respawn_timer");
     };
     _RespawnBtn ctrlEnable false;
-    waitUntil {_Timer ctrlSetText format [localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
-    round(_maxTime - time) <= 0 || isNull _this};
+
+    // added 3/17/18 this will increase the time for respawn to 6 min if player hits the request Medic button
+         waitUntil {_Timer ctrlSetText format [localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
+         round(_maxTime - time) <= 0 || isNull _this || life_request_timer};
+
+     if (life_request_timer) then {                                  // this used to set it to 12 min lol
+        _maxTime = time + (LIFE_SETTINGS(getNumber,"respawn_timer") * 3); //multiples the respawn time set in the master config file by 5, to create the new respawn time!
+        waitUntil {_Timer ctrlSetText format [localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
+        round(_maxTime - time) <= 0 || isNull _this};
+    };
+
+    life_request_timer = false; //resets increased respawn timer
     _RespawnBtn ctrlEnable true;
     _Timer ctrlSetText localize "STR_Medic_Respawn_2";
 };
@@ -92,10 +102,13 @@ if (!isNull _killer && {!(_killer isEqualTo _unit)} && {!(side _killer isEqualTo
             [getPlayerUID _killer,_killer getVariable ["realname",name _killer],"187V"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
         };
 
-        //Get rid of this if you don't want automatic vehicle license removal.
-        if (!local _killer) then {
+        
+       /*  
+       Removed 3/19/18 in preperation for new code
+       if (!local _killer) then {
             [2] remoteExecCall ["life_fnc_removeLicenses",_killer];
-        };
+        }; */
+
     } else {
         if (life_HC_isActive) then {
             [getPlayerUID _killer,_killer getVariable ["realname",name _killer],"187"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
@@ -103,9 +116,11 @@ if (!isNull _killer && {!(_killer isEqualTo _unit)} && {!(side _killer isEqualTo
             [getPlayerUID _killer,_killer getVariable ["realname",name _killer],"187"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
         };
 
-        if (!local _killer) then {
+       /*
+       Removed 3/19/18 in preperation for new code
+         if (!local _killer) then {
             [3] remoteExecCall ["life_fnc_removeLicenses",_killer];
-        };
+        }; */
     };
 };
 
