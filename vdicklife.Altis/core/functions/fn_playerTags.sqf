@@ -43,15 +43,15 @@ private _index = -1;
                 _text = switch (true) do {
                     case (_x in (units group player) && playerSide isEqualTo civilian): {format ["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
                     case (side _x isEqualTo west && {!isNil {_x getVariable "rank"}}): {format ["<img image='%1' size='1'></img> %2",switch ((_x getVariable "rank")) do {
-                        case 2: {"icons\ico_cop_ranks\patrolOfficer"};
-                        case 3: {"icons\ico_cop_ranks\seinorPatrol.paa"};
-                        case 4: {"icons\ico_cop_ranks\sergeant.paa"};
-                        case 5: {"icons\ico_cop_ranks\sergeantFC.paa"};
-                        case 6: {"icons\ico_cop_ranks\lieutenant.paa"};
-                        case 7: {"icons\ico_cop_ranks\captain.paa"};
-                        case 8: {"icons\ico_cop_ranks\Acheif.paa"};
-                        case 9: {"icons\ico_cop_ranks\deputy_chief.paa"};
-                        case 10: {"icons\ico_cop_ranks\chief.paa"};
+                        case 1: {"icons\ico_cop_ranks\patrolOfficer"};
+                        case 2: {"icons\ico_cop_ranks\seinorPatrol.paa"};
+                        case 3: {"icons\ico_cop_ranks\sergeant.paa"};
+                        case 4: {"icons\ico_cop_ranks\sergeantFC.paa"};
+                        case 5: {"icons\ico_cop_ranks\lieutenant.paa"};
+                        case 6: {"icons\ico_cop_ranks\captain.paa"};
+                        case 7: {"icons\ico_cop_ranks\Acheif.paa"};
+                        case 8: {"icons\ico_cop_ranks\deputy_chief.paa"};
+                        case 9: {"icons\ico_cop_ranks\chief.paa"};
                         default {"icons\ico_cop_ranks\cadet.paa"};
                         },_x getVariable ["realname",name _x]]};
                     case (side _x isEqualTo independent): {format ["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x getVariable ["realname",name _x]]};
