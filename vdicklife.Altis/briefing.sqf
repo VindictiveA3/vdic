@@ -420,13 +420,15 @@ The highest ranking officer on duty is in charge of the police force outside of 
 Police Chain of Command:<br/>
 1. Chief<br/>
 2. Deputy Chief<br/>
-3. Superintendent<br/>
+3. Ass. Chief<br/>
 4. Captain<br/>
 5. Lieutenant<br/>
-6. Sergeant<br/>
-7. Senior Patrol Officer<br/>
-8. Patrol Officer<br/>
-9. Cadet<br/><br/>
+6. Sergeant First Class<br/>
+7. Sergeant<br/>
+8. Corporal<br/>
+9. Senior Patrol Officer<br/>
+10. Patrol Officer<br/>
+11. Cadet<br/><br/>
 Cops in game who are not enrolled/accepted into the SPD are the lowest tier and have no say in police operations.<br/><br/>
                 "
         ]
@@ -490,7 +492,7 @@ A civilian in control of the following prohibited vehicles is subject to the con
 1. Ifrit<br/>
 2. Speedboat<br/>
 3. Hunter<br/>
-4. Police Offroad<br/><br/>
+4. Police Vehicles<br/><br/>
                 "
         ]
     ];
@@ -562,6 +564,16 @@ Left Shift + H: Holsters the weapon in your hands.<br/>
 Left Ctrl + H: Revert holster action.<br/>
 Shift + Spacebar: Jump.<br/>
 Left Shift + O: (un)fade sound (ear plugs).<br/><br/>
+                "
+        ]
+    ];
+	
+	 player createDiaryRecord ["controls",
+        [
+            "Maverick controls",
+                "
+Left Shift + T: Talent Tree System.<br/>
+Left Ctrl + N: Navigation Tools.<br/><br/>
                 "
         ]
     ];
