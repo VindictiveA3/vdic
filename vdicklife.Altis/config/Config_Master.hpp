@@ -238,7 +238,16 @@ class Life_Settings {
         {"STR_Crime_93F","15000","93F"},//Felony Hit and Run	//No Aggravated Crime
         {"STR_Crime_94M","7000","94M"},//Driving While Intoxicated	//No Aggravated Crime
         {"STR_Crime_95M","3000","95M"},//Reckless Driving	//No Aggravated Crime
-        {"STR_Crime_96C","See Right","96C"},//Speeding	//No Aggravated Crime
+        
+        //{"STR_Crime_96C","See Right","96C"},//Speeding	//No Aggravated Crime /* This one doesn't get a thing ignore it*/
+        {"STR_Crime_96CA","150","96CA"},//Speeding_A	//No Aggravated Crime
+        {"STR_Crime_96CB","250","96CB"},//Speeding_B	//No Aggravated Crime
+        {"STR_Crime_96CC","500","96CC"},//Speeding_C	//No Aggravated Crime
+        {"STR_Crime_96CD","750","96CD"},//Speeding_D	//No Aggravated Crime
+        {"STR_Crime_96CE","1250","96CE"},//Speeding_E	//No Aggravated Crime
+        {"STR_Crime_96CF","2000","96CF"},//Speeding_F	//No Aggravated Crime
+        {"STR_Crime_96CG","4000","96CG"},//Speeding_G	//No Aggravated Crime
+
         {"STR_Crime_97C","1000","97C"},//Failure to Stop	//No Aggravated Crime
         {"STR_Crime_98M","1250","98M"},//Operation of a Vehicle without a License	//No Aggravated Crime
         {"STR_Crime_99M","750","99M"},//Illegal Parking	//No Aggravated Crime
@@ -249,14 +258,6 @@ class Life_Settings {
         {"STR_Crime_914C","250","914C"},//Failure to Indicate	//No Aggravated Crime
         {"STR_Crime_915M","10000","915M"},//Street Racing	//No Aggravated Crime
         {"STR_Crime_916M","10000","916M"},//Excessive Speeding	//No Aggravated Crime
-
-        {"STR_Crime_96CA","150","96CA"},//Speeding_A	//No Aggravated Crime
-        {"STR_Crime_96CB","250","96CB"},//Speeding_B	//No Aggravated Crime
-        {"STR_Crime_96CC","500","96CC"},//Speeding_C	//No Aggravated Crime
-        {"STR_Crime_96CD","750","96CD"},//Speeding_D	//No Aggravated Crime
-        {"STR_Crime_96CE","1250","96CE"},//Speeding_E	//No Aggravated Crime
-        {"STR_Crime_96CF","2000","96CF"},//Speeding_F	//No Aggravated Crime
-        {"STR_Crime_96CG","4000","96CG"},//Speeding_G	//No Aggravated Crime
 
         {"STR_Crime_101F","150000","101F"},//Drug Cultivation and Manufacturing	//No Aggravated Crime
         {"STR_Crime_102F","50000","102F"},//Class 1 Drug Distribution	
