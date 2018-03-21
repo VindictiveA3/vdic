@@ -8,7 +8,11 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
+<<<<<<< Updated upstream
 		nextID=2268;
+=======
+		nextID=2269;
+>>>>>>> Stashed changes
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +20,17 @@ class EditorData
 	};
 	class Camera
 	{
+<<<<<<< Updated upstream
 		pos[]={3244.0471,148.21976,12795.199};
 		dir[]={0.43187132,-0.47874573,0.76455277};
 		up[]={0.23551546,0.87781262,0.41695011};
 		aside[]={0.87077308,9.4602001e-007,-0.4918606};
+=======
+		pos[]={9285.4375,139.99817,21509.828};
+		dir[]={-0.42260012,-0.59661198,0.68243188};
+		up[]={-0.31415361,0.80238926,0.50729734};
+		aside[]={0.85025311,-8.7870285e-007,0.52653784};
+>>>>>>> Stashed changes
 	};
 };
 binarizationWanted=0;
@@ -541,7 +552,11 @@ class Mission
 	};
 	class Entities
 	{
+<<<<<<< Updated upstream
 		items=1399;
+=======
+		items=1400;
+>>>>>>> Stashed changes
 		class Item0
 		{
 			dataType="Marker";
@@ -34564,7 +34579,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1"",""reb_v_1_1""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel']; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Air""; createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""air_g_r1""; }];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+						init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1"",""reb_v_1_1""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel']; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Air""; createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""air_g_r1""; }];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""reb_v_1_2""; }];";
 						name="reb_1_3";
 						disableSimulation=1;
 					};
@@ -54371,7 +54386,11 @@ class Mission
 			position[]={9262.4336,14.419678,21572.123};
 			name="air_g_r1";
 			type="Empty";
+<<<<<<< Updated upstream
 			angle=223.16437;
+=======
+			angle=223.16435;
+>>>>>>> Stashed changes
 			id=2139;
 			atlOffset=-2.5743942;
 		};
@@ -54936,7 +54955,11 @@ class Mission
 			};
 			id=2213;
 			type="B_Heli_Transport_03_F";
+<<<<<<< Updated upstream
 			atlOffset=-0.9104352;
+=======
+			atlOffset=-0.93451118;
+>>>>>>> Stashed changes
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55187,7 +55210,11 @@ class Mission
 			};
 			id=2224;
 			type="CamoNet_BLUFOR_open_F";
+<<<<<<< Updated upstream
 			atlOffset=0.54235125;
+=======
+			atlOffset=0.5423665;
+>>>>>>> Stashed changes
 		};
 		class Item1378
 		{
@@ -55330,7 +55357,11 @@ class Mission
 			};
 			id=2228;
 			type="Land_FoodSacks_01_cargo_brown_idap_F";
+<<<<<<< Updated upstream
 			atlOffset=0.044634342;
+=======
+			atlOffset=0.010227203;
+>>>>>>> Stashed changes
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55412,7 +55443,11 @@ class Mission
 			};
 			id=2230;
 			type="Campfire_burning_F";
+<<<<<<< Updated upstream
 			atlOffset=-2.2888184e-005;
+=======
+			atlOffset=-0.00040817261;
+>>>>>>> Stashed changes
 		};
 		class Item1384
 		{
@@ -55429,7 +55464,11 @@ class Mission
 			};
 			id=2231;
 			type="Land_CampingChair_V1_F";
+<<<<<<< Updated upstream
 			atlOffset=0.00015354156;
+=======
+			atlOffset=-0.0054550171;
+>>>>>>> Stashed changes
 		};
 		class Item1385
 		{
@@ -55446,7 +55485,11 @@ class Mission
 			};
 			id=2232;
 			type="Land_CampingChair_V1_F";
+<<<<<<< Updated upstream
 			atlOffset=0.00011205673;
+=======
+			atlOffset=-0.0054764748;
+>>>>>>> Stashed changes
 		};
 		class Item1386
 		{
@@ -55740,5 +55783,18 @@ class Mission
 			type="Land_Boat_03_abandoned_cover_F";
 			atlOffset=-3.528595e-005;
 		};
+<<<<<<< Updated upstream
+=======
+		class Item1399
+		{
+			dataType="Marker";
+			position[]={9173.6865,14.424,21643.545};
+			name="reb_v_1_2";
+			type="Empty";
+			angle=152.46999;
+			id=2268;
+			atlOffset=-0.040328026;
+		};
+>>>>>>> Stashed changes
 	};
 };
