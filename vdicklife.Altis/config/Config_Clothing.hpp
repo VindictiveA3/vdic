@@ -35,12 +35,9 @@ class Clothing {
             { "U_C_HunterBody_grn", "", 1500, "" },
             { "U_C_WorkerCoveralls", "", 2500, "" },
             { "U_NikosBody", "", 3000, "" },
-            {"C_man_sport_1_F","",200,100,""},
-            
-           
-           
+            {"C_man_sport_1_F","",200,100,""},     
             {"C_Man_casual_2_F","Church Clothes",2000,1000,""},
-            {"C_Man_casual_3_F",""Reuniting with your lost son" pants",1500,750,""},           
+            {"C_Man_casual_3_F","Reuniting with your lost son pants",1500,750,""},           
             {"U_C_IDAP_Man_shorts_F","Cool Shorts Bro",2000,1000,""},
             {"U_C_IDAP_Man_casual_F","",2000,1000,""},
             {"U_C_IDAP_Man_cargo_F","",2000,1000,""},
