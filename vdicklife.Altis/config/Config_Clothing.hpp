@@ -34,24 +34,22 @@ class Clothing {
             { "U_IG_Guerilla2_3", "", 1200, "" },
             { "U_C_HunterBody_grn", "", 1500, "" },
             { "U_C_WorkerCoveralls", "", 2500, "" },
-            { "U_NikosBody", "", 3000, "" },
-            {"C_man_sport_1_F","",200,100,""},     
-            {"C_Man_casual_2_F","Church Clothes",2000,1000,""},
-            {"C_Man_casual_3_F","Reuniting with your lost son pants",1500,750,""},           
-            {"U_C_IDAP_Man_shorts_F","Cool Shorts Bro",2000,1000,""},
-            {"U_C_IDAP_Man_casual_F","",2000,1000,""},
-            {"U_C_IDAP_Man_cargo_F","",2000,1000,""},
-            {"U_C_IDAP_Man_Tee_F","",2000,1000,""},
-            {"U_C_IDAP_Man_Jeans_F","",2000,1000,""},
-            {"U_C_IDAP_Man_TeeShorts_F","",2000,1000,""},
-            {"U_C_Mechanic_01_F","Grease Monkey",2000,1000,""},
-            {"U_C_ConstructionCoverall_Red_F","",3000,1500,""},
-            {"U_C_ConstructionCoverall_Vrana_F","",3000,1500,""},
-            {"U_C_ConstructionCoverall_Black_F","",3000,1500,""},
-            {"U_C_ConstructionCoverall_Blue_F","",3000,1500,""},
+           // { "U_NikosBody", "", 3000, "" }, 
+            { "C_Man_casual_2_F","Church Clothes",2000,1000,""},
+            { "C_Man_casual_3_F","Reuniting with your lost son pants",1500,750,""},           
+            { "U_C_IDAP_Man_shorts_F","Cool Shorts Bro",2000,1000,""},
+            { "U_C_IDAP_Man_casual_F","",2000,1000,""},
+            { "U_C_IDAP_Man_cargo_F","",2000,1000,""},
+            { "U_C_IDAP_Man_Tee_F","",2000,1000,""},
+            { "U_C_IDAP_Man_Jeans_F","",2000,1000,""},
+            { "U_C_IDAP_Man_TeeShorts_F","",2000,1000,""},
+            { "U_C_Mechanic_01_F","Grease Monkey",2000,1000,""},
+            { "U_C_ConstructionCoverall_Red_F","",3000,1500,""},
+            { "U_C_ConstructionCoverall_Vrana_F","",3000,1500,""},
+            { "U_C_ConstructionCoverall_Black_F","",3000,1500,""},
+            { "U_C_ConstructionCoverall_Blue_F","",3000,1500,""},
            // { "U_NikosAgedBody", $STR_C_Civ_Niko, 5000, "" },
             { "U_C_Man_casual_1_F", "", 5000, "" }, //Apex DLC
-            { "U_C_Man_casual_3_F", "", 5000, "" }, //Apex DLC
             { "U_C_Man_casual_4_F", "", 5000, "" }, //Apex DLC
             { "U_C_Man_casual_5_F", "", 5000, "" }, //Apex DLC
             { "U_C_Man_casual_6_F", "", 5000, "" }, //Apex DLC
@@ -340,6 +338,7 @@ class Clothing {
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
+            { "G_Respirator_White_F", "", 20, "" },
             { "G_Shades_Black", "", 20, "" },
             { "G_Shades_Blue", "", 20, "" },
             { "G_Sport_Blackred", "", 25, "" },
