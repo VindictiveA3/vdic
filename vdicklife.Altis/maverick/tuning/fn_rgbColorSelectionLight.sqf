@@ -41,7 +41,7 @@ mav_tuning_light_preview setLightAmbient mav_tuning_colors;
 	(vehicle player) setVariable ["mav_tuning",_values,true];
 
 	closeDialog 0;
-	[format["<t size='1' align='center' shadow='2' font='PuristaMedium'>Underglow successfully added, press SHIFT-L to activate<br/><t color='#12FE00'>$%1</t> left</t>",[life_cash] call BIS_fnc_numberText]] spawn mav_tuning_fnc_displayText;
+	[format["<t size='1' align='center' shadow='2' font='PuristaMedium'>Underglow successfully added, press SHIFT-C to activate<br/><t color='#12FE00'>$%1</t> left</t>",[life_cash] call BIS_fnc_numberText]] spawn mav_tuning_fnc_displayText;
 }];
 
 ((findDisplay 5200) displayCtrl 4) ctrlAddEventHandler ["ButtonClick",{

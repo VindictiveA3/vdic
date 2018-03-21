@@ -45,7 +45,7 @@ scriptName "fn_initTuningClient";
 			};
 
 			// Activate nitro
-			if ((_this select 1) == 33) then {
+			if ((_this select 1) == 48) then {
 				if (!mav_tuning_nitroActive) then {
 					if ((((vehicle player) getVariable ["mav_tuning",[0,0,0,0,0]]) select 3) > 0) then {
 						mav_tuning_nitroActive = true;
@@ -70,7 +70,7 @@ scriptName "fn_initTuningClient";
 			};
 
 			// Shift L (Underglow)
-			if ((_this select 2) AND (_this select 1) == 38) then {
+			if ((_this select 2) AND (_this select 1) == 46) then {
 				if !((((vehicle player) getVariable ["mav_tuning",[0,0,0,0,[-1,-1,-1]]]) select 4) isEqualTo [-1,-1,-1]) then {
 					if ((diag_tickTime - mav_tuning_light_toofast) < 1) exitWith {};
 					mav_tuning_light_toofast = diag_tickTime;

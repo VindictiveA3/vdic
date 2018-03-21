@@ -574,6 +574,9 @@ Left Shift + O: (un)fade sound (ear plugs).<br/><br/>
                 "
 Left Ctrl + T: Talent Tree System.<br/>
 Left Ctrl + N: Navigation Tools.<br/><br/>
+Aftermarket Mods:<br/>
+B: Nitro<br/>
+Left Shift + C: Vehicle Underglow<br/><br/>
                 "
         ]
     ];
