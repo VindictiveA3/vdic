@@ -23,7 +23,7 @@ camDestroy life_deathCamera;
 
 //Take fee for services.
 if (BANK > _reviveCost) then {
-    BANK = BANK - _reviveCost;
+    BANK = BANK -( _reviveCost * (missionNamespace getVariable ["mav_ttm_var_CanadaHealthInsurance", 1]));
 } else {
     BANK = 0;
 };

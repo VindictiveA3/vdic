@@ -7,31 +7,31 @@ class Level_0 {
 class Level_1 {
     displayName = "Rank 1";
     expRequired = 85;
-    perkPointsOnUnlock = 2;
+    perkPointsOnUnlock = 4;
 };
 
 class Level_2 {
     displayName = "Rank 2";
     expRequired = 340;
-    perkPointsOnUnlock = 2;
+    perkPointsOnUnlock = 4;
 };
 
 class Level_3 {
     displayName = "Rank 3";
     expRequired = 765;
-    perkPointsOnUnlock = 2;
+    perkPointsOnUnlock = 4;
 };
 
 class Level_4 {
     displayName = "Rank 4";
     expRequired = 1360;
-    perkPointsOnUnlock = 2;
+    perkPointsOnUnlock = 4;
 };
 
 class Level_5 {
     displayName = "Rank 5";
     expRequired = 2125;
-    perkPointsOnUnlock = 2;
+    perkPointsOnUnlock = 5;
 };
 
 class Level_6 {

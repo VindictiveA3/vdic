@@ -145,3 +145,41 @@ class perk_locksmith_3 {
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
 };
+
+//Health Insurance
+
+class perk_HealthInsurance_1 {
+	displayName = "Health Insurance";
+	requiredPerkPoints = 2;
+	requiredLevel = 2;
+	requiredPerk = "";
+	subtitle = "Level 2 Required, 2 Perk Points";
+	description = "Health Insurance that reduces revive cost when medic revives.<br/><br/><t color='#10FF45'>+20% Reduced Revive Cost</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_CanadaHealthInsurance_1.sqf";
+	limitToSides[] = {};
+	color[] = {1,1,1,1};
+};
+
+class perk_HealthInsurance_2 {
+	displayName = "Health Insurance Part:B";
+	requiredPerkPoints = 4;
+	requiredLevel = 6;
+	requiredPerk = "perk_HealthInsurance_1";
+	subtitle = "Level 6 Required, 4 Perk Points";
+	description = "Health Insurance that reduces revive cost when medic revives.<br/><br/><t color='#10FF45'>+40% Reduced Revive Cost</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_CanadaHealthInsurance_2.sqf";
+	limitToSides[] = {};
+	color[] = {1,1,1,1};
+};
+
+class perk_HealthInsurance_2 {
+	displayName = "Health Insurance Part:D";
+	requiredPerkPoints = 4;
+	requiredLevel = 12;
+	requiredPerk = "perk_HealthInsurance_2";
+	subtitle = "Level 12 Required, 4 Perk Points";
+	description = "Health Insurance that reduces revive cost when medic revives.<br/><br/><t color='#10FF45'>+60% Reduced Revive Cost</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_CanadaHealthInsurance_3.sqf";
+	limitToSides[] = {};
+	color[] = {1,1,1,1};
+};

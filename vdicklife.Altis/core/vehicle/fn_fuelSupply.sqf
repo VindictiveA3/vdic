@@ -116,7 +116,37 @@ if (_fuelFeedState <= 0) then {titleText [localize "STR_FuelTank_FeedFull","PLAI
 if (_fuelState <= 0) then {titleText [localize "STR_FuelTank_Empty","PLAIN"]};
 sleep 2;
 
-CASH = CASH + _win;
+
+life_atmbank = life_atmbank + _win;
+
+_meters = player distance2d (getMarkerPos "fuel_storage_1");
+if (_meters >= 20000 && _win > 20000) then{["GasDelivery20km"] spawn mav_ttm_fnc_addExp;} else {
+		if (_meters >= 15000 && _win > 15000) then{["GasDelivery15km"] spawn mav_ttm_fnc_addExp;} else {
+			if (_meters >= 10000 && _win > 10000) then{["GasDelivery10km"] spawn mav_ttm_fnc_addExp;} else {
+				if (_meters >= 5000 && _win > 5000) then{["GasDelivery5km"] spawn mav_ttm_fnc_addExp;} else {
+					if (_meters >= 1000 && _win > 1000) then{["GasDelivery1km"] spawn mav_ttm_fnc_addExp;} else {
+						if (_meters < 999 && _win > 500) then{["GasDeliveryLess1km"] spawn mav_ttm_fnc_addExp;};
+							
+					};
+				};  
+			};  
+		};  
+	};
+
+
+if (LIFE_SETTINGS(getNumber,"player_fueldeliveredLog") isEqualTo 1) then {
+    if (LIFE_SETTINGS(getNumber,"battlEye_friendlyLogging") isEqualTo 1) then {
+        fuel_deliver_Log = format ["Fuel Delivery Mission Log Player %1-%2 Date & Time %3 - Distance From Oil Marker %4Km - Money Rewarded $%5",profileName,(getPlayerUID player),missionStart,_meters,_win];
+         } else {
+        fuel_deliver_Log = format ["Fuel Delivery Mission Log Player %1-%2 Date & Time %3 - Distance From Oil Marker %4Km - Money Rewarded $%5",profileName,(getPlayerUID player),missionStart,_meters,_win];
+
+    };     
+     
+      publicVariableServer "fuel_deliver_Log";
+};
+
+
+
 [0] call SOCK_fnc_updatePartial;
 
 titleText [format [localize "STR_FuelTank_Money", _win], "PLAIN"];
