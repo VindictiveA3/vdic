@@ -264,8 +264,8 @@ class Life_Settings {
         {"STR_Crime_103M","25000","103M"},//Class 2 Drug Distribution	
         {"STR_Crime_103MA","50000","103MA"},//Class 2 Drug Distribution Ag
         {"STR_Crime_104M","10000","104M"},//Class 1 Drug Possession	//No Aggravated Crime
-        {"STR_Crime_104M","5000","105M"},//Class 2 Drug Possession	//No Aggravated Crime
-        {"STR_Crime_","2500","106M"},//Class 1 Drug Paraphernalia	//No Aggravated Crime
+        {"STR_Crime_105M","5000","105M"},//Class 2 Drug Possession	//No Aggravated Crime
+        {"STR_Crime_106M","2500","106M"},//Class 1 Drug Paraphernalia	//No Aggravated Crime
         {"STR_Crime_107M","1500","107M"}//Class 2 Drug Paraphernalia	//No Aggravated Crime
     };
 };
