@@ -172,7 +172,7 @@ class perk_HealthInsurance_2 {
 	color[] = {1,1,1,1};
 };
 
-class perk_HealthInsurance_2 {
+class perk_HealthInsurance_3 {
 	displayName = "Health Insurance Part:D";
 	requiredPerkPoints = 4;
 	requiredLevel = 12;

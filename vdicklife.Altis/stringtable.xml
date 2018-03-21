@@ -923,14 +923,14 @@
             <German>Admin %1 hat die Debug-Konsole geöffnet.</German>
         </Key>
         <Key ID="STR_NOTF_cannotDropKeys">
-            <Original>You cannot drop keys to a vehicle which is locked and you are inside of.</Original>
-            <Czech>You cannot drop keys to a vehicle which is locked and you are inside of.</Czech>
-            <French>You cannot drop keys to a vehicle which is locked and you are inside of.</French>
-            <Spanish>You cannot drop keys to a vehicle which is locked and you are inside of.</Spanish>
-            <Italian>You cannot drop keys to a vehicle which is locked and you are inside of.</Italian>
-            <Polish>You cannot drop keys to a vehicle which is locked and you are inside of.</Polish>
-            <Portuguese>You cannot drop keys to a vehicle which is locked and you are inside of.</Portuguese>
-            <Russian>You cannot drop keys to a vehicle which is locked and you are inside of.</Russian>
+            <Original>You cannot drop Keys to a vehicle which is locked and you are inside of.</Original>
+            <Czech>You cannot drop Keys to a vehicle which is locked and you are inside of.</Czech>
+            <French>You cannot drop Keys to a vehicle which is locked and you are inside of.</French>
+            <Spanish>You cannot drop Keys to a vehicle which is locked and you are inside of.</Spanish>
+            <Italian>You cannot drop Keys to a vehicle which is locked and you are inside of.</Italian>
+            <Polish>You cannot drop Keys to a vehicle which is locked and you are inside of.</Polish>
+            <Portuguese>You cannot drop Keys to a vehicle which is locked and you are inside of.</Portuguese>
+            <Russian>You cannot drop Keys to a vehicle which is locked and you are inside of.</Russian>
             <German>Du kannst den Schlüssel nicht wegschmeißen, weil das Auto verschlossen ist und du drin sitzt.</German>
         </Key>
     </Package>
@@ -3929,7 +3929,7 @@
             <German>Du hast deine Materialien verarbeitet!</German>
         </Key>
         <Key ID="STR_NOTF_RapidAction">
-            <Original>You can't rapidly use action keys!</Original>
+            <Original>You can't rapidly use action Keys!</Original>
             <Czech>Nemůžete rychle využít akčních kláves!</Czech>
             <Spanish>No puedes usar Keys de Acciones tan rápido!</Spanish>
             <Russian></Russian>
@@ -4369,7 +4369,7 @@
             <German>Du hast keinen Spieler ausgewählt.</German>
         </Key>
         <Key ID="STR_NOTF_givenKeysTo">
-            <Original>You have given %1 keys to your %2.</Original>
+            <Original>You have given %1 Keys to your %2.</Original>
             <Czech>Dali jste %1 klíče ke svému %2.</Czech>
             <French>Vous avez donné les clés de votre %2 à %1.</French>
             <Spanish>Usted ha dado %1 llaves de su %2.</Spanish>
@@ -4380,18 +4380,18 @@
             <German>Du hast %1 die Schlüssel zu deinem %2 gegeben.</German>
         </Key>
         <Key ID="STR_NOTF_gaveKeysFrom">
-            <Original>%1 has gave you keys for a %2.</Original>
-            <Czech>%1 has gave you keys for a %2.</Czech>
+            <Original>%1 has gave you Keys for a %2.</Original>
+            <Czech>%1 has gave you Keys for a %2.</Czech>
             <French>%1 a vous a donné les clés de %2.</French>
-            <Spanish>%1 has gave you keys for a %2.</Spanish>
-            <Italian>%1 has gave you keys for a %2.</Italian>
-            <Polish>%1 has gave you keys for a %2.</Polish>
-            <Portuguese>%1 has gave you keys for a %2.</Portuguese>
-            <Russian>%1 has gave you keys for a %2.</Russian>
+            <Spanish>%1 has gave you Keys for a %2.</Spanish>
+            <Italian>%1 has gave you Keys for a %2.</Italian>
+            <Polish>%1 has gave you Keys for a %2.</Polish>
+            <Portuguese>%1 has gave you Keys for a %2.</Portuguese>
+            <Russian>%1 has gave you Keys for a %2.</Russian>
             <German>%1 hat dir die Schlüssel zum %2 gegeben.</German>
         </Key>
         <Key ID="STR_NOTF_cannotRemoveHouseKeys">
-            <Original>You cannot remove the keys to your house!</Original>
+            <Original>You cannot remove the Keys to your house!</Original>
             <Czech>Nemůžete odstranit klíče od domu!</Czech>
             <French>Vous ne pouvez pas supprimer les clés de votre maison !</French>
             <Spanish>No se puede quitar las llaves de su casa!</Spanish>
@@ -7526,7 +7526,7 @@
             <Polish>Zatankowałeś %1</Polish>
         </Key>
         <Key ID="STR_ISTR_Lock_AlreadyHave">
-            <Original>This vehicle is already in your key-chain.</Original>
+            <Original>This vehicle is already in your Key-chain.</Original>
             <Czech>Toto vozidlo je již ve vaší klíčenky.</Czech>
             <Spanish>Esta vehiculo ya esta en tu llavero.</Spanish>
             <Russian></Russian>
@@ -7559,7 +7559,7 @@
             <Polish>Jesteś za daleko od celu.</Polish>
         </Key>
         <Key ID="STR_ISTR_Lock_Success">
-            <Original>You now have keys to this vehicle.</Original>
+            <Original>You now have Keys to this vehicle.</Original>
             <Czech>Nyní máte klíče k tomuto vozidlu.</Czech>
             <Spanish>Ahora tienes las llaves para este vehiculo.</Spanish>
             <Russian></Russian>
@@ -10914,513 +10914,464 @@
         </Key>
     </Package>
     <Package name="Crimes">
-        <Key ID="STR_Crime_187V">
-            <Original>Vehicular Manslaughter</Original>
-            <Czech>dopravní zabití</Czech>
-            <French>Vol de véhicule</French>
-            <Spanish>Homicidio Vehicular</Spanish>
-            <Italian>Omicidio colposo veicolare</Italian>
-            <Polish>Kołowego Manslaughter</Polish>
-            <Russian></Russian>
-            <Portuguese>Atropelamento</Portuguese>
-            <German>Fahrlässige Tötung</German>
+        
+        <Key ID="STR_Crime_41F">
+        <Original>1st Degree Murder</Original>
         </Key>
-        <Key ID="STR_Crime_187">
-            <Original>Manslaughter</Original>
-            <Czech>Zabití</Czech>
-            <French>Homicide involontaire</French>
-            <Spanish>Homicidio</Spanish>
-            <Italian>Omicidio colposo</Italian>
-            <Polish>Zabójstwo</Polish>
-            <Russian></Russian>
-            <Portuguese>Homicidio Involuntario</Portuguese>
-            <German>Totschlag</German>
+        <Key ID="STR_Crime_41FA">
+        <Original>Aggravated 1st Degree Murder</Original>
         </Key>
-        <Key ID="STR_Crime_901">
-            <Original>Escaping Jail</Original>
-            <Czech>Jak uniknout vězení</Czech>
-            <French>Evasion de prison</French>
-            <Spanish>Escaparse de la Cárcel</Spanish>
-            <Italian>Fuga dalla prigione</Italian>
-            <Polish>Uciekając Jail</Polish>
-            <Russian></Russian>
-            <Portuguese>Fuga da Prisão</Portuguese>
-            <German>Ausbruch</German>
+        <Key ID="STR_Crime_42F">
+        <Original>2nd Degree Murder</Original>
         </Key>
-        <Key ID="STR_Crime_215">
-            <Original>Attempted Auto Theft</Original>
-            <Czech>Pokusili Theft Auto</Czech>
-            <French>Tentative de vol de véhicule</French>
-            <Spanish>Atentado: Robo de Vehículo</Spanish>
-            <Italian>Tentativo di furto d'auto</Italian>
-            <Polish>Próba Theft Auto</Polish>
-            <Russian></Russian>
-            <Portuguese>Tentativa de Roubo de Veiculo</Portuguese>
-            <German>Versuchter Autodiebstahl</German>
+        <Key ID="STR_Crime_42FA">
+        <Original>Aggravated 2nd Degree Murder</Original>
         </Key>
-        <Key ID="STR_Crime_213">
-            <Original>Use of illegal explosives</Original>
-            <Czech>Používání nelegálních výbušnin</Czech>
-            <French>Utilisation d'explosifs illégaux</French>
-            <Spanish>Uso de Explosivos Ilegales</Spanish>
-            <Italian>Uso di esplosivi illegali</Italian>
-            <Polish>Używanie nielegalnych materiałów wybuchowych</Polish>
-            <Russian></Russian>
-            <Portuguese>Uso de explosivos ilegais</Portuguese>
-            <German>Verwendung von illegalen Sprengstoff</German>
+        <Key ID="STR_Crime_43F">
+        <Original>Attempted Murder</Original>
         </Key>
-        <Key ID="STR_Crime_211">
-            <Original>Robbery</Original>
-            <Czech>Loupež</Czech>
-            <French>Vol</French>
-            <Spanish>Robo</Spanish>
-            <Italian>Rapina</Italian>
-            <Polish>Rozbój</Polish>
-            <Russian></Russian>
-            <Portuguese>Roubo</Portuguese>
-            <German>Raub</German>
+        <Key ID="STR_Crime_43FA">
+        <Original>Aggravated Attempted Murder</Original>
         </Key>
-        <Key ID="STR_Crime_207">
-            <Original>Kidnapping</Original>
-            <Czech>Únos</Czech>
-            <French>Enlèvement</French>
-            <Spanish>Secuestro</Spanish>
-            <Italian>Rapimento</Italian>
-            <Polish>Porwanie</Polish>
-            <Russian></Russian>
-            <Portuguese>Sequestro</Portuguese>
-            <German>Entführung</German>
+        <Key ID="STR_Crime_44F">
+        <Original>Voluntary Manslaughter</Original>
         </Key>
-        <Key ID="STR_Crime_207A">
-            <Original>Attempted Kidnapping</Original>
-            <Czech>pokus o únos</Czech>
-            <French>Tentative de kidnapping</French>
-            <Spanish>Atentado: Secuestro</Spanish>
-            <Russian></Russian>
-            <Portuguese>Tentativa de Sequestro</Portuguese>
-            <German>Versuchte Entführung</German>
-            <Italian>Tentativo di rapimento</Italian>
-            <Polish>Próba porwania</Polish>
+        <Key ID="STR_Crime_44FA">
+        <Original>Aggravated Voluntary Manslaughter</Original>
         </Key>
-        <Key ID="STR_Crime_390">
-            <Original>Public Intoxication</Original>
-            <Czech>veřejné Intoxikace</Czech>
-            <French>Intoxication publique</French>
-            <Spanish>Intoxicación Pública</Spanish>
-            <Russian></Russian>
-            <Portuguese>Uso de Droga em Publico</Portuguese>
-            <German>Öffentlicher Drogenmissbrauch</German>
-            <Italian>Uso di stupefacenti in pubblico</Italian>
-            <Polish>Upojenie publiczny</Polish>
+        <Key ID="STR_Crime_45F">
+        <Original>Involuntary Manslaughter</Original>
         </Key>
-        <Key ID="STR_Crime_487">
-            <Original>Grand Theft</Original>
-            <Czech>velká loupež</Czech>
-            <French>Vol de voiture</French>
-            <Spanish>Robo Mayor</Spanish>
-            <Italian>grande furto</Italian>
-            <Polish>Wielka kradzież</Polish>
-            <Russian></Russian>
-            <Portuguese>Grande Roubo</Portuguese>
-            <German>Auto Diebstahl</German>
+        <Key ID="STR_Crime_45FA">
+        <Original>Aggravated Involuntary Manslaughter</Original>
         </Key>
-        <Key ID="STR_Crime_488">
-            <Original>Petty Theft</Original>
-            <Czech>Petty Theft</Czech>
-            <French>Petit vol</French>
-            <Spanish>Robo Menor</Spanish>
-            <Italian>piccoli furti</Italian>
-            <Polish>Drobnych kradzieży</Polish>
-            <Russian></Russian>
-            <Portuguese>Pequeno Roubo</Portuguese>
-            <German>Kleiner Diebstahl</German>
+        <Key ID="STR_Crime_46F">
+        <Original>Vehicular Manslaughter</Original>
         </Key>
-        <Key ID="STR_Crime_480">
-            <Original>Hit and run</Original>
-            <Czech>Zavinit nehodu a ujet</Czech>
-            <French>Délit de fuite</French>
-            <Spanish>Pega y Corre</Spanish>
-            <Italian>Mordi e fuggi</Italian>
-            <Polish>Uderz i uciekaj</Polish>
-            <Russian></Russian>
-            <Portuguese>Fugir de Batida</Portuguese>
-            <German>Fahrerflucht</German>
+        <Key ID="STR_Crime_46FA">
+        <Original>Aggravated Vehicular Manslaughter</Original>
         </Key>
-        <Key ID="STR_Crime_481">
-            <Original>Drug Possession</Original>
-            <Czech>držení drog</Czech>
-            <French>Possession de drogue</French>
-            <Spanish>Posesión de Drogas</Spanish>
-            <Italian>possesso di droga</Italian>
-            <Polish>Posiadanie narkotyków</Polish>
-            <Russian></Russian>
-            <Portuguese>Posse de Droga</Portuguese>
-            <German>Drogenbesitz</German>
-        </Key>
-        <Key ID="STR_Crime_482">
-            <Original>Intent to distribute</Original>
-            <Czech>Intent distribuovat</Czech>
-            <French>Intention de distribuer</French>
-            <Spanish>Intención de Distribuir</Spanish>
-            <Russian></Russian>
-            <Portuguese>Tentativa de Trafico</Portuguese>
-            <German>Versuchter Drogenhandel</German>
-            <Italian>Tentativo di spaccio</Italian>
-            <Polish>Zamiarem dystrybucji</Polish>
-        </Key>
-        <Key ID="STR_Crime_483">
-            <Original>Drug Trafficking</Original>
-            <Czech>Obchodování s drogami</Czech>
-            <French>Trafic de drogue</French>
-            <Spanish>Tráfico de Drogas</Spanish>
-            <Russian></Russian>
-            <Portuguese>Trafico de Drogas</Portuguese>
-            <German>Drogenhandel</German>
-            <Italian>Vendita di droga</Italian>
-            <Polish>Handel narkotykami</Polish>
-        </Key>
-        <Key ID="STR_Crime_459">
-            <Original>Burglary</Original>
-            <Czech>loupež</Czech>
-            <French>Cambriolage</French>
-            <Spanish>Robo de Casa</Spanish>
-            <Italian>furto con scasso</Italian>
-            <Polish>Włamanie</Polish>
-            <Russian></Russian>
-            <Portuguese>Arrombamento</Portuguese>
-            <German>Einbruch</German>
-        </Key>
-        <Key ID="STR_Crime_666">
-            <Original>Tax Evasion</Original>
-            <Czech>Daňový únik</Czech>
-            <French>Évasion fiscale</French>
-            <Spanish>Evadir Impuestos</Spanish>
-            <Russian></Russian>
-            <Portuguese>Evasão Fiscal</Portuguese>
-            <German>Steuerhinterziehung</German>
-            <Italian>Evasione delle tasse</Italian>
-            <Polish>Unikanie podatków</Polish>
-        </Key>
-        <Key ID="STR_Crime_667">
-            <Original>Terrorism</Original>
-            <Czech>Terorismus</Czech>
-            <French>Terrorisme</French>
-            <Spanish>Terrorismo</Spanish>
-            <Russian></Russian>
-            <Portuguese>Terrorismo</Portuguese>
-            <German>Terrorismus</German>
-            <Italian>Terrorismo</Italian>
-            <Polish>Terroryzm</Polish>
-        </Key>
-        <Key ID="STR_Crime_668">
-            <Original>Unlicensed Hunting</Original>
-            <Czech>Volně prodejné Hunting</Czech>
-            <French>Chasse sans licence</French>
-            <Spanish>Caza sin Licencia</Spanish>
-            <Russian></Russian>
-            <Portuguese>Caça sem Licença</Portuguese>
-            <German>Jagen ohne Jagdschein</German>
-            <Italian>Caccia senza licenza</Italian>
-            <Polish>Polowanie nielicencjonowane</Polish>
-        </Key>
-        <Key ID="STR_Crime_919">
-            <Original>Organ Theft</Original>
-            <Czech>Organ Krádež</Czech>
-            <French>Vol d'organes</French>
-            <Spanish>Robo de Organos</Spanish>
-            <Italian>organo furto</Italian>
-            <Polish>Narząd kradzieżą</Polish>
-            <Russian></Russian>
-            <Portuguese>Roubo de Orgãos</Portuguese>
-            <German>Organ Diebstahl</German>
-        </Key>
-        <Key ID="STR_Crime_919A">
-            <Original>Attempted Organ Theft</Original>
-            <Czech>Pokus o krádež Organ</Czech>
-            <French>Tentative de vol d'organes</French>
-            <Spanish>Atentado: Robo de Organos</Spanish>
-            <Italian>Tentativo furto di organi</Italian>
-            <Polish>Próba kradzieży narządów</Polish>
-            <Russian></Russian>
-            <Portuguese>Tentativa de Roubo de Orgãos</Portuguese>
-            <German>Versuchter Organ Diebstahl</German>
-        </Key>
-        <Key ID="STR_Crime_1">
-            <Original>Driving without license</Original>
-            <Czech>Jízda bez povolení</Czech>
-            <Spanish>Conducir sin Licencia</Spanish>
-            <Russian></Russian>
-            <French>Absence du permis de conduire</French>
-            <Portuguese>Dirigir sem Licença</Portuguese>
-            <German>Fahren ohne Führerschein</German>
-            <Italian>Guida senza patente</Italian>
-            <Polish>Jazda bez licencji</Polish>
-        </Key>
-        <Key ID="STR_Crime_2">
-            <Original>Driving on the wrong side of the road</Original>
-            <Czech>Jízda v špatným směrem do ulice</Czech>
-            <Spanish>Conducir en el lado incorrecto de la calle</Spanish>
-            <Russian></Russian>
-            <French>Conduite sur le mauvais côté de la route</French>
-            <Portuguese>Dirigindo no sentido contrario</Portuguese>
-            <Italian>Guida Contromano</Italian>
-            <Polish>Jazda po niewłaściwej stronie drogi</Polish>
-            <German>Fahren in die falsche Richtung der Straße</German>
-        </Key>
-        <Key ID="STR_Crime_3">
-            <Original>Not respecting the signalizations</Original>
-            <Czech>Nerespektování signalizací</Czech>
-            <Spanish>No respetar las señales</Spanish>
-            <Russian></Russian>
-            <French>Non respect des signalisations</French>
-            <Portuguese>Não respeitar as sinalizações</Portuguese>
-            <German>Nicht unter Beachtung der Signalisierungen</German>
-            <Italian>Mancato rispetto dei segnali stradali</Italian>
-            <Polish>Nie przestrzegając sygnalizacji czy</Polish>
-        </Key>
-        <Key ID="STR_Crime_4">
-            <Original>Speeding</Original>
-            <Czech>rychlá jízda</Czech>
-            <Spanish>Exceso de Velocidad</Spanish>
-            <Russian></Russian>
-            <French>Excès de vitesse</French>
-            <Portuguese>Excesso de Velocidade</Portuguese>
-            <German>Geschwindigkeitsüberschreitung</German>
-            <Italian>Eccesso di velocità</Italian>
-            <Polish>Przyśpieszenie</Polish>
-        </Key>
-        <Key ID="STR_Crime_5">
-            <Original>No headlight in the night</Original>
-            <Czech>No světel v noci</Czech>
-            <Spanish>Manejar sin luces en la noche</Spanish>
-            <Russian></Russian>
-            <French>Absence de phare la nuit</French>
-            <Portuguese>Farois Apagados Durante a Noite</Portuguese>
-            <German>Fahren ohne Licht</German>
-            <Italian>Luci spente durante la notte</Italian>
-            <Polish>Brak świateł w nocy</Polish>
-        </Key>
-        <Key ID="STR_Crime_6">
-            <Original>Driving kart without helmet</Original>
-            <Czech>Hnací motokáru bez helmy</Czech>
-            <Spanish>Manejar un Kart sin casco</Spanish>
-            <Russian></Russian>
-            <French>Non-port du casque en Kart</French>
-            <Portuguese>Dirigindo Kart Sem Capacete</Portuguese>
-            <German>Fahren ohne Helm</German>
-            <Italian>Guida di Kart senza casco</Italian>
-            <Polish>Jazda bez kasku gokarta</Polish>
-        </Key>
-        <Key ID="STR_Crime_7">
-            <Original>Badly parked vehicle</Original>
-            <Czech>Špatně zaparkované vozidlo</Czech>
-            <Spanish>Vehículo mal estacionado</Spanish>
-            <Russian></Russian>
-            <French>Véhicule mal garé</French>
-            <Portuguese>Veículo Mal Estacionado</Portuguese>
-            <German>Parksünder</German>
-            <Italian>Veicolo mal parcheggiato</Italian>
-            <Polish>Źle zaparkowany samochód</Polish>
-        </Key>
-        <Key ID="STR_Crime_8">
-            <Original>Rebel vehicle (Not armed)</Original>
-            <Czech>Rebel vozidla (není ozbrojený)</Czech>
-            <Spanish>Vehículo Rebelde (No Armado)</Spanish>
-            <Russian></Russian>
-            <French>Véhicule rebel non armé</French>
-            <Portuguese>Veículo Rebelde(Não Armado)</Portuguese>
-            <German>Rebellen Fahrzeug (nicht bewaffnet)</German>
-            <Italian>Veicolo blindato(Non armato)</Italian>
-            <Polish>Rebel pojeździe (nie czuwa)</Polish>
-        </Key>
-        <Key ID="STR_Crime_9">
-            <Original>Grand Theft (Civilian Vehicle)</Original>
-            <Czech>Grand Theft (Civilian Vehicle)</Czech>
-            <Spanish>Robo Mayor (Vehículo Civil)</Spanish>
-            <Russian></Russian>
-            <French>Vol de véhicule civil</French>
-            <Portuguese>Roubo de Veículo (Veículo Civil)</Portuguese>
-            <German>Schwerer Diebstahl (Zivilfahrzeug)</German>
-            <Italian>Furto di veicolo (Civile)</Italian>
-            <Polish>Grand Theft (Cywilny Vehicle)</Polish>
 
+
+
+
+        <Key ID="STR_Crime_51f">
+        <Original>Felony Robbery</Original>
         </Key>
-        <Key ID="STR_Crime_10">
-            <Original>Grand Theft (Military Vehicle)</Original>
-            <Czech>Grand Theft (Military Vehicle)</Czech>
-            <Spanish>Robo Mayor (Vehículo Militar)</Spanish>
-            <Russian></Russian>
-            <French>Vol de véhicule militaire</French>
-            <Portuguese>Roubo de Veículo(Militar)</Portuguese>
-            <German>Schwerer Diebstahl (Dienstfahrzeug)</German>
-            <Italian>Furto di veicolo militare</Italian>
-            <Polish>Grand Theft (pojazd wojskowy)</Polish>
+        <Key ID="STR_Crime_51fA">
+        <Original>Aggravated Felony Robbery</Original>
         </Key>
-        <Key ID="STR_Crime_11">
-            <Original>Armored Vehicle</Original>
-            <Czech>obrněné vozidlo</Czech>
-            <Spanish>Vehículo Blindado</Spanish>
-            <Russian></Russian>
-            <French>Véhicules blindés</French>
-            <Portuguese>Veículo Armado</Portuguese>
-            <German>Panzerfahrzeug</German>
-            <Italian>Veicolo D'assalto</Italian>
-            <Polish>Opancerzony pojazd</Polish>
+        <Key ID="STR_Crime_52F">
+        <Original>Robbery of an Individual</Original>
         </Key>
-        <Key ID="STR_Crime_12">
-            <Original>Flying over the city without authorization</Original>
-            <Czech>Létání nad městem bez povolení</Czech>
-            <Spanish>Volar sobre la ciudad sin autorización</Spanish>
-            <Russian></Russian>
-            <French>Survol de ville sans autorisation</French>
-            <Portuguese>Sobrevoando sobre a cidade sem autorização</Portuguese>
-            <German>Fliegen über die Stadt ohne Genehmigung</German>
-            <Italian>Guida di velivolo su città abitata senza autorizzazione</Italian>
-            <Polish>Latające nad miastem bez zezwolenia</Polish>
+        <Key ID="STR_Crime_52FA">
+        <Original>Aggravated Robbery of an Individual</Original>
         </Key>
-        <Key ID="STR_Crime_13">
-            <Original>Closing the street without authorization</Original>
-            <Czech>Uzavření ulici bez povolení</Czech>
-            <Spanish>Cerrar las calles sin autorización</Spanish>
-            <Russian></Russian>
-            <French>Interdiction de se poser sans autorisation</French>
-            <Portuguese>Fechar Rua Sem Autorização</Portuguese>
-            <German>Absperren der Straße ohne Genehmigung</German>
-            <Italian>Impedimento del traffico senza permesso</Italian>
-            <Polish>Zamknięcie ulicy bez zezwolenia</Polish>
+        <Key ID="STR_Crime_53F">
+        <Original>Robbery of a Business</Original>
         </Key>
-        <Key ID="STR_Crime_14">
-            <Original>Open carry in city (Legal Weapon)</Original>
-            <Czech>open carry ve městě (právní Weapon)</Czech>
-            <Spanish>Cargar Arma Abiertamente en la Ciudad (Arma Legal)</Spanish>
-            <Italian>Aprire il trasporto in città (Arma Legale)</Italian>
-            <Polish>Otwarty Carry w mieście (prawny Weapon)</Polish>
-            <Russian></Russian>
-            <French>Arme légale visible en ville</French>
-            <Portuguese>Portar em Cidades(Arma Legal)</Portuguese>
-            <German>Offenes Tragen einer legalen Waffe in der Stadt</German>
+        <Key ID="STR_Crime_53FA">
+        <Original>Aggravated Robbery of a Business</Original>
         </Key>
-        <Key ID="STR_Crime_15">
-            <Original>Rebel weapon</Original>
-            <Czech>Rebel zbraň</Czech>
-            <Spanish>Arma Rebelde</Spanish>
-            <Russian></Russian>
-            <French>Armes rebelles</French>
-            <Portuguese>Arma Rebelde</Portuguese>
-            <German>Rebellen Waffe</German>
-            <Italian>Arma Ribelle</Italian>
-            <Polish>Rebel bronią</Polish>
+        <Key ID="STR_Crime_54M">
+        <Original>Petty Theft</Original>
         </Key>
-        <Key ID="STR_Crime_16">
-            <Original>Illegal clothing</Original>
-            <Czech>Nelegální oblečení</Czech>
-            <Spanish>Ropa Ilegal</Spanish>
-            <Italian>abbigliamento illegale</Italian>
-            <Polish>Nielegalna odzież</Polish>
-            <Russian></Russian>
-            <French>Vêtements illégaux</French>
-            <Portuguese>Roupas Ilegais</Portuguese>
-            <German>Illegale Kleidung</German>
+        <Key ID="STR_Crime_54MA">
+        <Original>Aggravated Petty Theft</Original>
         </Key>
-        <Key ID="STR_Crime_17">
-            <Original>Hiding face (Mask)</Original>
-            <Czech>Schovává tvář (Mask)</Czech>
-            <Spanish>Ocultar su Cara (Máscara)</Spanish>
-            <Italian>Nascondere faccia (Mask)</Italian>
-            <Polish>Ukrywając twarz (maska)</Polish>
-            <Russian></Russian>
-            <French>Cacher son visage</French>
-            <Portuguese>Esconder o Rosto(Mascara)</Portuguese>
-            <German>Verstecken des Gesichts (Maske)</German>
+        <Key ID="STR_Crime_55F">
+        <Original>Kidnapping</Original>
         </Key>
-        <Key ID="STR_Crime_18">
-            <Original>Refuses to cooperate</Original>
-            <Czech>Odmítá spolupracovat</Czech>
-            <Spanish>Reusa a Cooperar</Spanish>
-            <Italian>Si rifiuta di collaborare</Italian>
-            <Polish>Odmawia współpracy</Polish>
-            <Russian></Russian>
-            <French>Refus d'obtempérer</French>
-            <Portuguese>Recusou-se a Cooperar</Portuguese>
-            <German>Behinderung der Staatsgewalt</German>
+        <Key ID="STR_Crime_55FA">
+        <Original>Aggravated Kidnapping</Original>
         </Key>
-        <Key ID="STR_Crime_19">
-            <Original>Hit and run</Original>
-            <Czech>Zavinit nehodu a ujet</Czech>
-            <Spanish>Golpea y Corre</Spanish>
-            <Italian>Mordi e fuggi</Italian>
-            <Polish>Uderz i uciekaj</Polish>
-            <Russian></Russian>
-            <French>Délit de fuite</French>
-            <Portuguese>Bater e Fugir</Portuguese>
-            <German>Fahrerflucht</German>
+        <Key ID="STR_Crime_56F">
+        <Original>Arson 1st Degree</Original>
         </Key>
-        <Key ID="STR_Crime_20">
-            <Original>Insulting a civilian</Original>
-            <Czech>Urážky civilní</Czech>
-            <Spanish>Insultar a un Civil</Spanish>
-            <Russian></Russian>
-            <French>Insulte envers un civil</French>
-            <Portuguese>Insulto a Civil</Portuguese>
-            <German>Beleidigung</German>
-            <Italian>Insulto a civile</Italian>
-            <Polish>Obrażanie cywilem</Polish>
+        <Key ID="STR_Crime_56FA">
+        <Original>Aggravated Arson 1st Degree</Original>
         </Key>
-        <Key ID="STR_Crime_21">
-            <Original>Insulting a soldier</Original>
-            <Czech>Urážky vojáka</Czech>
-            <Spanish>Insultar a un Soldado</Spanish>
-            <Russian></Russian>
-            <French>Insulte envers un militaire</French>
-            <Portuguese>Insulto as Autoridades</Portuguese>
-            <German>Beamtenbeleidigung</German>
-            <Italian>Insulto a pubblico ufficiale</Italian>
-            <Polish>Znieważenie żołnierza</Polish>
+        <Key ID="STR_Crime_57F">
+        <Original>Arson 2nd Degree</Original>
         </Key>
-        <Key ID="STR_Crime_22">
-            <Original>Drug dealing</Original>
-            <Czech>Urážky vojáka...</Czech>
-            <Spanish>Venta de Drogas</Spanish>
-            <Russian></Russian>
-            <French>Trafique de drogue</French>
-            <Portuguese>Trafico de Drogas</Portuguese>
-            <German>Drogenhandel</German>
-            <Italian>Traffico di droga</Italian>
-            <Polish>Handel narkotykami</Polish>
+        <Key ID="STR_Crime_57FA">
+        <Original>Aggravated Arson 2nd Degree</Original>
         </Key>
-        <Key ID="STR_Crime_23">
-            <Original>Federal Reserve breaking</Original>
-            <Czech>Federální rezervní systém lámání</Czech>
-            <Spanish>Entrar a la Reserva Federal</Spanish>
-            <Russian></Russian>
-            <French>Intrusion dans la réserve fédérale</French>
-            <Portuguese>Invasão a Reserva Federal</Portuguese>
-            <German>Bankeinbruch</German>
-            <Italian>Rapina alla Riserva Federale</Italian>
-            <Polish>Rezerwa Federalna łamanie</Polish>
+        <Key ID="STR_Crime_58M">
+        <Original>Arson 3rd Degree</Original>
         </Key>
-        <Key ID="STR_Crime_24">
-            <Original>Killing of a civilian</Original>
-            <Czech>Zabíjení civilní</Czech>
-            <Spanish>Homicidio de un Civil</Spanish>
-            <Italian>Uccisione di un civile</Italian>
-            <Polish>Zabójstwo cywilnej</Polish>
-            <Russian></Russian>
-            <French>Meurtre d'un civil</French>
-            <Portuguese>Matou um Civil</Portuguese>
-            <German>Töten eines Zivilen</German>
+        <Key ID="STR_Crime_58MA">
+        <Original>Aggravated Arson 3rd Degree</Original>
         </Key>
-        <Key ID="STR_Crime_25">
-            <Original>Killing of a soldier</Original>
-            <Czech>Zabití vojáka</Czech>
-            <Spanish>Homicidio de un Soldado</Spanish>
-            <Russian></Russian>
-            <French>Meurtre d'un militaire</French>
-            <Portuguese>Matou um Policial</Portuguese>
-            <German>Töten eines Beamten</German>
-            <Italian>Omicidio di un agente</Italian>
-            <Polish>Zabijając żołnierza</Polish>
+        <Key ID="STR_Crime_59F">
+        <Original>Terrorism</Original>
         </Key>
+        <Key ID="STR_Crime_59FA">
+        <Original>Aggravated Terrorism</Original>
+        </Key>
+        <Key ID="STR_Crime_510F">
+        <Original>Gang Terrorism</Original>
+        </Key>
+        <Key ID="STR_Crime_510FA">
+        <Original>Aggravated Gang Terrorism</Original>
+        </Key>
+        <Key ID="STR_Crime_511M">
+        <Original>Menacing</Original>
+        </Key>
+        <Key ID="STR_Crime_511MA">
+        <Original>Aggravated Menacing</Original>
+        </Key>
+        <Key ID="STR_Crime_512F">
+        <Original>Hostage Taking</Original>
+        </Key>
+        <Key ID="STR_Crime_512FA">
+        <Original>Aggravated Hostage Taking</Original>
+        </Key>
+
+
+
+
+        <Key ID="STR_Crime_63F">
+        <Original>Burglary</Original>
+        </Key>
+        <Key ID="STR_Crime_63FA">
+        <Original>Aggravated Burglary</Original>
+        </Key>
+        <Key ID="STR_Crime_64F">
+        <Original>Assault</Original>
+        </Key>
+        <Key ID="STR_Crime_64FA">
+        <Original>Aggravated Assault</Original>
+        </Key>
+        <Key ID="STR_Crime_65M">
+        <Original>Harassment</Original>
+        </Key>
+        <Key ID="STR_Crime_65MA">
+        <Original>Aggravated Harassment</Original>
+        </Key>
+        <Key ID="STR_Crime_66M">
+        <Original>Break and enter</Original>
+        </Key>
+        <Key ID="STR_Crime_66MA">
+        <Original>Aggravated Break and enter</Original>
+        </Key>
+        <Key ID="STR_Crime_67M">
+        <Original>Stalking</Original>
+        </Key>
+        <Key ID="STR_Crime_67MA">
+        <Original>Aggravated Stalking</Original>
+        </Key>
+        <Key ID="STR_Crime_68M">
+        <Original>Vandalism</Original>
+        </Key>
+        <Key ID="STR_Crime_68MA">
+        <Original>Aggravated Vandalism</Original>
+        </Key>
+        <Key ID="STR_Crime_69M">
+        <Original>Conspiracy to Commit a Crime</Original>
+        </Key>
+        <Key ID="STR_Crime_69MA">
+        <Original>Aggravated Conspiracy to Commit a Crime</Original>
+        </Key>
+        <Key ID="STR_Crime_610M">
+        <Original>Lock Picking</Original>
+        </Key>
+        <Key ID="STR_Crime_610MA">
+        <Original>Aggravated Lock Picking</Original>
+        </Key>
+        <Key ID="STR_Crime_611M">
+        <Original>False Imprisonment</Original>
+        </Key>
+        <Key ID="STR_Crime_611MA">
+        <Original>Aggravated False Imprisonment</Original>
+        </Key>
+        <Key ID="STR_Crime_612M">
+        <Original>Indecent Exposure</Original>
+        </Key>
+        <Key ID="STR_Crime_612MA">
+        <Original>Aggravated Indecent Exposure</Original>
+        </Key>
+        <Key ID="STR_Crime_613M">
+        <Original>Trespassing</Original>
+        </Key>
+        <Key ID="STR_Crime_613MA">
+        <Original>Aggravated Trespassing</Original>
+        </Key>
+
+
+
+
+        <Key ID="STR_Crime_80M">
+        <Original>Concealed Identity</Original>
+        </Key>
+        <Key ID="STR_Crime_80MA">
+        <Original>Aggravated Concealed Identity</Original>
+        </Key>
+        <Key ID="STR_Crime_81M">
+        <Original>Failure to Identify</Original>
+        </Key>
+        <Key ID="STR_Crime_81MA">
+        <Original>Aggravated Failure to Identify</Original>
+        </Key>
+        <Key ID="STR_Crime_82M">
+        <Original>False Identification</Original>
+        </Key>
+        <Key ID="STR_Crime_82MA">
+        <Original>Aggravated False Identification</Original>
+        </Key>
+        <Key ID="STR_Crime_83M">
+        <Original>Resisting Arrest</Original>
+        </Key>
+        <Key ID="STR_Crime_83MA">
+        <Original>Aggravated Resisting Arrest</Original>
+        </Key>
+        <Key ID="STR_Crime_84F">
+        <Original>Felony Evasion</Original>
+        </Key>
+        <Key ID="STR_Crime_84FA">
+        <Original>Aggravated Felony Evasion</Original>
+        </Key>
+        <Key ID="STR_Crime_85F">
+        <Original>Escaping Jail</Original>
+        </Key>
+        <Key ID="STR_Crime_85FA">
+        <Original>Aggravated Escaping Jail</Original>
+        </Key>
+        <Key ID="STR_Crime_86M">
+        <Original>False Report</Original>
+        </Key>
+        <Key ID="STR_Crime_86MA">
+        <Original>Aggravated False Report</Original>
+        </Key>
+        <Key ID="STR_Crime_87M">
+        <Original>Failure to Comply</Original>
+        </Key>
+        <Key ID="STR_Crime_87MA">
+        <Original>Aggravated Failure to Comply</Original>
+        </Key>
+        <Key ID="STR_Crime_88M">
+        <Original>Obstruction of Justice</Original>
+        </Key>
+        <Key ID="STR_Crime_88MA">
+        <Original>Aggravated Obstruction of Justice</Original>
+        </Key>
+        <Key ID="STR_Crime_89C">
+        <Original>Failure to Yield to Emergency Vehicles</Original>
+        </Key>
+        <Key ID="STR_Crime_89CA">
+        <Original>Aggravated Failure to Yield to Emergency Vehicles</Original>
+        </Key>
+        <Key ID="STR_Crime_810M">
+        <Original>Fleeing</Original>
+        </Key>
+        <Key ID="STR_Crime_810MA">
+        <Original>Aggravated Fleeing</Original>
+        </Key>
+        <Key ID="STR_Crime_811F">
+        <Original>Jailbreaking</Original>
+        </Key>
+        <Key ID="STR_Crime_811FA">
+        <Original>Aggravated Jailbreaking</Original>
+        </Key>
+        <Key ID="STR_Crime_812M">
+        <Original>Failure to Pay Citation</Original>
+        </Key>
+        <Key ID="STR_Crime_812MA">
+        <Original>Aggravated Failure to Pay Citation</Original>
+        </Key>
+
+
+
+
+        <Key ID="STR_Crime_91F">
+        <Original>Grand Theft Auto</Original>
+        </Key>
+        <Key ID="STR_Crime_91FA">
+        <Original>Aggravated Grand Theft Auto</Original>
+        </Key>
+        <Key ID="STR_Crime_92M">
+        <Original>Hit and Run</Original>
+        </Key>
+        <Key ID="STR_Crime_92MA">
+        <Original>Aggravated Hit and Run</Original>
+        </Key>
+        <Key ID="STR_Crime_93F">
+        <Original>Felony Hit and Run</Original>
+        </Key>
+        <Key ID="STR_Crime_93FA">
+        <Original>Aggravated Felony Hit and Run</Original>
+        </Key>
+        <Key ID="STR_Crime_94M">
+        <Original>Driving While Intoxicated</Original>
+        </Key>
+        <Key ID="STR_Crime_94MA">
+        <Original>Aggravated Driving While Intoxicated</Original>
+        </Key>
+        <Key ID="STR_Crime_95M">
+        <Original>Reckless Driving</Original>
+        </Key>
+        <Key ID="STR_Crime_95MA">
+        <Original>Aggravated Reckless Driving</Original>
+        </Key>
+        <Key ID="STR_Crime_96C">
+        <Original>Speeding</Original>
+        </Key>
+        <Key ID="STR_Crime_97C">
+        <Original>Failure to Stop</Original>
+        </Key>
+        <Key ID="STR_Crime_97CA">
+        <Original>Aggravated Failure to Stop</Original>
+        </Key>
+        <Key ID="STR_Crime_98M">
+        <Original>Operation of a Vehicle without a License</Original>
+        </Key>
+        <Key ID="STR_Crime_98MA">
+        <Original>Aggravated Operation of a Vehicle without a License</Original>
+        </Key>
+        <Key ID="STR_Crime_99M">
+        <Original>Illegal Parking</Original>
+        </Key>
+        <Key ID="STR_Crime_99MA">
+        <Original>Aggravated Illegal Parking</Original>
+        </Key>
+        <Key ID="STR_Crime_910C">
+        <Original>Failure to use Headlights</Original>
+        </Key>
+        <Key ID="STR_Crime_910CA">
+        <Original>Aggravated Failure to use Headlights</Original>
+        </Key>
+        <Key ID="STR_Crime_911M">
+        <Original>Illegal U-Turn</Original>
+        </Key>
+        <Key ID="STR_Crime_911MA">
+        <Original>Aggravated Illegal U-Turn</Original>
+        </Key>
+        <Key ID="STR_Crime_912M">
+        <Original>Failure to Yield</Original>
+        </Key>
+        <Key ID="STR_Crime_912MA">
+        <Original>Aggravated Failure to Yield</Original>
+        </Key>
+        <Key ID="STR_Crime_913M">
+        <Original>Obstruction of Traffic</Original>
+        </Key>
+        <Key ID="STR_Crime_913MA">
+        <Original>Aggravated Obstruction of Traffic</Original>
+        </Key>
+        <Key ID="STR_Crime_914C">
+        <Original>Failure to Indicate</Original>
+        </Key>
+        <Key ID="STR_Crime_914CA">
+        <Original>Aggravated Failure to Indicate</Original>
+        </Key>
+        <Key ID="STR_Crime_915M">
+        <Original>Street Racing</Original>
+        </Key>
+        <Key ID="STR_Crime_915MA">
+        <Original>Aggravated Street Racing</Original>
+        </Key>
+        <Key ID="STR_Crime_916M">
+        <Original>Excessive Speeding</Original>
+        </Key>
+        <Key ID="STR_Crime_916MA">
+        <Original>Aggravated Excessive Speeding</Original>
+        </Key>
+
+
+
+
+        <Key ID="STR_Crime_96CA">
+        <Original>Speeding_A</Original>
+        </Key>
+        <Key ID="STR_Crime_96CAA">
+        <Original>Aggravated Speeding_A</Original>
+        </Key>
+        <Key ID="STR_Crime_96CB">
+        <Original>Speeding_B</Original>
+        </Key>
+        <Key ID="STR_Crime_96CBA">
+        <Original>Aggravated Speeding_B</Original>
+        </Key>
+        <Key ID="STR_Crime_96CC">
+        <Original>Speeding_C</Original>
+        </Key>
+        <Key ID="STR_Crime_96CCA">
+        <Original>Aggravated Speeding_C</Original>
+        </Key>
+        <Key ID="STR_Crime_96CD">
+        <Original>Speeding_D</Original>
+        </Key>
+        <Key ID="STR_Crime_96CDA">
+        <Original>Aggravated Speeding_D</Original>
+        </Key>
+        <Key ID="STR_Crime_96CE">
+        <Original>Speeding_E</Original>
+        </Key>
+        <Key ID="STR_Crime_96CEA">
+        <Original>Aggravated Speeding_E</Original>
+        </Key>
+        <Key ID="STR_Crime_96CF">
+        <Original>Speeding_F</Original>
+        </Key>
+        <Key ID="STR_Crime_96CFA">
+        <Original>Aggravated Speeding_F</Original>
+        </Key>
+        <Key ID="STR_Crime_96CG">
+        <Original>Speeding_G</Original>
+        </Key>
+        <Key ID="STR_Crime_96CGA">
+        <Original>Aggravated Speeding_G</Original>
+        </Key>
+
+
+
+
+        <Key ID="STR_Crime_101F">
+        <Original>Drug Cultivation and Manufacturing</Original>
+        </Key>
+        <Key ID="STR_Crime_101FA">
+        <Original>Aggravated Drug Cultivation and Manufacturing</Original>
+        </Key>
+        <Key ID="STR_Crime_102F">
+        <Original>Class 1 Drug Distribution</Original>
+        </Key>
+        <Key ID="STR_Crime_102FA">
+        <Original>Aggravated Class 1 Drug Distribution</Original>
+        </Key>
+        <Key ID="STR_Crime_103M">
+        <Original>Class 2 Drug Distribution</Original>
+        </Key>
+        <Key ID="STR_Crime_103MA">
+        <Original>Aggravated Class 2 Drug Distribution</Original>
+        </Key>
+        <Key ID="STR_Crime_104M">
+        <Original>Class 1 Drug Possession</Original>
+        </Key>
+        <Key ID="STR_Crime_104MA">
+        <Original>Aggravated Class 1 Drug Possession</Original>
+        </Key>
+        <Key ID="STR_Crime_105M">
+        <Original>Class 2 Drug Possession</Original>
+        </Key>
+        <Key ID="STR_Crime_105MA">
+        <Original>Aggravated Class 2 Drug Possession</Original>
+        </Key>
+        <Key ID="STR_Crime_106M">
+        <Original>Class 1 Drug Paraphernalia</Original>
+        </Key>
+        <Key ID="STR_Crime_106MA">
+        <Original>Aggravated Class 1 Drug Paraphernalia</Original>
+        </Key>
+        <Key ID="STR_Crime_107M">
+        <Original>Class 2 Drug Paraphernalia</Original>
+        </Key>
+        <Key ID="STR_Crime_107MA">
+        <Original>Aggravated Class 2 Drug Paraphernalia</Original>
+        </Key>
+
+
+
+
     </Package>
     <Package name="FuelTank_Mission">
         <Key ID="STR_MAR_FuelTank_Storage">

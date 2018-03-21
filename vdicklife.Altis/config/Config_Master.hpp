@@ -165,50 +165,109 @@ class Life_Settings {
     /* Wanted System Settings *
     /* crimes[] = {String, Bounty, Code} */
     crimes[] = {
-        {"STR_Crime_187V","650","187V"},
-        {"STR_Crime_187","2000","187"},
-        {"STR_Crime_901","450","901"},
-        {"STR_Crime_215","200","215"},
-        {"STR_Crime_213","1000","213"},
-        {"STR_Crime_211","100","211"},
-        {"STR_Crime_207","350","207"},
-        {"STR_Crime_207A","200","207A"},
-        {"STR_Crime_390","1500","390"},
-        {"STR_Crime_487","150","487"},
-        {"STR_Crime_488","70","488"},
-        {"STR_Crime_480","100","480"},
-        {"STR_Crime_481","100","481"},
-        {"STR_Crime_482","500","482"},
-        {"STR_Crime_483","950","483"},
-        {"STR_Crime_459","650","459"},
-        {"STR_Crime_666","200","666"},
-        {"STR_Crime_667","4500","667"},
-        {"STR_Crime_668","1500","668"},
-        {"STR_Crime_1","250","1"},
-        {"STR_Crime_2","200","2"},
-        {"STR_Crime_3","150","3"},
-        {"STR_Crime_4","250","4"},
-        {"STR_Crime_5","100","5"},
-        {"STR_Crime_6","80","6"},
-        {"STR_Crime_7","150","7"},
-        {"STR_Crime_8","5000","8"},
-        {"STR_Crime_9","5000","9"},
-        {"STR_Crime_10","15000","10"},
-        {"STR_Crime_11","10000","11"},
-        {"STR_Crime_12","2500","12"},
-        {"STR_Crime_13","1500","13"},
-        {"STR_Crime_14","500","14"},
-        {"STR_Crime_15","2500","15"},
-        {"STR_Crime_16","1500","16"},
-        {"STR_Crime_17","100","17"},
-        {"STR_Crime_18","1500","18"},
-        {"STR_Crime_19","2500","19"},
-        {"STR_Crime_20","500","20"},
-        {"STR_Crime_21","500","21"},
-        {"STR_Crime_22","2000","22"},
-        {"STR_Crime_23","5000","23"},
-        {"STR_Crime_24","10000","24"},
-        {"STR_Crime_25","20000","25"}
+        {"STR_Crime_41F","20000","41F"},//1st Degree Murder	
+        {"STR_Crime_41FA","40000","41FA"},//1st Degree Murder Ag
+        {"STR_Crime_42F","15000","42F"},//2nd Degree Murder	
+        {"STR_Crime_42FA","25000","42FA"},//2nd Degree Murder Ag
+        {"STR_Crime_43F","12500","43F"},//Attempted Murder	
+        {"STR_Crime_43FA","20000","43FA"},//Attempted Murder Ag
+        {"STR_Crime_44F","12500","44F"},//Vol Manslaught	//No Aggravated Crime
+        {"STR_Crime_45F","10000","45F"},//InVol Manslaugh	//No Aggravated Crime
+        {"STR_Crime_46F","10000","46F"},//Veh Manslaught	//No Aggravated Crime
+
+        {"STR_Crime_51f","5000","51f"},//Felony Robbery	
+        {"STR_Crime_51fA","12500","51fA"},//Felony Robbery Ag
+        {"STR_Crime_52F","7500","52F"},//Robbery of an Individual	
+        {"STR_Crime_52FA","17500","52FA"},//Robbery of an Individual Ag
+        {"STR_Crime_53F","10000","53F"},//Robbery of a Business	
+        {"STR_Crime_53FA","17500","53FA"},//Robbery of a Business Ag
+        {"STR_Crime_54M","2000","54M"},//Petty Theft	
+        {"STR_Crime_54MA","5000","54MA"},//Petty Theft Ag
+        {"STR_Crime_55F","12500","55F"},//Kidnapping	
+        {"STR_Crime_55FA","25000","55FA"},//Kidnapping Ag
+        {"STR_Crime_56F","10000","56F"},//Arson 1st Degree	
+        {"STR_Crime_56FA","17500","56FA"},//Arson 1st Degree Ag
+        {"STR_Crime_57F","5000","57F"},//Arson 2nd Degree	
+        {"STR_Crime_57FA","10000","57FA"},//Arson 2nd Degree Ag
+        {"STR_Crime_58M","2500","58M"},//Arson 3rd Degree	
+        {"STR_Crime_58MA","5000","58MA"},//Arson 3rd Degree Ag
+        {"STR_Crime_59F","100000","59F"},//Terrorism	//No Aggravated Crime
+        {"STR_Crime_510F","10000","510F"},//Gang Terrorism	
+        {"STR_Crime_510FA","15000","510FA"},//Gang Terrorism Ag
+        {"STR_Crime_511M","2500","511M"},//Menacing	
+        {"STR_Crime_511MA","5000","511MA"},//Menacing Ag
+        {"STR_Crime_512F","17500","512F"},//Hostage Taking	
+        {"STR_Crime_512FA","30000","512FA"},//Hostage Taking Ag
+
+        {"STR_Crime_63F","7500","63F"},//Burglary	
+        {"STR_Crime_63FA","12500","63FA"},//Burglary Ag
+        {"STR_Crime_64F","2500","64F"},//Assault	
+        {"STR_Crime_64FA","7500","64FA"},//Assault Ag
+        {"STR_Crime_65M","1000","65M"},//Harassment	//No Aggravated Crime
+        {"STR_Crime_66M","2500","66M"},//Break and enter	
+        {"STR_Crime_66MA","5000","66MA"},//Break and enter Ag
+        {"STR_Crime_67M","2000","67M"},//Stalking	//No Aggravated Crime
+        {"STR_Crime_68M","2500","68M"},//Vandalism	
+        {"STR_Crime_68MA","5000","68MA"},//Vandalism Ag
+        {"STR_Crime_69M","5000","69M"},//Conspiracy to Commit a Crime	//No Aggravated Crime
+        {"STR_Crime_610M","2000","610M"},//Lock Picking	//No Aggravated Crime
+        {"STR_Crime_611M","12500","611M"},//False Imprisonment	//No Aggravated Crime
+        {"STR_Crime_612M","1500","612M"},//Indecent Exposure	
+        {"STR_Crime_612MA","2000","612MA"},//Indecent Exposure Ag
+        {"STR_Crime_613M","2000","613M"},//Trespassing	//No Aggravated Crime
+
+        {"STR_Crime_80M","3000","80M"},//Concealed Identity	//No Aggravated Crime
+        {"STR_Crime_81M","2000","81M"},//Failure to Identify	//No Aggravated Crime
+        {"STR_Crime_82M","2000","82M"},//False Identification	//No Aggravated Crime
+        {"STR_Crime_83M","10000","83M"},//Resisting Arrest	
+        {"STR_Crime_83MA","22500","83MA"},//Resisting Arrest Ag
+        {"STR_Crime_84F","12500","84F"},//Felony Evasion	//No Aggravated Crime
+        {"STR_Crime_85F","12500","85F"},//Escaping Jail	//No Aggravated Crime
+        {"STR_Crime_86M","2000","86M"},//False Report	//No Aggravated Crime
+        {"STR_Crime_87M","2500","87M"},//Failure to Comply	//No Aggravated Crime
+        {"STR_Crime_88M","5000","88M"},//Obstruction of Justice	//No Aggravated Crime
+        {"STR_Crime_89C","2000","89C"},//Failure to Yield to Emergency Vehicles	//No Aggravated Crime
+        {"STR_Crime_810M","5000","810M"},//Fleeing	//No Aggravated Crime
+        {"STR_Crime_811F","12500","811F"},//Jailbreaking	//No Aggravated Crime
+        {"STR_Crime_812M","1000","812M"},//Failure to Pay Citation	//No Aggravated Crime
+
+        {"STR_Crime_91F","15000","91F"},//Grand Theft Auto	
+        {"STR_Crime_91FA","25000","91FA"},//Grand Theft Auto Ag
+        {"STR_Crime_92M","10000","92M"},//Hit and Run	
+        {"STR_Crime_92MA","20000","92MA"},//Hit and Run Ag
+        {"STR_Crime_93F","15000","93F"},//Felony Hit and Run	//No Aggravated Crime
+        {"STR_Crime_94M","7000","94M"},//Driving While Intoxicated	//No Aggravated Crime
+        {"STR_Crime_95M","3000","95M"},//Reckless Driving	//No Aggravated Crime
+        
+        //{"STR_Crime_96C","See Right","96C"},//Speeding	//No Aggravated Crime /* This one doesn't get a thing ignore it*/
+        {"STR_Crime_96CA","150","96CA"},//Speeding_A	//No Aggravated Crime
+        {"STR_Crime_96CB","250","96CB"},//Speeding_B	//No Aggravated Crime
+        {"STR_Crime_96CC","500","96CC"},//Speeding_C	//No Aggravated Crime
+        {"STR_Crime_96CD","750","96CD"},//Speeding_D	//No Aggravated Crime
+        {"STR_Crime_96CE","1250","96CE"},//Speeding_E	//No Aggravated Crime
+        {"STR_Crime_96CF","2000","96CF"},//Speeding_F	//No Aggravated Crime
+        {"STR_Crime_96CG","4000","96CG"},//Speeding_G	//No Aggravated Crime
+
+        {"STR_Crime_97C","1000","97C"},//Failure to Stop	//No Aggravated Crime
+        {"STR_Crime_98M","1250","98M"},//Operation of a Vehicle without a License	//No Aggravated Crime
+        {"STR_Crime_99M","750","99M"},//Illegal Parking	//No Aggravated Crime
+        {"STR_Crime_910C","500","910C"},//Failure to use Headlights	//No Aggravated Crime
+        {"STR_Crime_911M","500","911M"},//Illegal U-Turn	//No Aggravated Crime
+        {"STR_Crime_912M","750","912M"},//Failure to Yield	//No Aggravated Crime
+        {"STR_Crime_913M","750","913M"},//Obstruction of Traffic	//No Aggravated Crime
+        {"STR_Crime_914C","250","914C"},//Failure to Indicate	//No Aggravated Crime
+        {"STR_Crime_915M","10000","915M"},//Street Racing	//No Aggravated Crime
+        {"STR_Crime_916M","10000","916M"},//Excessive Speeding	//No Aggravated Crime
+
+        {"STR_Crime_101F","150000","101F"},//Drug Cultivation and Manufacturing	//No Aggravated Crime
+        {"STR_Crime_102F","50000","102F"},//Class 1 Drug Distribution	
+        {"STR_Crime_102FA","75000","102FA"},//Class 1 Drug Distribution Ag
+        {"STR_Crime_103M","25000","103M"},//Class 2 Drug Distribution	
+        {"STR_Crime_103MA","50000","103MA"},//Class 2 Drug Distribution Ag
+        {"STR_Crime_104M","10000","104M"},//Class 1 Drug Possession	//No Aggravated Crime
+        {"STR_Crime_105M","5000","105M"},//Class 2 Drug Possession	//No Aggravated Crime
+        {"STR_Crime_106M","2500","106M"},//Class 1 Drug Paraphernalia	//No Aggravated Crime
+        {"STR_Crime_107M","1500","107M"}//Class 2 Drug Paraphernalia	//No Aggravated Crime
     };
 };
 

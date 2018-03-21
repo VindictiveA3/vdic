@@ -79,9 +79,9 @@ switch (true) do {
         [0,"STR_Jail_EscapeNOTF",true,[profileName]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 
         if (life_HC_isActive) then {
-            [getPlayerUID player,profileName,"901"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
+            [getPlayerUID player,profileName,"85F"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
         } else {
-            [getPlayerUID player,profileName,"901"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
+            [getPlayerUID player,profileName,"85F"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
         };
 
         [5] call SOCK_fnc_updatePartial;
