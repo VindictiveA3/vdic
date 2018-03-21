@@ -69,11 +69,6 @@ if (life_interrupted) exitWith {life_interrupted = false; titleText[localize "ST
 life_action_inUse = false;
 _target setVariable ["Revive",true,true];
 [profileName] remoteExecCall ["life_fnc_revived",_target];
-_target setDamage .51;
-_target life_thirst = 10;
-_target life_hunger = 10;
-_target setFatigue 1;
-
 
 if (playerSide isEqualTo independent) then {
     titleText[format [localize "STR_Medic_RevivePayReceive",_targetName,[_reviveCost] call life_fnc_numberText],"PLAIN"];
