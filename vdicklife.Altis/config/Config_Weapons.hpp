@@ -61,6 +61,20 @@ class WeaponShops {
             { "arifle_AKM_F", "", 22000, 11000, "" }, //Apex DLC
             { "arifle_ARX_blk_F", "", 22000, 11000, "" }, //Apex DLC
             { "arifle_SPAR_01_blk_F", "", 33000, 16500, "" }, //Apex DLC
+            {"srifle_DMR_05_blk_F","",92000,46000,""},
+            {"srifle_DMR_02_F","",89000,44500,""},
+            {"LMG_03_F","",75000,37500,""},
+            {"srifle_DMR_03_F","",45000,22500,""},
+            {"srifle_EBR_F","",45000,22500,""},
+            {"srifle_DMR_04_F","",50000,25000,""},
+            {"MMG_01_tan_F","",120000,60000,""},
+            {"MMG_02_black_F","",150000,75000,""},
+            {"SMG_01_F","",15000,7500,""},
+            {"arifle_MX_Black_F","",27000,13500,""},
+            {"arifle_MX_SW_Black_F","",40000,20000,""},
+            {"arifle_SPAR_03_blk_F","",49000,24500,""},
+            {"launch_RPG7_F","",100000,50000,""},
+            {"hgun_Pistol_heavy_01_F","",10000,5000,""},
             { "arifle_CTAR_blk_F", "", 30000, 15000, "" } //Apex DLC
         };
         mags[] = {
@@ -70,12 +84,30 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_green", "", 275, 140, "" },
             { "10Rnd_762x54_Mag", "", 500, 250, "" },
             { "20Rnd_556x45_UW_mag", "", 125, 60, "" },
+            {"10Rnd_93x64_DMR_05_Mag","",250,125,""},
+            {"200Rnd_556x45_Box_F","",1000,500,""},
+            {"10Rnd_338_Mag","",250,125,""},
+            {"20Rnd_762x51_Mag","",250,125,""},
+            {"30Rnd_65x39_caseless_mag","",250,125,""},
+            {"100Rnd_65x39_caseless_mag","",500,250,""},
+            {"150Rnd_93x64_Mag","",2000,1000,""},
+            {"30Rnd_45ACP_Mag_SMG_01","",150,75,""},
+            {"200Rnd_65x39_cased_Box","",1500,750,""},
+            {"10Rnd_127x54_Mag","",250,125,""},
+             {"R_PG7_F","",250000,125000,""},//RPG Round 250k
             { "30Rnd_580x42_Mag_F", "", 125, 60, "" } //Apex DLC
         };
         accs[] = {
             { "optic_ACO_grn", "", 3500, 1750, "" },
             { "optic_Holosight", "", 3600, 1800, "" },
             { "optic_Hamr", "", 7500, 3750, "" },
+            {"optic_DMS","",500,250,""},
+            {"optic_AMS","",4000,2000,""},
+            {"optic_ERCO_blk_F","",500,250,""},
+            {"optic_LRPS","",4000,2000,""},
+            {"optic_MRCO","",500,250,""},
+            {"optic_Arco","",500,250,""},
+            {"bipod_02_F_blk","",100,50,""},
             { "acc_flashlight", "", 1000, 500, "" }
         };
     };
