@@ -10914,451 +10914,464 @@
         </Key>
     </Package>
     <Package name="Crimes">
-        "<key ID=""STR_Crime_41F"">
+        <key ID="STR_Crime_41F">
         <Original>1st Degree Murder</Original>
-        </key>"
-        "<key ID=""STR_Crime_42F"">
-        <Original>2nd Degree Murder</Original>
-        </key>"
-        "<key ID=""STR_Crime_43F"">
-        <Original>Attempted Murder</Original>
-        </key>"
-        "<key ID=""STR_Crime_44F"">
-        <Original>Vol Manslaught</Original>
-        </key>"
-        "<key ID=""STR_Crime_45F"">
-        <Original>InVol Manslaugh</Original>
-        </key>"
-        "<key ID=""STR_Crime_46F"">
-        <Original>Veh Manslaught</Original>
-        </key>"
-
-        "<key ID=""STR_Crime_51f"">
-        <Original>Felony Robbery</Original>
-        </key>"
-        "<key ID=""STR_Crime_52F"">
-        <Original>Robbery of an Individual</Original>
-        </key>"
-        "<key ID=""STR_Crime_53F"">
-        <Original>Robbery of a Business</Original>
-        </key>"
-        "<key ID=""STR_Crime_54M"">
-        <Original>Petty Theft</Original>
-        </key>"
-        "<key ID=""STR_Crime_55F"">
-        <Original>Kidnapping</Original>
-        </key>"
-        "<key ID=""STR_Crime_56F"">
-        <Original>Arson 1st Degree</Original>
-        </key>"
-        "<key ID=""STR_Crime_57F"">
-        <Original>Arson 2nd Degree</Original>
-        </key>"
-        "<key ID=""STR_Crime_58M"">
-        <Original>Arson 3rd Degree</Original>
-        </key>"
-        "<key ID=""STR_Crime_59F"">
-        <Original>Terrorism</Original>
-        </key>"
-        "<key ID=""STR_Crime_510F"">
-        <Original>Gang Terrorism</Original>
-        </key>"
-        "<key ID=""STR_Crime_511M"">
-        <Original>Menacing</Original>
-        </key>"
-        "<key ID=""STR_Crime_512F"">
-        <Original>Hostage Taking</Original>
-        </key>"
-
-        "<key ID=""STR_Crime_63F"">
-        <Original>Burglary</Original>
-        </key>"
-        "<key ID=""STR_Crime_64F"">
-        <Original>Assault</Original>
-        </key>"
-        "<key ID=""STR_Crime_65M"">
-        <Original>Harassment</Original>
-        </key>"
-        "<key ID=""STR_Crime_66M"">
-        <Original>Break and enter</Original>
-        </key>"
-        "<key ID=""STR_Crime_67M"">
-        <Original>Stalking</Original>
-        </key>"
-        "<key ID=""STR_Crime_68M"">
-        <Original>Vandalism</Original>
-        </key>"
-        "<key ID=""STR_Crime_69M"">
-        <Original>Conspiracy to Commit a Crime</Original>
-        </key>"
-        "<key ID=""STR_Crime_610M"">
-        <Original>Lock Picking</Original>
-        </key>"
-        "<key ID=""STR_Crime_611M"">
-        <Original>False Imprisonment</Original>
-        </key>"
-        "<key ID=""STR_Crime_612M"">
-        <Original>Indecent Exposure</Original>
-        </key>"
-        "<key ID=""STR_Crime_613M"">
-        <Original>Trespassing</Original>
-        </key>"
-
-        "<key ID=""STR_Crime_80M"">
-        <Original>Concealed Identity</Original>
-        </key>"
-        "<key ID=""STR_Crime_81M"">
-        <Original>Failure to Identify</Original>
-        </key>"
-        "<key ID=""STR_Crime_82M"">
-        <Original>False Identification</Original>
-        </key>"
-        "<key ID=""STR_Crime_83M"">
-        <Original>Resisting Arrest</Original>
-        </key>"
-        "<key ID=""STR_Crime_84F"">
-        <Original>Felony Evasion</Original>
-        </key>"
-        "<key ID=""STR_Crime_85F"">
-        <Original>Escaping Jail</Original>
-        </key>"
-        "<key ID=""STR_Crime_86M"">
-        <Original>False Report</Original>
-        </key>"
-        "<key ID=""STR_Crime_87M"">
-        <Original>Failure to Comply</Original>
-        </key>"
-        "<key ID=""STR_Crime_88M"">
-        <Original>Obstruction of Justice</Original>
-        </key>"
-        "<key ID=""STR_Crime_89C"">
-        <Original>Failure to Yield to Emergency Vehicles</Original>
-        </key>"
-        "<key ID=""STR_Crime_810M"">
-        <Original>Fleeing</Original>
-        </key>"
-        "<key ID=""STR_Crime_811F"">
-        <Original>Jailbreaking</Original>
-        </key>"
-        "<key ID=""STR_Crime_812M"">
-        <Original>Failure to Pay Citation</Original>
-        </key>"
-
-        "<key ID=""STR_Crime_91F"">
-        <Original>Grand Theft Auto</Original>
-        </key>"
-        "<key ID=""STR_Crime_92M"">
-        <Original>Hit and Run</Original>
-        </key>"
-        "<key ID=""STR_Crime_93F"">
-        <Original>Felony Hit and Run</Original>
-        </key>"
-        "<key ID=""STR_Crime_94M"">
-        <Original>Driving While Intoxicated</Original>
-        </key>"
-        "<key ID=""STR_Crime_95M"">
-        <Original>Reckless Driving</Original>
-        </key>"
-        "<key ID=""STR_Crime_96C"">
-        <Original>Speeding</Original>
-        </key>"
-        "<key ID=""STR_Crime_97C"">
-        <Original>Failure to Stop</Original>
-        </key>"
-        "<key ID=""STR_Crime_98M"">
-        <Original>Operation of a Vehicle without a License</Original>
-        </key>"
-        "<key ID=""STR_Crime_99M"">
-        <Original>Illegal Parking</Original>
-        </key>"
-        "<key ID=""STR_Crime_910C"">
-        <Original>Failure to use Headlights</Original>
-        </key>"
-        "<key ID=""STR_Crime_911M"">
-        <Original>Illegal U-Turn</Original>
-        </key>"
-        "<key ID=""STR_Crime_912M"">
-        <Original>Failure to Yield</Original>
-        </key>"
-        "<key ID=""STR_Crime_913M"">
-        <Original>Obstruction of Traffic</Original>
-        </key>"
-        "<key ID=""STR_Crime_914C"">
-        <Original>Failure to Indicate</Original>
-        </key>"
-        "<key ID=""STR_Crime_915M"">
-        <Original>Street Racing</Original>
-        </key>"
-        "<key ID=""STR_Crime_916M"">
-        <Original>Excessive Speeding</Original>
-        </key>"
-
-        "<key ID=""STR_Crime_96CA"">
-        <Original>Speeding_A</Original>
-        </key>"
-        "<key ID=""STR_Crime_96CB"">
-        <Original>Speeding_B</Original>
-        </key>"
-        "<key ID=""STR_Crime_96CC"">
-        <Original>Speeding_C</Original>
-        </key>"
-        "<key ID=""STR_Crime_96CD"">
-        <Original>Speeding_D</Original>
-        </key>"
-        "<key ID=""STR_Crime_96CE"">
-        <Original>Speeding_E</Original>
-        </key>"
-        "<key ID=""STR_Crime_96CF"">
-        <Original>Speeding_F</Original>
-        </key>"
-        "<key ID=""STR_Crime_96CG"">
-        <Original>Speeding_G</Original>
-        </key>"
-
-        "<key ID=""STR_Crime_101F"">
-        <Original>Drug Cultivation and Manufacturing</Original>
-        </key>"
-        "<key ID=""STR_Crime_102F"">
-        <Original>Class 1 Drug Distribution</Original>
-        </key>"
-        "<key ID=""STR_Crime_103M"">
-        <Original>Class 2 Drug Distribution</Original>
-        </key>"
-        "<key ID=""STR_Crime_104M"">
-        <Original>Class 1 Drug Possession</Original>
-        </key>"
-        "<key ID=""STR_Crime_105M"">
-        <Original>Class 2 Drug Possession</Original>
-        </key>"
-        "<key ID=""STR_Crime_106M"">
-        <Original>Class 1 Drug Paraphernalia</Original>
-        </key>"
-        "<key ID=""STR_Crime_107M"">
-        <Original>Class 2 Drug Paraphernalia</Original>
-        </key>"
-
-        "<key ID=""STR_Crime_42FA"">
+        </key>
+        <key ID="STR_Crime_42FA">
         <Original>Aggravated 1st Degree Murder</Original>
-        </key>"
-        "<key ID=""STR_Crime_43FA"">
+        </key>
+        <key ID="STR_Crime_42F">
+        <Original>2nd Degree Murder</Original>
+        </key>
+        <key ID="STR_Crime_43FA">
         <Original>Aggravated 2nd Degree Murder</Original>
-        </key>"
-        "<key ID=""STR_Crime_44FA"">
+        </key>
+        <key ID="STR_Crime_43F">
+        <Original>Attempted Murder</Original>
+        </key>
+        <key ID="STR_Crime_44FA">
         <Original>Aggravated Attempted Murder</Original>
-        </key>"
-        "<key ID=""STR_Crime_45FA"">
+        </key>
+        <key ID="STR_Crime_44F">
+        <Original>Vol Manslaught</Original>
+        </key>
+        <key ID="STR_Crime_45FA">
         <Original>Aggravated Vol Manslaught</Original>
-        </key>"
-        "<key ID=""STR_Crime_46FA"">
+        </key>
+        <key ID="STR_Crime_45F">
+        <Original>InVol Manslaugh</Original>
+        </key>
+        <key ID="STR_Crime_46FA">
         <Original>Aggravated InVol Manslaugh</Original>
-        </key>"
-        "<key ID=""STR_Crime_A"">
+        </key>
+        <key ID="STR_Crime_46F">
+        <Original>Veh Manslaught</Original>
+        </key>
+        <key ID="STR_Crime_A">
         <Original>Aggravated Veh Manslaught</Original>
-        </key>"
+        </key>
 
-        "<key ID=""STR_Crime_52FA"">
+
+
+
+        <key ID="STR_Crime_51f">
+        <Original>Felony Robbery</Original>
+        </key>
+        <key ID="STR_Crime_52FA">
         <Original>Aggravated Felony Robbery</Original>
-        </key>"
-        "<key ID=""STR_Crime_53FA"">
+        </key>
+        <key ID="STR_Crime_52F">
+        <Original>Robbery of an Individual</Original>
+        </key>
+        <key ID="STR_Crime_53FA">
         <Original>Aggravated Robbery of an Individual</Original>
-        </key>"
-        "<key ID=""STR_Crime_54MA"">
+        </key>
+        <key ID="STR_Crime_53F">
+        <Original>Robbery of a Business</Original>
+        </key>
+        <key ID="STR_Crime_54MA">
         <Original>Aggravated Robbery of a Business</Original>
-        </key>"
-        "<key ID=""STR_Crime_55FA"">
+        </key>
+        <key ID="STR_Crime_54M">
+        <Original>Petty Theft</Original>
+        </key>
+        <key ID="STR_Crime_55FA">
         <Original>Aggravated Petty Theft</Original>
-        </key>"
-        "<key ID=""STR_Crime_56FA"">
+        </key>
+        <key ID="STR_Crime_55F">
+        <Original>Kidnapping</Original>
+        </key>
+        <key ID="STR_Crime_56FA">
         <Original>Aggravated Kidnapping</Original>
-        </key>"
-        "<key ID=""STR_Crime_57FA"">
+        </key>
+        <key ID="STR_Crime_56F">
+        <Original>Arson 1st Degree</Original>
+        </key>
+        <key ID="STR_Crime_57FA">
         <Original>Aggravated Arson 1st Degree</Original>
-        </key>"
-        "<key ID=""STR_Crime_58MA"">
+        </key>
+        <key ID="STR_Crime_57F">
+        <Original>Arson 2nd Degree</Original>
+        </key>
+        <key ID="STR_Crime_58MA">
         <Original>Aggravated Arson 2nd Degree</Original>
-        </key>"
-        "<key ID=""STR_Crime_59FA"">
+        </key>
+        <key ID="STR_Crime_58M">
+        <Original>Arson 3rd Degree</Original>
+        </key>
+        <key ID="STR_Crime_59FA">
         <Original>Aggravated Arson 3rd Degree</Original>
-        </key>"
-        "<key ID=""STR_Crime_510FA"">
+        </key>
+        <key ID="STR_Crime_59F">
+        <Original>Terrorism</Original>
+        </key>
+        <key ID="STR_Crime_510FA">
         <Original>Aggravated Terrorism</Original>
-        </key>"
-        "<key ID=""STR_Crime_511MA"">
+        </key>
+        <key ID="STR_Crime_510F">
+        <Original>Gang Terrorism</Original>
+        </key>
+        <key ID="STR_Crime_511MA">
         <Original>Aggravated Gang Terrorism</Original>
-        </key>"
-        "<key ID=""STR_Crime_512FA"">
+        </key>
+        <key ID="STR_Crime_511M">
+        <Original>Menacing</Original>
+        </key>
+        <key ID="STR_Crime_512FA">
         <Original>Aggravated Menacing</Original>
-        </key>"
-        "<key ID=""STR_Crime_A"">
+        </key>
+        <key ID="STR_Crime_512F">
+        <Original>Hostage Taking</Original>
+        </key>
+        <key ID="STR_Crime_A">
         <Original>Aggravated Hostage Taking</Original>
-        </key>"
+        </key>
 
-        "<key ID=""STR_Crime_64FA"">
+
+
+
+        <key ID="STR_Crime_63F">
+        <Original>Burglary</Original>
+        </key>
+        <key ID="STR_Crime_64FA">
         <Original>Aggravated Burglary</Original>
-        </key>"
-        "<key ID=""STR_Crime_65MA"">
+        </key>
+        <key ID="STR_Crime_64F">
+        <Original>Assault</Original>
+        </key>
+        <key ID="STR_Crime_65MA">
         <Original>Aggravated Assault</Original>
-        </key>"
-        "<key ID=""STR_Crime_66MA"">
+        </key>
+        <key ID="STR_Crime_65M">
+        <Original>Harassment</Original>
+        </key>
+        <key ID="STR_Crime_66MA">
         <Original>Aggravated Harassment</Original>
-        </key>"
-        "<key ID=""STR_Crime_67MA"">
+        </key>
+        <key ID="STR_Crime_66M">
+        <Original>Break and enter</Original>
+        </key>
+        <key ID="STR_Crime_67MA">
         <Original>Aggravated Break and enter</Original>
-        </key>"
-        "<key ID=""STR_Crime_68MA"">
+        </key>
+        <key ID="STR_Crime_67M">
+        <Original>Stalking</Original>
+        </key>
+        <key ID="STR_Crime_68MA">
         <Original>Aggravated Stalking</Original>
-        </key>"
-        "<key ID=""STR_Crime_69MA"">
+        </key>
+        <key ID="STR_Crime_68M">
+        <Original>Vandalism</Original>
+        </key>
+        <key ID="STR_Crime_69MA">
         <Original>Aggravated Vandalism</Original>
-        </key>"
-        "<key ID=""STR_Crime_610MA"">
+        </key>
+        <key ID="STR_Crime_69M">
+        <Original>Conspiracy to Commit a Crime</Original>
+        </key>
+        <key ID="STR_Crime_610MA">
         <Original>Aggravated Conspiracy to Commit a Crime</Original>
-        </key>"
-        "<key ID=""STR_Crime_611MA"">
+        </key>
+        <key ID="STR_Crime_610M">
+        <Original>Lock Picking</Original>
+        </key>
+        <key ID="STR_Crime_611MA">
         <Original>Aggravated Lock Picking</Original>
-        </key>"
-        "<key ID=""STR_Crime_612MA"">
+        </key>
+        <key ID="STR_Crime_611M">
+        <Original>False Imprisonment</Original>
+        </key>
+        <key ID="STR_Crime_612MA">
         <Original>Aggravated False Imprisonment</Original>
-        </key>"
-        "<key ID=""STR_Crime_613MA"">
+        </key>
+        <key ID="STR_Crime_612M">
+        <Original>Indecent Exposure</Original>
+        </key>
+        <key ID="STR_Crime_613MA">
         <Original>Aggravated Indecent Exposure</Original>
-        </key>"
-        "<key ID=""STR_Crime_A"">
+        </key>
+        <key ID="STR_Crime_613M">
+        <Original>Trespassing</Original>
+        </key>
+        <key ID="STR_Crime_A">
         <Original>Aggravated Trespassing</Original>
-        </key>"
+        </key>
 
-        "<key ID=""STR_Crime_81MA"">
+
+
+
+        <key ID="STR_Crime_80M">
+        <Original>Concealed Identity</Original>
+        </key>
+        <key ID="STR_Crime_81MA">
         <Original>Aggravated Concealed Identity</Original>
-        </key>"
-        "<key ID=""STR_Crime_82MA"">
+        </key>
+        <key ID="STR_Crime_81M">
+        <Original>Failure to Identify</Original>
+        </key>
+        <key ID="STR_Crime_82MA">
         <Original>Aggravated Failure to Identify</Original>
-        </key>"
-        "<key ID=""STR_Crime_83MA"">
+        </key>
+        <key ID="STR_Crime_82M">
+        <Original>False Identification</Original>
+        </key>
+        <key ID="STR_Crime_83MA">
         <Original>Aggravated False Identification</Original>
-        </key>"
-        "<key ID=""STR_Crime_84FA"">
+        </key>
+        <key ID="STR_Crime_83M">
+        <Original>Resisting Arrest</Original>
+        </key>
+        <key ID="STR_Crime_84FA">
         <Original>Aggravated Resisting Arrest</Original>
-        </key>"
-        "<key ID=""STR_Crime_85FA"">
+        </key>
+        <key ID="STR_Crime_84F">
+        <Original>Felony Evasion</Original>
+        </key>
+        <key ID="STR_Crime_85FA">
         <Original>Aggravated Felony Evasion</Original>
-        </key>"
-        "<key ID=""STR_Crime_86MA"">
+        </key>
+        <key ID="STR_Crime_85F">
+        <Original>Escaping Jail</Original>
+        </key>
+        <key ID="STR_Crime_86MA">
         <Original>Aggravated Escaping Jail</Original>
-        </key>"
-        "<key ID=""STR_Crime_87MA"">
+        </key>
+        <key ID="STR_Crime_86M">
+        <Original>False Report</Original>
+        </key>
+        <key ID="STR_Crime_87MA">
         <Original>Aggravated False Report</Original>
-        </key>"
-        "<key ID=""STR_Crime_88MA"">
+        </key>
+        <key ID="STR_Crime_87M">
+        <Original>Failure to Comply</Original>
+        </key>
+        <key ID="STR_Crime_88MA">
         <Original>Aggravated Failure to Comply</Original>
-        </key>"
-        "<key ID=""STR_Crime_89CA"">
+        </key>
+        <key ID="STR_Crime_88M">
+        <Original>Obstruction of Justice</Original>
+        </key>
+        <key ID="STR_Crime_89CA">
         <Original>Aggravated Obstruction of Justice</Original>
-        </key>"
-        "<key ID=""STR_Crime_810MA"">
+        </key>
+        <key ID="STR_Crime_89C">
+        <Original>Failure to Yield to Emergency Vehicles</Original>
+        </key>
+        <key ID="STR_Crime_810MA">
         <Original>Aggravated Failure to Yield to Emergency Vehicles</Original>
-        </key>"
-        "<key ID=""STR_Crime_811FA"">
+        </key>
+        <key ID="STR_Crime_810M">
+        <Original>Fleeing</Original>
+        </key>
+        <key ID="STR_Crime_811FA">
         <Original>Aggravated Fleeing</Original>
-        </key>"
-        "<key ID=""STR_Crime_812MA"">
+        </key>
+        <key ID="STR_Crime_811F">
+        <Original>Jailbreaking</Original>
+        </key>
+        <key ID="STR_Crime_812MA">
         <Original>Aggravated Jailbreaking</Original>
-        </key>"
-        "<key ID=""STR_Crime_A"">
+        </key>
+        <key ID="STR_Crime_812M">
+        <Original>Failure to Pay Citation</Original>
+        </key>
+        <key ID="STR_Crime_A">
         <Original>Aggravated Failure to Pay Citation</Original>
-        </key>"
+        </key>
 
-        "<key ID=""STR_Crime_92MA"">
+
+
+
+        <key ID="STR_Crime_91F">
+        <Original>Grand Theft Auto</Original>
+        </key>
+        <key ID="STR_Crime_92MA">
         <Original>Aggravated Grand Theft Auto</Original>
-        </key>"
-        "<key ID=""STR_Crime_93FA"">
+        </key>
+        <key ID="STR_Crime_92M">
+        <Original>Hit and Run</Original>
+        </key>
+        <key ID="STR_Crime_93FA">
         <Original>Aggravated Hit and Run</Original>
-        </key>"
-        "<key ID=""STR_Crime_94MA"">
+        </key>
+        <key ID="STR_Crime_93F">
+        <Original>Felony Hit and Run</Original>
+        </key>
+        <key ID="STR_Crime_94MA">
         <Original>Aggravated Felony Hit and Run</Original>
-        </key>"
-        "<key ID=""STR_Crime_95MA"">
+        </key>
+        <key ID="STR_Crime_94M">
+        <Original>Driving While Intoxicated</Original>
+        </key>
+        <key ID="STR_Crime_95MA">
         <Original>Aggravated Driving While Intoxicated</Original>
-        </key>"
-        "<key ID=""STR_Crime_96CA"">
+        </key>
+        <key ID="STR_Crime_95M">
+        <Original>Reckless Driving</Original>
+        </key>
+        <key ID="STR_Crime_96CA">
         <Original>Aggravated Reckless Driving</Original>
-        </key>"
-        "<key ID=""STR_Crime_97CA"">
+        </key>
+        <key ID="STR_Crime_96C">
+        <Original>Speeding</Original>
+        </key>
+        <key ID="STR_Crime_97CA">
         <Original>Aggravated Speeding</Original>
-        </key>"
-        "<key ID=""STR_Crime_98MA"">
+        </key>
+        <key ID="STR_Crime_97C">
+        <Original>Failure to Stop</Original>
+        </key>
+        <key ID="STR_Crime_98MA">
         <Original>Aggravated Failure to Stop</Original>
-        </key>"
-        "<key ID=""STR_Crime_99MA"">
+        </key>
+        <key ID="STR_Crime_98M">
+        <Original>Operation of a Vehicle without a License</Original>
+        </key>
+        <key ID="STR_Crime_99MA">
         <Original>Aggravated Operation of a Vehicle without a License</Original>
-        </key>"
-        "<key ID=""STR_Crime_910CA"">
+        </key>
+        <key ID="STR_Crime_99M">
+        <Original>Illegal Parking</Original>
+        </key>
+        <key ID="STR_Crime_910CA">
         <Original>Aggravated Illegal Parking</Original>
-        </key>"
-        "<key ID=""STR_Crime_911MA"">
+        </key>
+        <key ID="STR_Crime_910C">
+        <Original>Failure to use Headlights</Original>
+        </key>
+        <key ID="STR_Crime_911MA">
         <Original>Aggravated Failure to use Headlights</Original>
-        </key>"
-        "<key ID=""STR_Crime_912MA"">
+        </key>
+        <key ID="STR_Crime_911M">
+        <Original>Illegal U-Turn</Original>
+        </key>
+        <key ID="STR_Crime_912MA">
         <Original>Aggravated Illegal U-Turn</Original>
-        </key>"
-        "<key ID=""STR_Crime_913MA"">
+        </key>
+        <key ID="STR_Crime_912M">
+        <Original>Failure to Yield</Original>
+        </key>
+        <key ID="STR_Crime_913MA">
         <Original>Aggravated Failure to Yield</Original>
-        </key>"
-        "<key ID=""STR_Crime_914CA"">
+        </key>
+        <key ID="STR_Crime_913M">
+        <Original>Obstruction of Traffic</Original>
+        </key>
+        <key ID="STR_Crime_914CA">
         <Original>Aggravated Obstruction of Traffic</Original>
-        </key>"
-        "<key ID=""STR_Crime_915MA"">
+        </key>
+        <key ID="STR_Crime_914C">
+        <Original>Failure to Indicate</Original>
+        </key>
+        <key ID="STR_Crime_915MA">
         <Original>Aggravated Failure to Indicate</Original>
-        </key>"
-        "<key ID=""STR_Crime_916MA"">
+        </key>
+        <key ID="STR_Crime_915M">
+        <Original>Street Racing</Original>
+        </key>
+        <key ID="STR_Crime_916MA">
         <Original>Aggravated Street Racing</Original>
-        </key>"
-        "<key ID=""STR_Crime_A"">
+        </key>
+        <key ID="STR_Crime_916M">
+        <Original>Excessive Speeding</Original>
+        </key>
+        <key ID="STR_Crime_A">
         <Original>Aggravated Excessive Speeding</Original>
-        </key>"
+        </key>
 
-        "<key ID=""STR_Crime_96CBA"">
+
+
+
+        <key ID="STR_Crime_96CA">
+        <Original>Speeding_A</Original>
+        </key>
+        <key ID="STR_Crime_96CBA">
         <Original>Aggravated Speeding_A</Original>
-        </key>"
-        "<key ID=""STR_Crime_96CCA"">
+        </key>
+        <key ID="STR_Crime_96CB">
+        <Original>Speeding_B</Original>
+        </key>
+        <key ID="STR_Crime_96CCA">
         <Original>Aggravated Speeding_B</Original>
-        </key>"
-        "<key ID=""STR_Crime_96CDA"">
+        </key>
+        <key ID="STR_Crime_96CC">
+        <Original>Speeding_C</Original>
+        </key>
+        <key ID="STR_Crime_96CDA">
         <Original>Aggravated Speeding_C</Original>
-        </key>"
-        "<key ID=""STR_Crime_96CEA"">
+        </key>
+        <key ID="STR_Crime_96CD">
+        <Original>Speeding_D</Original>
+        </key>
+        <key ID="STR_Crime_96CEA">
         <Original>Aggravated Speeding_D</Original>
-        </key>"
-        "<key ID=""STR_Crime_96CFA"">
+        </key>
+        <key ID="STR_Crime_96CE">
+        <Original>Speeding_E</Original>
+        </key>
+        <key ID="STR_Crime_96CFA">
         <Original>Aggravated Speeding_E</Original>
-        </key>"
-        "<key ID=""STR_Crime_96CGA"">
+        </key>
+        <key ID="STR_Crime_96CF">
+        <Original>Speeding_F</Original>
+        </key>
+        <key ID="STR_Crime_96CGA">
         <Original>Aggravated Speeding_F</Original>
-        </key>"
-        "<key ID=""STR_Crime_A"">
+        </key>
+        <key ID="STR_Crime_96CG">
+        <Original>Speeding_G</Original>
+        </key>
+        <key ID="STR_Crime_A">
         <Original>Aggravated Speeding_G</Original>
-        </key>"
+        </key>
 
-        "<key ID=""STR_Crime_101FA"">
+
+
+
+        <key ID="STR_Crime_101F">
+        <Original>Drug Cultivation and Manufacturing</Original>
+        </key>
+        <key ID="STR_Crime_102FA">
         <Original>Aggravated Drug Cultivation and Manufacturing</Original>
-        </key>"
-        "<key ID=""STR_Crime_102FA"">
+        </key>
+        <key ID="STR_Crime_102F">
+        <Original>Class 1 Drug Distribution</Original>
+        </key>
+        <key ID="STR_Crime_103MA">
         <Original>Aggravated Class 1 Drug Distribution</Original>
-        </key>"
-        "<key ID=""STR_Crime_103MA"">
+        </key>
+        <key ID="STR_Crime_103M">
+        <Original>Class 2 Drug Distribution</Original>
+        </key>
+        <key ID="STR_Crime_104MA">
         <Original>Aggravated Class 2 Drug Distribution</Original>
-        </key>"
-        "<key ID=""STR_Crime_104MA"">
+        </key>
+        <key ID="STR_Crime_104M">
+        <Original>Class 1 Drug Possession</Original>
+        </key>
+        <key ID="STR_Crime_105MA">
         <Original>Aggravated Class 1 Drug Possession</Original>
-        </key>"
-        "<key ID=""STR_Crime_105MA"">
+        </key>
+        <key ID="STR_Crime_105M">
+        <Original>Class 2 Drug Possession</Original>
+        </key>
+        <key ID="STR_Crime_106MA">
         <Original>Aggravated Class 2 Drug Possession</Original>
-        </key>"
-        "<key ID=""STR_Crime_106MA"">
+        </key>
+        <key ID="STR_Crime_106M">
+        <Original>Class 1 Drug Paraphernalia</Original>
+        </key>
+        <key ID="STR_Crime_107MA">
         <Original>Aggravated Class 1 Drug Paraphernalia</Original>
-        </key>"
-        "<key ID=""STR_Crime_107MA"">
+        </key>
+        <key ID="STR_Crime_107M">
+        <Original>Class 2 Drug Paraphernalia</Original>
+        </key>
+        <key ID="STR_Crime_A">
         <Original>Aggravated Class 2 Drug Paraphernalia</Original>
-        </key>"
+        </key>
+
+
     </Package>
     <Package name="FuelTank_Mission">
         <Key ID="STR_MAR_FuelTank_Storage">
