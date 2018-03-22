@@ -157,7 +157,7 @@ class Clothing {
             { "U_Rangemaster", $STR_C_Cop_uniforms, 25, "" },
             { "U_B_CombatUniform_mcam_tshirt", "", 350, "call life_coplevel >= 1" },
             { "U_B_CombatUniform_mcam_worn", "", 550, "call life_coplevel >= 2" },
-            { "U_B_survival_uniform", "", 1250, "call life_coplevel >= 1" }
+            { "U_B_survival_uniform", "", 1250, "call life_coplevel >= 3" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
@@ -192,7 +192,8 @@ class Clothing {
             { "V_Rangemaster_belt", "", 800, "" },
             { "V_TacVest_blk_POLICE", "", 1000, "call life_coplevel >= 1" },
             { "V_TacVest_gen_F", "", 1000, "call life_coplevel >= 1" }, //Apex DLC
-            { "V_PlateCarrier2_rgr", "", 1500, "call life_coplevel >= 2" }
+            { "V_PlateCarrier2_rgr", "", 1500, "call life_coplevel >= 2" },
+            { "V_RebreatherIR", "", 1500, "call life_coplevel >= 3" },
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
@@ -333,6 +334,11 @@ class Clothing {
             { "H_Bandanna_camo", "", 650, "" },
             { "H_ShemagOpen_khk", "", 800, "" },
             { "H_ShemagOpen_tan", "", 850, "" },
+            { "H_HelmetB_camo","",2000,1000,""},
+            { "H_HelmetB_sand","",2000,1000,""},
+            { "H_HelmetSpecB","",2000,1000,""},
+            { "H_HelmetB_light","",1000,500,""},
+            { "H_HelmetB_light_black","",1000,500,""},
             { "H_Shemag_olive", "", 850, "" },
             { "H_HelmetO_ocamo", "", 2500, "" }
         };
@@ -367,11 +373,11 @@ class Clothing {
             { "V_BandollierB_cbr", "", 4500, "" },
             { "V_HarnessO_brn", "", 7500, "" },
             { "V_TacVest_khk", "", 12500, "" },
-            {"V_PlateCarrier1_rgr","",30000,15000,""},
-            {"V_PlateCarrier1_blk","",30000,15000,""},
-            {"V_PlateCarrier2_rgr","",40000,20000,""},
-            {"V_PlateCarrier2_blk","",40000,20000,""},
-            {"V_PlateCarrierIAGL_oli","",50000,25000,""},
+            { "V_PlateCarrier1_rgr","",30000,15000,""},
+            { "V_PlateCarrier1_blk","",30000,15000,""},
+            { "V_PlateCarrier2_rgr","",40000,20000,""},
+            { "V_PlateCarrier2_blk","",40000,20000,""},
+            { "V_PlateCarrierIAGL_oli","",50000,25000,""},
             { "V_TacChestrig_grn_F", "", 17500, "" } //Apex DLC
         };
         backpacks[] = {
