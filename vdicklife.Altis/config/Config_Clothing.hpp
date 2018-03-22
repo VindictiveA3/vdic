@@ -451,4 +451,31 @@ class Clothing {
             { "NONE", $STR_C_Remove_backpacks, 0, "" }
         };
     };
+
+    class news {
+        title = "STR_Shops_C_Kart";
+        conditions = "license_civ_news";
+        side = "civ";
+        uniforms[] = {
+            { "NONE", $STR_C_Remove_uniforms, 0, "" },
+            { "U_C_Driver_4", "", 3700, "" }
+        };
+        headgear[] = {
+            { "NONE", $STR_C_Remove_headgear, 0, "" },
+            {"H_PASGT_basic_blue_press_F","Press Hat",500,250,""}
+        };
+        goggles[] = {
+            { "NONE", $STR_C_Remove_goggles, 0, "" }
+        };
+        vests[] = {
+            { "NONE", $STR_C_Remove_vests, 0, "" },
+            {"V_Press_F","Press Vest",1000,500,""},
+            {"V_EOD_blue_F","Press Vest",1000,500,""}
+        };
+        backpacks[] = {
+            { "NONE", $STR_C_Remove_backpacks, 0, "" }
+        };
+    };
+
+
 };

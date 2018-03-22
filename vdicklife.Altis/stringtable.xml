@@ -4601,6 +4601,9 @@
             <Portuguese>Estação de Transmissão de Notícias</Portuguese>
             <Polish></Polish>
         </Key>
+           <Key ID="STR_News_clothing">
+            <Original>News Station clothing</Original>
+        </Key>
         <Key ID="STR_News_DialogTitle">
             <Original>Channel 7 News Station</Original>
             <Czech></Czech>
@@ -7243,6 +7246,10 @@
             <Portuguese>Licença de Casas</Portuguese>
             <Polish>Zarządca nieruchomości</Polish>
         </Key>
+         <Key ID="STR_License_news">
+            <Original>Channel 7 News License</Original>
+        </Key>
+
     </Package>
     <Package name="More_Item_Strings">
         <Key ID="STR_ISTR_Blast_VaultOnly">
