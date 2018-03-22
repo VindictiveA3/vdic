@@ -39,7 +39,7 @@ if (count _invs > 0) then {
         } else {
             [getPlayerUID _civ,_civ getVariable ["realname",name _civ],"103F"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
         };
-
+            ["CopSearch6k"] spawn mav_ttm_fnc_addExp;
     };
 
     if (life_HC_isActive) then {
@@ -49,6 +49,7 @@ if (count _invs > 0) then {
     };
 
     [0,"STR_Cop_Contraband",true,[(_civ getVariable ["realname",name _civ]),[_illegal] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",west];
+     ["CopSearch"] spawn mav_ttm_fnc_addExp;
 } else {
     _inv = localize "STR_Cop_NoIllegal";
 };

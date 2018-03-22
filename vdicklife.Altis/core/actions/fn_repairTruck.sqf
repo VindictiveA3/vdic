@@ -66,6 +66,7 @@ if ((_veh isKindOf "Car") || (_veh isKindOf "Ship") || (_veh isKindOf "Air")) th
         };
 
         _veh setDamage 0;
+        ["RepairKit"] spawn mav_ttm_fnc_addExp;
         titleText[localize "STR_NOTF_RepairedVehicle","PLAIN"];
     };
 };

@@ -13,6 +13,60 @@ class VehicleLockpicked {
 	message = "Vehicle Lockpicked";
 };
 
+class VehicleLockpickedAttempt {
+    expToAdd = 2;
+	message = "Vehicle Lockpicked Attempted";
+};
+
+class WaitOnRevive {
+    expToAdd = 2;
+    message = "Waited For Revive";
+};
+
+class Reviving {
+    expToAdd = 5;
+    message = "Revived Player";
+};
+
+class RobPlayer {
+    expToAdd = 4;
+    message = "Pratice Makes Perfect";
+};
+
+class RepairKit {
+    expToAdd = 5;
+    message = "Using ToolKit";
+};
+
+class CivTicketPaid {
+    expToAdd = 2;
+    message = "Paid Ticket";
+};
+
+class CopTicketPaid {
+    expToAdd = 5;
+    message = "Ticket Paid";
+};
+
+class CopSearch6k {
+    expToAdd = 10;
+    message = "Seizure Over $6000 in value";
+};
+
+class CopSearch {
+    expToAdd = 5;
+    message = "Seizure of Illegal items";
+};
+
+class DPMission {
+    expToAdd = 10;
+    message = "Package Delivered";
+};
+
+class GatheringHand {
+    expToAdd = 2;
+    message = "Item Gathered";
+};
 
 //Gas Delivery Experience per distance
 class GasDelivery20km {
@@ -50,13 +104,20 @@ class GasDeliveryLess1km {
 
 
 
+
+
+
+
+
+
+// Rewards for playing
 class PowerLevel {
     expToAdd = 200;
 	message = "Experence Reward";
 };
 
 
-class Example {
+class Hundo {
     expToAdd = 100;
-	message = "Customizable Message";
+	message = "A Hudo On Us";
 };

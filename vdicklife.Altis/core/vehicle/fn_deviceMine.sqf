@@ -128,7 +128,7 @@ for "_i" from 0 to 1 step 0 do {
     _space = (_vehicle_data select 1);
     _itemIndex = [_resource,_inv] call TON_fnc_index;
     _weight = [_vehicle] call life_fnc_vehicleWeight;
-    _random = 10 + round((random(10)));
+    _random = 10 + round((random(10)));// add mavrick talent here
     _sum = [_resource,_random,(_weight select 1),(_weight select 0)] call life_fnc_calWeightDiff; // Get a sum base of the remaining weight..
 
     if (_sum < 1) exitWith {

@@ -94,12 +94,13 @@ if (!_isVehicle) then {
     } else {
 
         if (life_HC_isActive) then {
-            [getPlayerUID player,profileName,"215"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
+            [getPlayerUID player,profileName,"610M"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
         } else {
-            [getPlayerUID player,profileName,"215"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
+            [getPlayerUID player,profileName,"610M"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
         };
 
         [0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]] remoteExecCall ["life_fnc_broadcast",west];
         titleText[localize "STR_ISTR_Lock_Failed","PLAIN"];
+        ["VehicleLockpickedAttempted"] spawn mav_ttm_fnc_addExp;
     };
 };
