@@ -39,8 +39,6 @@ deleteVehicle life_corpse;
 life_action_inUse = false;
 life_is_alive = true;
 player setDamage .51;
-player life_thirst = 30;
-player life_hunger = 30;
 player setFatigue 1;
 
 player setVariable ["Revive",nil,true];
