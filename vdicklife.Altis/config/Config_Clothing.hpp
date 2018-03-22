@@ -406,7 +406,8 @@ class Clothing {
             { "B_Carryall_mcamo", "", 7500, "" },
             { "B_Carryall_oli", "", 7500, "" },
             { "B_Carryall_khk", "", 7500, "" },
-            { "B_Carryall_cbr", "", 7500, "" }
+            { "B_Parachute", "", 5000, "" },
+            { "B_Carryall_cbr", "", 7500, "" }                                                          
         };
     };
 
