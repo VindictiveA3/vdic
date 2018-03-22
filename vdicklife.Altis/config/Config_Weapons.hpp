@@ -74,6 +74,7 @@ class WeaponShops {
             {"arifle_MX_SW_Black_F","",40000,20000,""},
             {"arifle_SPAR_03_blk_F","",49000,24500,""},
             {"launch_RPG7_F","",100000,50000,""},
+            {"R_PG7_F","",250000,125000,""},//RPG Round 250k
             {"hgun_Pistol_heavy_01_F","",10000,5000,""},
             { "arifle_CTAR_blk_F", "", 30000, 15000, "" } //Apex DLC
         };
@@ -94,7 +95,6 @@ class WeaponShops {
             {"30Rnd_45ACP_Mag_SMG_01","",150,75,""},
             {"200Rnd_65x39_cased_Box","",1500,750,""},
             {"10Rnd_127x54_Mag","",250,125,""},
-             {"R_PG7_F","",250000,125000,""},//RPG Round 250k
             { "30Rnd_580x42_Mag_F", "", 125, 60, "" } //Apex DLC
         };
         accs[] = {
