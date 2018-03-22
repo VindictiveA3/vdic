@@ -97,9 +97,9 @@ _unit spawn {
 if (!isNull _killer && {!(_killer isEqualTo _unit)} && {!(side _killer isEqualTo west)} && {alive _killer}) then {
     if (vehicle _killer isKindOf "LandVehicle") then {
         if (life_HC_isActive) then {
-            [getPlayerUID _killer,_killer getVariable ["realname",name _killer],"187V"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
+            [getPlayerUID _killer,_killer getVariable ["realname",name _killer],"46F"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
         } else {
-            [getPlayerUID _killer,_killer getVariable ["realname",name _killer],"187V"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
+            [getPlayerUID _killer,_killer getVariable ["realname",name _killer],"46F"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
         };
 
         
@@ -111,9 +111,9 @@ if (!isNull _killer && {!(_killer isEqualTo _unit)} && {!(side _killer isEqualTo
 
     } else {
         if (life_HC_isActive) then {
-            [getPlayerUID _killer,_killer getVariable ["realname",name _killer],"187"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
+            [getPlayerUID _killer,_killer getVariable ["realname",name _killer],"44F"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
         } else {
-            [getPlayerUID _killer,_killer getVariable ["realname",name _killer],"187"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
+            [getPlayerUID _killer,_killer getVariable ["realname",name _killer],"44F"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
         };
 
        /*

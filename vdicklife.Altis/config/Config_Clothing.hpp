@@ -34,11 +34,22 @@ class Clothing {
             { "U_IG_Guerilla2_3", "", 1200, "" },
             { "U_C_HunterBody_grn", "", 1500, "" },
             { "U_C_WorkerCoveralls", "", 2500, "" },
-            { "U_NikosBody", "", 3000, "" },
+           // { "U_NikosBody", "", 3000, "" }, 
+            { "C_Man_casual_2_F","Church Clothes",2000,1000,""},
+            { "C_Man_casual_3_F","Reuniting with your lost son pants",1500,750,""},           
+            { "U_C_IDAP_Man_shorts_F","Cool Shorts Bro",2000,1000,""},
+            { "U_C_IDAP_Man_casual_F","",2000,1000,""},
+            { "U_C_IDAP_Man_cargo_F","",2000,1000,""},
+            { "U_C_IDAP_Man_Tee_F","",2000,1000,""},
+            { "U_C_IDAP_Man_Jeans_F","",2000,1000,""},
+            { "U_C_IDAP_Man_TeeShorts_F","",2000,1000,""},
+            { "U_C_Mechanic_01_F","Grease Monkey",2000,1000,""},
+            { "U_C_ConstructionCoverall_Red_F","",3000,1500,""},
+            { "U_C_ConstructionCoverall_Vrana_F","",3000,1500,""},
+            { "U_C_ConstructionCoverall_Black_F","",3000,1500,""},
+            { "U_C_ConstructionCoverall_Blue_F","",3000,1500,""},
            // { "U_NikosAgedBody", $STR_C_Civ_Niko, 5000, "" },
             { "U_C_Man_casual_1_F", "", 5000, "" }, //Apex DLC
-            { "U_C_Man_casual_2_F", "", 5000, "" }, //Apex DLC
-            { "U_C_Man_casual_3_F", "", 5000, "" }, //Apex DLC
             { "U_C_Man_casual_4_F", "", 5000, "" }, //Apex DLC
             { "U_C_Man_casual_5_F", "", 5000, "" }, //Apex DLC
             { "U_C_Man_casual_6_F", "", 5000, "" }, //Apex DLC
@@ -67,7 +78,11 @@ class Clothing {
             { "H_Hat_grey", "", 280, "" },
             { "H_BandMask_blk", $STR_C_Civ_BandMask, 300, "" },
             { "H_Hat_blue", "", 310, "" },
-            { "H_Hat_checker", "", 340, "" },
+            { "H_Hat_checker", "", 340, "" },            
+            {"H_Construction_basic_white_F","Sunday's Best Tophat",25,12.5,""},
+            {"H_Cap_White_IDAP_F","",16,8,""},
+            {"H_Cap_Orange_IDAP_F","",16,8,""},
+            {"	H_Cap_Black_IDAP_F","",16,8,""},
             { "H_Booniehat_tan", "", 425, "" },
             { "H_Booniehat_grn", "", 425, "" }
         };
@@ -92,7 +107,11 @@ class Clothing {
             { "G_Lady_Blue", "", 150, "" }
         };
         vests[] = {
-            { "NONE", $STR_C_Remove_vests, 0, "" }
+        {"V_Pocketed_black_F","",250,125,""},
+        {"V_Safety_yellow_F","",50,25,""},
+        {"V_Safety_orange_F","",250,125,""},
+        {"V_LegStrapBag_black_F","Fanny Pack",1500,750,""},
+        { "NONE", $STR_C_Remove_vests, 0, "" }
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
@@ -295,6 +314,12 @@ class Clothing {
             { "U_O_PilotCoveralls", "", 15610, "" },
             { "U_O_SpecopsUniform_ocamo", "", 17500, "" },
             { "U_O_GhillieSuit", "", 50000, "" },
+            {"U_B_CTRG_Soldier_urb_1_F","",1000,500,""},
+            {"U_B_GEN_Commander_F","",1000,500,""},
+            {"U_B_GEN_Soldier_F","",1000,500,""},
+            {"U_BG_Guerrilla_6_1","",1000,500,""},
+            {"U_B_FullGhillie_ard","",50000,25000,""},
+            {"U_B_FullGhillie_sard","",50000,25000,""},
             { "U_B_T_Soldier_F", "", 50000, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_1_F", "", 50000, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_2_F", "", 51000, "" }, //Apex DLC
@@ -313,6 +338,7 @@ class Clothing {
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
+            { "G_Respirator_White_F", "", 20, "" },
             { "G_Shades_Black", "", 20, "" },
             { "G_Shades_Blue", "", 20, "" },
             { "G_Sport_Blackred", "", 25, "" },
@@ -341,6 +367,11 @@ class Clothing {
             { "V_BandollierB_cbr", "", 4500, "" },
             { "V_HarnessO_brn", "", 7500, "" },
             { "V_TacVest_khk", "", 12500, "" },
+            {"V_PlateCarrier1_rgr","",30000,15000,""},
+            {"V_PlateCarrier1_blk","",30000,15000,""},
+            {"V_PlateCarrier2_rgr","",40000,20000,""},
+            {"V_PlateCarrier2_blk","",40000,20000,""},
+            {"V_PlateCarrierIAGL_oli","",50000,25000,""},
             { "V_TacChestrig_grn_F", "", 17500, "" } //Apex DLC
         };
         backpacks[] = {

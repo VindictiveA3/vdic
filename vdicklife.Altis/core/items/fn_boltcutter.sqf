@@ -98,7 +98,7 @@ _building setVariable [format ["bis_disabled_Door_%1",_door],0,true]; //Unlock t
 _building setVariable ["locked",false,true];
 
 if (life_HC_isActive) then {
-    [getPlayerUID player,profileName,"459"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
+    [getPlayerUID player,profileName,"63F"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
 } else {
-    [getPlayerUID player,profileName,"459"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
+    [getPlayerUID player,profileName,"63F"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
 };

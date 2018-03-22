@@ -44,7 +44,7 @@ private _index = -1;
                     case (_x in (units group player) && playerSide isEqualTo civilian): {format ["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
                     case (side _x isEqualTo west && {!isNil {_x getVariable "rank"}}): {format ["<img image='%1' size='1'></img> %2",switch ((_x getVariable "rank")) do {
                         case 1: {"icons\ico_cop_ranks\cadet.paa"};
-                        case 2: {"icons\ico_cop_ranks\patrolOfficer"};
+                        case 2: {"icons\ico_cop_ranks\patrolOfficer.paa"};
                         case 3: {"icons\ico_cop_ranks\seniorPatrol.paa"};
                         case 4: {"icons\ico_cop_ranks\corporal.paa"};
                         case 5: {"icons\ico_cop_ranks\sergeant.paa"};
