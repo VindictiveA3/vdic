@@ -90,6 +90,19 @@ class Life_Client_Core {
         class adminTpHere {};
     };
 
+    class CivTieing {
+		file = "core\civilian\CivTieing";
+		class gagAction {};					
+		class gagged {};
+		class removeGagAction {};
+		class tieing {};
+		class tieingAction {};
+		class tieingActionb {};
+		class tieingb {};
+		class untie {};
+		class untieb {};
+	};
+
     class Civilian {
         file = "core\civilian";
         class civLoadout {};

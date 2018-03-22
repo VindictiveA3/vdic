@@ -7015,6 +7015,12 @@
             <Portuguese>Tapete de Espinhos</Portuguese>
             <Polish>Kolczatka drogowa</Polish>
         </Key>
+        <Key ID="STR_Item_ZipTies">
+			<Original>ZipTies</Original>
+		</Key>
+		<Key ID="STR_Item_Blindfold">
+			<Original>Blindfold</Original>
+		</Key>
     </Package>
     <Package name="Life_License">
         <Key ID="STR_License_Driver">

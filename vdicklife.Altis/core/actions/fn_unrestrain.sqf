@@ -13,6 +13,9 @@ if (isNull _unit || !(_unit getVariable ["restrained",false])) exitWith {}; //Er
 _unit setVariable ["restrained",false,true];
 _unit setVariable ["Escorting",false,true];
 _unit setVariable ["transporting",false,true];
+_unit setVariable["tied", nil, true];
+_unit setVariable["gagged",false,true];
+_unit setVariable["blindfolded", nil, true];
 detach _unit;
 
 [0,"STR_NOTF_Unrestrain",true,[_unit getVariable ["realname",name _unit], profileName]] remoteExecCall ["life_fnc_broadcast",west];
