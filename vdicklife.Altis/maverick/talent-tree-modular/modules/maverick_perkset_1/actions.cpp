@@ -23,7 +23,7 @@ class WaitOnRevive {
     message = "Waited For Revive";
 };
 
-class Reviving {
+class GiveLife {
     expToAdd = 5;
     message = "Revived Player";
 };
