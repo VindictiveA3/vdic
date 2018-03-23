@@ -54,10 +54,25 @@ if (count _invs > 0) then {
     _inv = localize "STR_Cop_NoIllegal";
 };
 
-if (_illegal > 6000) then {
-    ["CopSearch6k"] spawn mav_ttm_fnc_addExp;
-} else {
-    ["CopSearch"] spawn mav_ttm_fnc_addExp;
+if ( _llegal >153600) then {
+    ["CopSearch6k"] spawn mav_ttm_fnc_addExp;} else {
+    if (_illegal > 768000) then {["CopSearch8"] spawn mav_ttm_fnc_addExp;} else {
+        if (_illegal > 384000) then {["CopSearch7"] spawn mav_ttm_fnc_addExp;} else {
+            if (_illegal > 192000) then {["CopSearch6"] spawn mav_ttm_fnc_addExp;} else {
+                if (_illegal > 96000) then {["CopSearch5"] spawn mav_ttm_fnc_addExp;} else {
+                    if (_illegal > 48000) then {["CopSearch4"] spawn mav_ttm_fnc_addExp;}else {
+                        if (_illegal > 24000) then {["CopSearch3"] spawn mav_ttm_fnc_addExp;} else {
+                            if (_illegal > 12000) then {["CopSearch2"] spawn mav_ttm_fnc_addExp;} else {
+                                if (_illegal > 6000) then {["CopSearch1"] spawn mav_ttm_fnc_addExp;} else {
+                                    ["CopSearch"] spawn mav_ttm_fnc_addExp;
+                                };
+                            };
+                        };
+                    };
+                };
+            };
+        };
+    };
 };
 
 if (!alive _civ || player distance _civ > 5) exitWith {hint format [localize "STR_Cop_CouldntSearch",_civ getVariable ["realname",name _civ]]};

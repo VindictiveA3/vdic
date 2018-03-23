@@ -30,7 +30,7 @@ class GiveLife {
 
 class RobPlayer {
     expToAdd = 4;
-    message = "Pratice Makes Perfect";
+    message = "Practice Makes Perfect";
 };
 
 class RepairKit {
@@ -48,16 +48,6 @@ class CopTicketPaid {
     message = "Ticket Paid";
 };
 
-class CopSearch6k {
-    expToAdd = 10;
-    message = "Seizure Over $6000 in value";
-};
-
-class CopSearch {
-    expToAdd = 5;
-    message = "Seizure of Illegal items";
-};
-
 class DPMission {
     expToAdd = 10;
     message = "Package Delivered";
@@ -66,6 +56,52 @@ class DPMission {
 class GatheringHand {
     expToAdd = 2;
     message = "Item Gathered";
+};
+
+// Cop Experence for value of seizure
+class CopSearch8 {
+    expToAdd = 100;
+    message = "Seizure Over $768,000 in value";
+};
+
+class CopSearch7 {
+    expToAdd = 60;
+    message = "Seizure Over $384,000 in value";
+};
+
+class CopSearch6 {
+    expToAdd = 50;
+    message = "Seizure Over $192,000 in value";
+};
+
+class CopSearch5 {
+    expToAdd = 40;
+    message = "Seizure Over $95,000 in value";
+};
+
+class CopSearch4 {
+    expToAdd = 30;
+    message = "Seizure Over 48,000 in value";
+};
+
+class CopSearch3 {
+    expToAdd = 20;
+    message = "Seizure Over $24,000 in value";
+};
+
+class CopSearch2 {
+    expToAdd = 15;
+    message = "Seizure Over $12,000 in value";
+};
+
+class CopSearch1 {
+    expToAdd = 10;
+    message = "Seizure Over $6,000 in value";
+};
+
+class CopSearch {
+    expToAdd = 5;
+    message = "Seizure of Illegal items";
 };
 
 //Gas Delivery Experience per distance

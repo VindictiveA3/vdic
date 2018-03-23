@@ -29,7 +29,6 @@ if(!isPlayer _unit) exitWith {};
 //Broadcast!
 
 life_inv_zipties = life_inv_zipties - 1;
-
 life_action_inUse = true;
 hintSilent "Restraining!";
 [_unit,"zipties"] remoteExec ["life_fnc_say3D",RANY];
