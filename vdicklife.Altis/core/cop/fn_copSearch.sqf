@@ -54,8 +54,7 @@ if (count _invs > 0) then {
     _inv = localize "STR_Cop_NoIllegal";
 };
 
-if ( _llegal >153600) then {
-    ["CopSearch6k"] spawn mav_ttm_fnc_addExp;} else {
+if ( _illegal > 1536000) then {["CopSearch9"] spawn mav_ttm_fnc_addExp;} else {
     if (_illegal > 768000) then {["CopSearch8"] spawn mav_ttm_fnc_addExp;} else {
         if (_illegal > 384000) then {["CopSearch7"] spawn mav_ttm_fnc_addExp;} else {
             if (_illegal > 192000) then {["CopSearch6"] spawn mav_ttm_fnc_addExp;} else {

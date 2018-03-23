@@ -59,8 +59,13 @@ class GatheringHand {
 };
 
 // Cop Experence for value of seizure
-class CopSearch8 {
+class CopSearch9 {
     expToAdd = 100;
+    message = "Seizure Over $1,536,000 in value";
+};
+
+class CopSearch8 {
+    expToAdd = 70;
     message = "Seizure Over $768,000 in value";
 };
 
