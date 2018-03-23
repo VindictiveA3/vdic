@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4191.8521,38.211697,12840.222};
-		dir[]={-0.425982,-0.9038955,0.038980309};
-		up[]={-0.90013492,0.42775488,0.082368769};
-		aside[]={0.091126785,1.0727672e-007,0.99584097};
+		pos[]={4541.6714,281.21448,15429.234};
+		dir[]={-0.12919068,-0.55648589,-0.82079363};
+		up[]={-0.086525977,0.83084691,-0.54973227};
+		aside[]={-0.98787326,7.9162419e-008,0.15548961};
 	};
 };
 binarizationWanted=0;
@@ -467,6 +467,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -481,24 +499,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -2032,7 +2032,7 @@ class Mission
 			position[]={14038.427,25.861816,18744.154};
 			name="car_g_3";
 			type="Empty";
-			angle=177.00505;
+			angle=177.00504;
 			id=149;
 			atlOffset=1.5258789e-005;
 		};
@@ -5304,7 +5304,6 @@ class Mission
 				angles[]={0,3.0901928,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -5312,6 +5311,7 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
+			atlOffset=1.1842289;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24437,13 +24437,13 @@ class Mission
 				angles[]={0,6.0063586,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=751;
 			type="Land_CashDesk_F";
+			atlOffset=0.3939209;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24726,6 +24726,7 @@ class Mission
 			};
 			id=758;
 			type="Land_CashDesk_F";
+			atlOffset=0.19405365;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -32733,7 +32734,6 @@ class Mission
 						angles[]={0,0.0679636,6.2826972};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -32742,6 +32742,7 @@ class Mission
 					};
 					id=1008;
 					type="C_man_p_fugitive_F_asia";
+					atlOffset=1.2672386;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33239,7 +33240,6 @@ class Mission
 						angles[]={0,0.53849125,6.2823396};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -33248,6 +33248,7 @@ class Mission
 					};
 					id=1020;
 					type="C_man_1";
+					atlOffset=0.51165199;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35283,7 +35284,6 @@ class Mission
 						angles[]={0,2.8397205,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
@@ -35292,6 +35292,7 @@ class Mission
 					};
 					id=1075;
 					type="C_Nikos_aged";
+					atlOffset=0.42167664;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35586,6 +35587,7 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
+					atlOffset=0.20879364;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -36125,13 +36127,32 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_News_AddAction"",life_fnc_newsBroadcast,"""",1.5,false,false,"""",'isNull objectParent player && player distance _target < 4']; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize ""STR_News_clothing"",life_fnc_clothingMenu,""news"",0,false,false,"""", license_civ_news && playerSide isEqualTo civilian]; " \n " " \n "this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""news"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""news"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""news"",0,false,false,"""",' !license_civ_news && playerSide isEqualTo civilian ']; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 					};
 					id=1175;
 					type="C_journalist_F";
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -36150,7 +36171,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item140
@@ -46479,6 +46500,7 @@ class Mission
 			};
 			id=1684;
 			type="Land_FieldToilet_F";
+			atlOffset=7.2479248e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -46582,6 +46604,7 @@ class Mission
 			};
 			id=1685;
 			type="Land_FieldToilet_F";
+			atlOffset=7.6293945e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54593,7 +54616,7 @@ class Mission
 			position[]={9262.4336,14.419678,21572.123};
 			name="air_g_r1";
 			type="Empty";
-			angle=223.16429;
+			angle=223.16428;
 			id=2139;
 			atlOffset=-2.5743942;
 		};
@@ -55409,7 +55432,7 @@ class Mission
 			};
 			id=2224;
 			type="CamoNet_BLUFOR_open_F";
-			atlOffset=0.5423665;
+			atlOffset=0.54228067;
 		};
 		class Item1376
 		{
