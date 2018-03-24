@@ -32,13 +32,14 @@ switch (true) do {
         if ([false,_item,1] call life_fnc_handleInv) then{
            if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1) then {player setFatigue 0;};
              if (_item isEqualTo "cocaine_processed" && {LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1}) then {
+                [] spawn life_fnc_cocaine;
                 [] spawn {
                     life_cocaine_effect = time;
                     titleText[localize "STR_ISTR_CocaineEffect","PLAIN"];
                     player enableFatigue false;
                     waitUntil {!alive player || ((time - life_cocaine_effect) > (10 * 60))};
                     player enableFatigue true;
-                };
+                 };
              };
         };
     };
@@ -92,7 +93,7 @@ switch (true) do {
         closeDialog 0;
     };
 
-        case (_item == "marijuana"): 
+        case (_item isEqualTo "marijuana"): 
   { 
     if(([false,_item,1] call life_fnc_handleInv)) then 
     { 
@@ -100,22 +101,13 @@ switch (true) do {
     }; 
   }; 
  
-  case (_item == "heroin_processed"): 
+  case (_item isEqualTo "heroin_processed"): 
   { 
     if(([false,_item,1] call life_fnc_handleInv)) then 
     { 
       [] spawn life_fnc_heroin; 
     }; 
-  }; 
- 
-  case (_item == "cocaine_processed"): 
-  { 
-    if(([false,_item,1] call life_fnc_handleInv)) then 
-    { 
-      [] spawn life_fnc_cocaine; 
-    }; 
-  }; 
-
+  };
 
     case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","donuts","tbacon","peach"]): {
         if (!(M_CONFIG(getNumber,"VirtualItems",_item,"edible") isEqualTo -1)) then {
