@@ -7714,6 +7714,9 @@
             <Portuguese>Você agora pode correr por 3 minutos</Portuguese>
             <Polish>Możesz przez 3 minuty biec bez wysiłku</Polish>
         </Key>
+        <Key ID="STR_ISTR_CocaineEffect">
+            <Original>Your High on Cocaine you can now run farther for 10 min</Original>
+        </Key> 
         <Key ID="STR_ISTR_SpikesDeployment">
             <Original>You already have a Spike Strip active in deployment</Original>
             <Czech>Ty už mají Spike Strip aktivní při nasazení</Czech>

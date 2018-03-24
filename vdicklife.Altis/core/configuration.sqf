@@ -22,6 +22,7 @@ life_siren_active = false;
 life_clothing_filter = 0;
 life_clothing_uniform = -1;
 life_redgull_effect = time;
+life_cocaine_effect = time;
 life_is_processing = false;
 life_bail_paid = false;
 life_impound_inuse = false;

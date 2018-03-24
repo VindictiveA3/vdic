@@ -285,6 +285,9 @@ class Life_Client_Core {
         class placestorage {};
         class spikeStrip {};
         class storageBox {};
+        class weed {};
+        class cocaine {}; 
+        class Heroin {}; 
     };
 
     class Medical_System {
