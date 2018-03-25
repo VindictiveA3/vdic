@@ -6,10 +6,7 @@
  
 //Close inventory 
 closeDialog 0; 
- 
-//A User message and removed sleep function 
-hint "Lets Do This"; 
- 
+
 //Activate ppEffects we need 
 "colorCorrections" ppEffectEnable true; 
 "colorCorrections" ppEffectAdjust [1, 1, 0, [0,0,0,0.5], [random 5 - random 5,random 5 - random 5,random 5 - random 5,random 1], [random 5 - random 5,random 5 - random 5,random 5 - random 5, random 1]]; 
