@@ -1,3 +1,4 @@
+#include "..\..\script_macros.hpp"
 /* 
   Unsure of orignal owner i will not take credit for this script
   edited by:Zwinkadink 
