@@ -24,7 +24,7 @@ if (vehicle player != player) then
     {
         _smoke attachTo [player, [0,-0.1,1.5]];
     };
-    [player,"weedhit"] remoteExec ["life_fnc_say3D",RANY];
+    [player,"weedhit",100,1] remoteExecCall ["life_fnc_say3D",RCLIENT];
 //Let's go for 45secs of effetcs
 for "_i" from 0 to 44 do
 {
