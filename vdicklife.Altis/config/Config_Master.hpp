@@ -269,6 +269,10 @@ class Life_Settings {
         {"STR_Crime_106M","2500","106M"},//Class 1 Drug Paraphernalia	//No Aggravated Crime
         {"STR_Crime_107M","1500","107M"}//Class 2 Drug Paraphernalia	//No Aggravated Crime
     };
+
+/*Custom Code by Wolfe*/
+    /*Medic Gear*/
+    medic_allowed_items[] = {"U_Rangemaster","FirstAidKit", "Rangemaster_belt","ItemWatch","ItemCompass","ItemMap"};
 };
 
 #include "Config_Clothing.hpp"
