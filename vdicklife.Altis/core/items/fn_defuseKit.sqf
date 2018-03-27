@@ -39,7 +39,7 @@ for "_i" from 0 to 1 step 0 do {
         _progressBar = _ui displayCtrl 38201;
         _titleText = _ui displayCtrl 38202;
     };
-    _cP = _cP + .0035;
+    _cP = _cP + (0.01 * (missionNamespace getVariable ["mav_ttm_var_defuseMultiplier", 1]));
     _progressBar progressSetPosition _cP;
     _titleText ctrlSetText format ["%3 (%1%2)...",round(_cP * 100),"%",_title];
     if (_cP >= 1 || !alive player) exitWith {};
@@ -55,3 +55,4 @@ if (life_interrupted) exitWith {life_interrupted = false; titleText[localize "ST
 life_action_inUse = false;
 _vault setVariable ["chargeplaced",false,true];
 [0,localize "STR_ISTR_Defuse_Success"] remoteExecCall ["life_fnc_broadcast",west];
+[player,"bombdefuse",100,1] remoteExecCall ["life_fnc_say3D",RCLIENT];

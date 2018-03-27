@@ -64,6 +64,21 @@ class Licenses {
         side = "civ";
     };
 
+      class news {
+        variable = "news";
+        displayName = "STR_License_news";
+        price = 5000;
+        illegal = false;
+        side = "civ";
+    };
+      class cor {
+        variable = "cor";
+        displayName = "STR_License_cor";
+        price = 666;
+        illegal = false;
+        side = "civ";
+    };
+
     //Processing Licenses
     class oil {
         variable = "oil";

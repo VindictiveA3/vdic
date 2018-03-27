@@ -109,7 +109,7 @@ if (_hasLicense) then {
     } count _oldItem;
 
     {
-        [true,(_x select 0),((_x select 1)*(_minimumConversions))] call life_fnc_handleInv;
+        [true,(_x select 0),((_x select 1)*(_minimumConversions))*(missionNamespace getVariable ["mav_ttm_var_process_amount", 1])] call life_fnc_handleInv;
     } count _newItem;
 
     "progressBar" cutText ["","PLAIN"];

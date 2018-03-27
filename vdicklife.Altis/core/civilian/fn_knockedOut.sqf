@@ -17,12 +17,12 @@ if !(_target isEqualTo player) exitWith {};
 if (_who isEqualTo "") exitWith {};
 
 titleText[format [localize "STR_Civ_KnockedOut",_who],"PLAIN"];
+[player,"knockedOut"] remoteExec ["life_fnc_say3D",RANY];
 player playMoveNow "Incapacitated";
 disableUserInput true;
 
 _obj = "Land_ClutterCutter_small_F" createVehicle ASLTOATL(visiblePositionASL player);
 _obj setPosATL ASLTOATL(visiblePositionASL player);
-
 life_isknocked = true;
 player attachTo [_obj,[0,0,0]];
 sleep 15;

@@ -18,7 +18,7 @@ class Life_Settings {
 /* Database Related Settings */
     /* Player Data Saving */
     save_virtualItems = true; //Save Virtual items (all sides)?
-    saved_virtualItems[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" }; //Array of virtual items that can be saved on your player.
+    saved_virtualItems[] = { "zipties","blindfold","pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" }; //Array of virtual items that can be saved on your player.
     save_playerStats = true; //Save food, water and damage (all sides)?
     save_civilian_weapons = true; //Allow civilians to save weapons on them?
     save_civilian_position = true; //Save civilian location?
@@ -28,7 +28,7 @@ class Life_Settings {
 
     /* Vehicle Data Saving */
     save_vehicle_virtualItems = true; //Save virtual items inside the vehicle (all sides)(-- See defined items on next line --)
-    save_vehicle_items[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" };
+    save_vehicle_items[] = { "zipties","blindfold","pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" };
     save_vehicle_inventory = true; //Save Arma inventory of vehicle to the database
     save_vehicle_fuel = true; //Save vehicle fuel level to the database (Impounded/Garaged).
     save_vehicle_damage = true; //Save vehicle damage to the database.
@@ -92,7 +92,7 @@ class Life_Settings {
     restrict_clothingPickup = true; //Set to false to allow civilians to pickup/take any uniform (ground/crates/vehicles)
     restrict_weaponPickup = true; //Set to false to allow civilians to pickup/take any weapon (ground/crates/vehicles)
     restricted_uniforms[] = { "U_Rangemaster", "U_B_CombatUniform_mcam_tshirt", "U_B_CombatUniform_mcam_worn", "U_B_survival_uniform" };
-    restricted_weapons[] = { "hgun_P07_snds_F", "arifle_SPAR_01_blk_F", "arifle_MXC_Black_F", "arifle_MX_Black_F", "arifle_SPAR_03_blk_F", "srifle_DMR_02_F", "arifle_MX_GL_Black_F", "LMG_Mk200_BI_F", "srifle_DMR_07_blk_F" };
+    restricted_weapons[] = { "hgun_P07_snds_F" };
 
     /* Jail System Configurations */
     jail_seize_vItems[] = { "spikeStrip","lockpick","goldbar","blastingcharge","boltcutter","defusekit","heroin_unprocessed","heroin_processed","cannabis","marijuana","cocaine_unprocessed","cocaine_processed","turtle_raw" }; //Define VIRTUAL items you want to be removed from players upon jailing here. Use "jail_seize_inventory" for Arma inventory items.
@@ -106,6 +106,9 @@ class Life_Settings {
     revive_east = false; //true to enable opfor the ability to revive everyone or false for only medics/ems or medic/ems/cops.
     revive_fee = 3500; //Revive fee that players have to pay and medics only EMS(independent) are rewarded with this amount.
     hospital_heal_fee = 1500; //Fee to heal at a hospital NPC
+    /*Custom Code by Wolfe*/
+    /*Medic Gear*/
+    medic_allowed_items[] = {"U_Rangemaster","FirstAidKit", "Rangemaster_belt","ItemWatch","ItemCompass","ItemMap"};
 
     /* Paycheck & Bank System Configurations */
     bank_cop = 2500000; //Amount of cash in bank for new cops
@@ -122,9 +125,10 @@ class Life_Settings {
     /* Player Job System Configurations */
     delivery_points[] = { "dp_1", "dp_2", "dp_3", "dp_4", "dp_5", "dp_6", "dp_7", "dp_8", "dp_9", "dp_10", "dp_11", "dp_12", "dp_13", "dp_14", "dp_15", "dp_15", "dp_16", "dp_17", "dp_18", "dp_19", "dp_20", "dp_21", "dp_22", "dp_23", "dp_24", "dp_25" };
     fuelTank_winMultiplier = 1; //Win Multiplier in FuelTank Missions. Increase for greater payout. Default = 1
-
+    robberyMarkers = true;  //Ability to use markers or not use markers for Gas Station Robberys. Default: true
+    
     /* Search & Seizure System Configurations */
-    seize_exempt[] = {"hgun_PDW2000_F", "SMG_05_F", "hgun_Pistol_heavy_02_F", "hgun_Pistol_01_F", "hgun_Rook40_F", "hgun_ACPC2_F", "Binocular", "ItemWatch", "ItemCompass", "ItemGPS", "ItemMap", "NVGoggles", "FirstAidKit", "ToolKit", "Chemlight_red", "Chemlight_yellow", "Chemlight_green", "Chemlight_blue", "optic_ACO_grn_smg" }; //Arma items that will not get seized from player inventories
+    seize_exempt[] = {"arifle_Mk20_F", "arifle_SPAR_01_blk_F", "arifle_TRG21_F", "hgun_PDW2000_F", "hgun_Pistol_heavy_01_F", "srifle_DMR_06_camo_F", "srifle_DMR_06_olive_F", "hgun_PDW2000_F", "SMG_05_F", "hgun_Pistol_heavy_02_F", "hgun_Pistol_01_F", "hgun_Rook40_F", "hgun_ACPC2_F", "Binocular", "ItemWatch", "ItemCompass", "ItemGPS", "ItemMap", "NVGoggles", "FirstAidKit", "ToolKit", "Chemlight_red", "Chemlight_yellow", "Chemlight_green", "Chemlight_blue", "optic_ACO_grn_smg", "SMG_01_F", "optic_Holosight_smg" }; //Arma items that will not get seized from player inventories
     seize_uniform[] = { "U_Rangemaster" }; //Any specific uniforms you want to be seized from players
     seize_vest[] = { "V_TacVest_blk_POLICE" }; //Any specific vests you want to be seized from players
     seize_headgear[] = { "H_Cap_police" }; //Any hats or helmets you want seized from players
@@ -269,6 +273,8 @@ class Life_Settings {
         {"STR_Crime_106M","2500","106M"},//Class 1 Drug Paraphernalia	//No Aggravated Crime
         {"STR_Crime_107M","1500","107M"}//Class 2 Drug Paraphernalia	//No Aggravated Crime
     };
+
+
 };
 
 #include "Config_Clothing.hpp"

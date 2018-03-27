@@ -39,3 +39,4 @@ if (life_is_alive && !life_is_arrested) then {
 };
 life_is_alive = true;
 [] call life_fnc_initPayChecks;
+setObjectViewDistance[3000,500];

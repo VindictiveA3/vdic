@@ -14,7 +14,7 @@ if (!isNil {_vehicle getVariable "fuelTankWork"}) exitWith {titleText[localize "
 closeDialog 0;
 life_action_inUse = true;
 if (isNil {_vehicle getVariable "fuelTank"}) then{
-    _fuelSpace = getNumber(missionConfigFile >> "LifeCfgVehicles" >> (typeOf _vehicle) >> "vFuelSpace");
+    _fuelSpace = getNumber(missionConfigFile >> "LifeCfgVehicles" >> (typeOf _vehicle) >> "vFuelSpace");// can added talent here to allow more fuel in truck
     _fuelState = 0;
     _vehicle setVariable ["fuelTank",[_fuelSpace,_fuelState],true];
 }else{
@@ -41,7 +41,7 @@ waitUntil {
     if (isNil {_vehicle getVariable "fuelTankWork"}) exitWith {titleText[localize "STR_FuelTank_Stopped","PLAIN"]; true};
     if (player distance _vehicle > 20) exitWith {titleText[localize "STR_FuelTank_Stopped","PLAIN"]; true};
 
-    _fuelState = _fuelState + 100;
+    _fuelState = _fuelState + 100;// add talent here to fuel faster
     _vehicle setVariable ["fuelTank",[_fuelSpace,_fuelState],true];
     _fuelLevel = (1 / _fuelSpace) * _fuelState;
 

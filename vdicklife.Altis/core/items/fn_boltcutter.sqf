@@ -52,10 +52,10 @@ _progressBar progressSetPosition 0.01;
 _cP = 0.01;
 
 switch (typeOf _building) do {
-    case "Land_Dome_Big_F": {_cpRate = 0.003;};
+    case "Land_Dome_Big_F": {_cpRate = 0.003;}; // other option for mavrick tallent for fed breaking this is the dome covering the vault
     case "Land_Medevac_house_V1_F";
-    case "Land_Research_house_V1_F": {_cpRate = 0.0015;};
-    default {_cpRate = 0.08;}
+    case "Land_Research_house_V1_F": {_cpRate = 0.0015;}; //Maverick talent to breaking into fed quicker (this is the inside door right before the vault)
+    default {_cpRate = 0.08;} // this line is for general boltvutting like player houses or other thing requiring boltcutters
 };
 
 for "_i" from 0 to 1 step 0 do {
@@ -71,7 +71,7 @@ for "_i" from 0 to 1 step 0 do {
         _progressBar = _ui displayCtrl 38201;
         _titleText = _ui displayCtrl 38202;
     };
-    _cP = _cP + _cpRate;
+    _cP = _cP + _cpRate; 
     _progressBar progressSetPosition _cP;
     _titleText ctrlSetText format ["%3 (%1%2)...",round(_cP * 100),"%",_title];
     if (_cP >= 1 || !alive player) exitWith {};
@@ -96,9 +96,12 @@ if (life_boltcutter_uses >= 5) then {
 
 _building setVariable [format ["bis_disabled_Door_%1",_door],0,true]; //Unlock the door.
 _building setVariable ["locked",false,true];
-
+// add experienc here for sucessful bolt cutting
 if (life_HC_isActive) then {
     [getPlayerUID player,profileName,"63F"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
 } else {
     [getPlayerUID player,profileName,"63F"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
 };
+
+
+//also do some checks here to see if it was fed and add other charges if it is fed

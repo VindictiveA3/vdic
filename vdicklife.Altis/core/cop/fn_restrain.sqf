@@ -31,7 +31,8 @@ if (isNull _cop) exitWith {};
 };
 
 titleText[format [localize "STR_Cop_Restrained",_cop getVariable ["realname",name _cop]],"PLAIN"];
-
+[_player,"cuffs"] remoteExec ["life_fnc_say3D",RANY];
+[_cop,"cuffs"] remoteExec ["life_fnc_say3D",RANY];
 life_disable_getIn = true;
 life_disable_getOut = false;
 

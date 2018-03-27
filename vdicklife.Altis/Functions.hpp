@@ -71,6 +71,7 @@ class Life_Client_Core {
         class surrender {};
         class ticketAction {};
         class unrestrain {};
+        class robShops {};
     };
 
     class Admin {
@@ -89,6 +90,19 @@ class Life_Client_Core {
         class adminTeleport {};
         class adminTpHere {};
     };
+
+    class CivTieing {
+		file = "core\civilian\CivTieing";
+		class gagAction {};					
+		class gagged {};
+		class removeGagAction {};
+		class tieing {};
+		class tieingAction {};
+		class tieingActionb {};
+		class tieingb {};
+		class untie {};
+		class untieb {};
+	};
 
     class Civilian {
         file = "core\civilian";
@@ -272,6 +286,9 @@ class Life_Client_Core {
         class placestorage {};
         class spikeStrip {};
         class storageBox {};
+        class weed {};
+        class cocaine {}; 
+        class Heroin {}; 
     };
 
     class Medical_System {

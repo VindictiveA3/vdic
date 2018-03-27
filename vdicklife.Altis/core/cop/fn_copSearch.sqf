@@ -39,7 +39,7 @@ if (count _invs > 0) then {
         } else {
             [getPlayerUID _civ,_civ getVariable ["realname",name _civ],"103F"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
         };
-
+            
     };
 
     if (life_HC_isActive) then {
@@ -49,8 +49,29 @@ if (count _invs > 0) then {
     };
 
     [0,"STR_Cop_Contraband",true,[(_civ getVariable ["realname",name _civ]),[_illegal] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",west];
+     
 } else {
     _inv = localize "STR_Cop_NoIllegal";
+};
+
+if ( _illegal > 1536000) then {["CopSearch9"] spawn mav_ttm_fnc_addExp;} else {
+    if (_illegal > 768000) then {["CopSearch8"] spawn mav_ttm_fnc_addExp;} else {
+        if (_illegal > 384000) then {["CopSearch7"] spawn mav_ttm_fnc_addExp;} else {
+            if (_illegal > 192000) then {["CopSearch6"] spawn mav_ttm_fnc_addExp;} else {
+                if (_illegal > 96000) then {["CopSearch5"] spawn mav_ttm_fnc_addExp;} else {
+                    if (_illegal > 48000) then {["CopSearch4"] spawn mav_ttm_fnc_addExp;}else {
+                        if (_illegal > 24000) then {["CopSearch3"] spawn mav_ttm_fnc_addExp;} else {
+                            if (_illegal > 12000) then {["CopSearch2"] spawn mav_ttm_fnc_addExp;} else {
+                                if (_illegal > 6000) then {["CopSearch1"] spawn mav_ttm_fnc_addExp;} else {
+                                   if(_illegal > 1)then{["CopSearch"] spawn mav_ttm_fnc_addExp;};
+                                };
+                            };
+                        };
+                    };
+                };
+            };
+        };
+    };
 };
 
 if (!alive _civ || player distance _civ > 5) exitWith {hint format [localize "STR_Cop_CouldntSearch",_civ getVariable ["realname",name _civ]]};
@@ -61,3 +82,4 @@ hint parseText format ["<t color='#FF0000'><t size='2'>%1</t></t><br/><t color='
 if (_robber) then {
     [0,"STR_Cop_Robber",true,[(_civ getVariable ["realname",name _civ])]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 };
+
