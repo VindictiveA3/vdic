@@ -27,7 +27,7 @@ _kassa = 5000 + round(random 40000);
 _shop removeAction _action;
 _chance = random(100);  // change this to a lower number, if you want the chance of getting money from the Robbery less.
 
-if(_chance >=40) then {
+if(_chance >= 40) then {
 [1,format["000 ALERT:\n\n%1 is being robbed by %2",_shop,_robber, name _robber]] remoteExec ["life_fnc_broadcast",west]
 };
 
