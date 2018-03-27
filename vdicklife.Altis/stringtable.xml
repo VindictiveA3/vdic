@@ -7249,6 +7249,9 @@
          <Key ID="STR_License_news">
             <Original>Channel 7 News License</Original>
         </Key>
+        <Key ID="STR_License_cor">
+            <Original>Council Of Ryan's</Original>
+        </Key>        
 
     </Package>
     <Package name="More_Item_Strings">
