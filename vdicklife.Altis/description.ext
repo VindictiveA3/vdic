@@ -105,6 +105,12 @@ class CfgSounds {
         titles[] = {};
     };
 
+    class bombdefuse {
+        name = "bombdefuse";
+        sound[] = {"\sounds\BombDefuse.ogg", 0.75, 1};
+        titles[] = {};
+    };
+
 };
 
 

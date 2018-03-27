@@ -40,7 +40,7 @@ for "_i" from 0 to 1 step 0 do {
     };
 
     uiSleep .15;
-    _cP = _cP + .01;
+    _cP = _cP + (0.01 * (missionNamespace getVariable ["mav_ttm_var_ReviveMultiplier", 1]));
     _progressBar progressSetPosition _cP;
     _titleText ctrlSetText format ["%3 (%1%2)...",round(_cP * 100),"%",_title];
     if (_cP >= 1 || !alive player) exitWith {};

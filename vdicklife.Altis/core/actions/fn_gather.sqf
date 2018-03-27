@@ -49,7 +49,8 @@ if (_requiredItem != "") then {
 
 if (_exit) exitWith {life_action_inUse = false;};
 
-_amount = round(random(_maxGather)) + 1;
+_amountBT = round(random(_maxGather)) + 1;
+_amount = _amountBT * (missionNamespace getVariable ["mav_ttm_var_gather_increase", 1]);
 _diff = [_resource,_amount,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if (_diff isEqualTo 0) exitWith {
     hint localize "STR_NOTF_InvFull";
@@ -64,7 +65,7 @@ switch (_requiredItem) do {
 for "_i" from 0 to 4 do {
     player playMoveNow "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
     waitUntil{animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";};
-    sleep 1;
+    sleep (1 * (missionNamespace getVariable ["mav_ttm_var_gather_speed_increase", 1]));
 };
 
 if ([true,_resource,_diff] call life_fnc_handleInv) then {

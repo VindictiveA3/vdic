@@ -23,7 +23,7 @@ if!(alive _robber) exitWith {};
 if (currentWeapon _robber isEqualTo "") exitWith {hint "You need a weapons to rob this shop!";};
 
 _rip = true;
-_kassa = 5000 + round(random 50000);
+_kassa = 5000 + round(random 40000);
 _shop removeAction _action;
 _chance = random(100);  // change this to a lower number, if you want the chance of getting money from the Robbery less.
 
@@ -72,15 +72,14 @@ if(_rip) then
         [getPlayerUID _robber, _robber getVariable ["realname",name _robber], "211"] remoteExecCall ["life_fnc_wantedAdd", RSERV];
         };
         5 cutText ["","PLAIN"];
-
-        titleText[format["You managed to steal %1, now get away before the cops arrive!",[_kassa] call life_fnc_numberText], "PLAIN"];
-        life_cash = life_cash + _kassa;// use this var to do mav talent
-        deleteMarker "Marker200";
+        _kassaPerk = _kassa * (missionNamespace getVariable ["mav_ttm_var_RobStoreCashMultiplier", 1]);
+        titleText[format["You managed to steal %1, now get away before the cops arrive!",[_kassaPerk] call life_fnc_numberText], "PLAIN"];
+        life_cash = life_cash + _kassaPerk;
         _rip = false;
         life_use_atm = false;
         playSound3D ["A3\Sounds_F\sfx\alarm_independent.wss", _robber];
         sleep 25;
-        [1, format["Altis News Corp: Gas Staion %1 was robbed for a total of $%2",_shop, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast", civilian];
+        [1, format["Altis News Corp: Gas Staion %1 was robbed for a total of $%2",_shop, [_kassaPerk] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast", civilian];
         sleep ((LIFE_SETTINGS(getNumber,"noatm_timer")) * 60);
         life_use_atm = true;
         if!(alive _robber) exitWith {};
