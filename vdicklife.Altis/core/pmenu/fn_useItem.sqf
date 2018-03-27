@@ -39,6 +39,7 @@ switch (true) do {
                     player enableFatigue false;
                     waitUntil {!alive player || ((time - life_cocaine_effect) > (10 * 60))};
                     player enableFatigue true;
+                    player setFatigue 1;
                  };
              };
         };
@@ -98,6 +99,11 @@ switch (true) do {
     if(([false,_item,1] call life_fnc_handleInv)) then 
         { 
         [] spawn life_fnc_weed; 
+           [] spawn {
+                 for "_i" from 0 to 38 do{
+                 life_hunger = life_hunger - 2;
+                    };
+                };
         }; 
    }; 
  

@@ -14,7 +14,7 @@ class perk_gunsspecialist_lessRecoil_1 {
 	subtitle = "Level 5 Required, 5 Perk Points";
 	description = "Learn to control weapons better and lower the noticable recoil<br/><br/><t color='#10FF45'>-5% less recoil</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_recoilCompensation_1.sqf";
-	limitToSides[] = {};
+	limitToSides[] = {"CIV","WEST"};
 	color[] = {1,1,1,1};
 };
 
@@ -26,7 +26,7 @@ class perk_gunsspecialist_lessRecoil_2 {
 	subtitle = "Level 16 Required, 6 Perk Points";
 	description = "Learn to control weapons better and lower the noticable recoil<br/><br/><t color='#10FF45'>-10% less recoil</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_recoilCompensation_2.sqf";
-	limitToSides[] = {};
+	limitToSides[] = {"CIV","WEST"};
 	color[] = {1,1,1,1};
 };
 
@@ -38,7 +38,7 @@ class perk_gunsspecialist_lessRecoil_3 {
 	subtitle = "Level 25 Required, 7 Perk Points";
 	description = "Learn to control weapons better and lower the noticable recoil<br/><br/><t color='#10FF45'>-20% less recoil</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_recoilCompensation_3.sqf";
-	limitToSides[] = {};
+	limitToSides[] = {"CIV","WEST"};
 	color[] = {1,1,1,1};
 };
 
@@ -84,7 +84,7 @@ class perk_processing_1 {
 	displayName = "Processing Speed";
 	requiredPerkPoints = 3;
 	requiredLevel = 4;
-	requiredPerk = "";
+	requiredPerk = "perk_gatherspeed_2";
 	subtitle = "Level 4 Required, 3 Perk Points";
 	description = "Learn to process materials more efficiently<br/><br/><t color='#10FF45'>+10% faster processing</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_processSpeed_1.sqf";
@@ -415,4 +415,41 @@ class perk_processamount_3{
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_Process_amount_3.sqf";
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
+};
+
+	//Cop Bomb Defuse
+class perk_defuse_1 {
+	displayName = "Defuse 1";
+	requiredPerkPoints = 5;
+	requiredLevel = 2;
+	requiredPerk = "";
+	subtitle = "Level 2 Required, 5 Perk Points";
+	description = "Learn to disarm explosives faster<br/><br/><t color='#10FF45'>+10% faster Defusing</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_DefuseSpeed_1.sqf";
+	limitToSides[] = {"WEST"};
+	color[] = {0.294,0.294,0.956,1};
+};
+
+class perk_defuse_2 {
+	displayName = "Defuse 2";
+	requiredPerkPoints = 6;
+	requiredLevel = 3;
+	requiredPerk = "perk_defuse_1";
+	subtitle = "Level 3 Required, 6 Perk Points";
+	description = "Learn to disarm explosives faster<br/><br/><t color='#10FF45'>+15% faster Defusing</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_DefuseSpeed_2.sqf";
+	limitToSides[] = {"WEST"};
+	color[] = {0.294,0.294,0.956,1};
+};
+
+class perk_defuse_3 {
+	displayName = "Defuse 3";
+	requiredPerkPoints = 4;
+	requiredLevel = 9;
+	requiredPerk = "perk_defuse_2";
+	subtitle = "Level 9 Required, 4 Perk Points";
+	description = "Learn to disarm explosives faster<br/><br/><t color='#10FF45'>+25% faster Defusing</t>";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_DefuseSpeed_3.sqf";
+	limitToSides[] = {"WEST"};
+	color[] = {0.294,0.294,0.956,1};
 };

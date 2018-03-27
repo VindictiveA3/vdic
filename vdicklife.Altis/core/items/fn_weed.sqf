@@ -35,7 +35,6 @@ for "_i" from 0 to 44 do
     "radialBlur" ppEffectCommit 1;
     addcamShake[random 3, 1, random 3];
     sleep 1;
-    life_hunger = life_hunger - 2;
 };
 
 //Stop effects

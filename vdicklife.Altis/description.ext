@@ -111,6 +111,12 @@ class CfgSounds {
         titles[] = {};
     };
 
+     class weedhit {
+        name = "weedhit";
+        sound[] = {"\sounds\weedhit.ogg", 0.75, 1};
+        titles[] = {};
+    };
+
 };
 
 

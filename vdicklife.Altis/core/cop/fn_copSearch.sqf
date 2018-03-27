@@ -63,7 +63,7 @@ if ( _illegal > 1536000) then {["CopSearch9"] spawn mav_ttm_fnc_addExp;} else {
                         if (_illegal > 24000) then {["CopSearch3"] spawn mav_ttm_fnc_addExp;} else {
                             if (_illegal > 12000) then {["CopSearch2"] spawn mav_ttm_fnc_addExp;} else {
                                 if (_illegal > 6000) then {["CopSearch1"] spawn mav_ttm_fnc_addExp;} else {
-                                    ["CopSearch"] spawn mav_ttm_fnc_addExp;
+                                   if(_illegal > 1)then{["CopSearch"] spawn mav_ttm_fnc_addExp;};
                                 };
                             };
                         };

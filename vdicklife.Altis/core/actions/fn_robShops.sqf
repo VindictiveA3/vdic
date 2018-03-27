@@ -47,7 +47,7 @@ if(_rip) then
             sleep 0.85;
             _cP = _cP + 0.01;// mav function to rob faster
             _progress progressSetPosition _cP;
-            _pgText ctrlSetText format ["Robbing Shop, stay close (3m)  (%1%2)...",round(_cP * 100), "%"];
+            _pgText ctrlSetText format ["Robbing Shop, stay close (5m)  (%1%2)...",round(_cP * 100), "%"];
 
              if (LIFE_SETTINGS(getNumber,"robberyMarkers") isEqualTo 1) then {
                 _marker = createMarker ["Marker200", _shop];
@@ -57,7 +57,7 @@ if(_rip) then
                 };
 
             if(_cP >=1) exitWith {};
-            if(_robber distance _shop > 3.5) exitWith{};
+            if(_robber distance _shop > 5.5) exitWith{};
             if!(alive _robber) exitWith {};
         };
 
@@ -84,6 +84,7 @@ if(_rip) then
         life_use_atm = true;
         if!(alive _robber) exitWith {};
         [getPlayerUID _robber, _robber getVariable ["realname",name _robber], "53FA"] remoteExecCall ["life_fnc_wantedAdd", RSERV];
+        _marker = deleteMarker "Marker200";
         call SOCK_fnc_updatePartial;
         };
 sleep 300; //5 Minutes
