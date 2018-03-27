@@ -93,13 +93,17 @@ switch (true) do {
         closeDialog 0;
     };
 
-        case (_item isEqualTo "marijuana"): 
+   case (_item isEqualTo "marijuana"): 
   { 
     if(([false,_item,1] call life_fnc_handleInv)) then 
-    { 
+        { 
         [] spawn life_fnc_weed; 
-    }; 
-  }; 
+             for "_i" from 0 to 9 do{
+            life_hunger = life_hunger -10;
+            sleep 60;
+            };
+        }; 
+   }; 
  
   case (_item isEqualTo "heroin_processed"): 
   { 
