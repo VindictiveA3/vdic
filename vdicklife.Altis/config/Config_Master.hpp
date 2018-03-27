@@ -18,7 +18,7 @@ class Life_Settings {
 /* Database Related Settings */
     /* Player Data Saving */
     save_virtualItems = true; //Save Virtual items (all sides)?
-    saved_virtualItems[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" }; //Array of virtual items that can be saved on your player.
+    saved_virtualItems[] = { "zipties","blindfold","pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" }; //Array of virtual items that can be saved on your player.
     save_playerStats = true; //Save food, water and damage (all sides)?
     save_civilian_weapons = true; //Allow civilians to save weapons on them?
     save_civilian_position = true; //Save civilian location?
@@ -28,7 +28,7 @@ class Life_Settings {
 
     /* Vehicle Data Saving */
     save_vehicle_virtualItems = true; //Save virtual items inside the vehicle (all sides)(-- See defined items on next line --)
-    save_vehicle_items[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" };
+    save_vehicle_items[] = { "zipties","blindfold","pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" };
     save_vehicle_inventory = true; //Save Arma inventory of vehicle to the database
     save_vehicle_fuel = true; //Save vehicle fuel level to the database (Impounded/Garaged).
     save_vehicle_damage = true; //Save vehicle damage to the database.
