@@ -16,7 +16,7 @@ player addItem "FirstAidKit";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player [true,"defibrillator",1] call life_fnc_handleInv; 
+[true,"defibrillator",1] call life_fnc_handleInv; 
 
 
 [] call life_fnc_playerSkins;
