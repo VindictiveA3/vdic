@@ -124,7 +124,7 @@ class Life_Settings {
     fuelTank_winMultiplier = 1; //Win Multiplier in FuelTank Missions. Increase for greater payout. Default = 1
 
     /* Search & Seizure System Configurations */
-    seize_exempt[] = {"hgun_PDW2000_F", "SMG_05_F", "hgun_Pistol_heavy_02_F", "hgun_Pistol_01_F", "hgun_Rook40_F", "hgun_ACPC2_F", "Binocular", "ItemWatch", "ItemCompass", "ItemGPS", "ItemMap", "NVGoggles", "FirstAidKit", "ToolKit", "Chemlight_red", "Chemlight_yellow", "Chemlight_green", "Chemlight_blue", "optic_ACO_grn_smg" }; //Arma items that will not get seized from player inventories
+    seize_exempt[] = {"arifle_Mk20_MRCO_F", "arifle_SPAR_01_blk_F", "arifle_TRG21_F", "hgun_PDW2000_F", "hgun_Pistol_heavy_01_F", "srifle_DMR_06_camo_F", "srifle_DMR_06_olive_F", "hgun_PDW2000_F", "SMG_05_F", "hgun_Pistol_heavy_02_F", "hgun_Pistol_01_F", "hgun_Rook40_F", "hgun_ACPC2_F", "Binocular", "ItemWatch", "ItemCompass", "ItemGPS", "ItemMap", "NVGoggles", "FirstAidKit", "ToolKit", "Chemlight_red", "Chemlight_yellow", "Chemlight_green", "Chemlight_blue", "optic_ACO_grn_smg", "SMG_01_F", "optic_Holosight_smg" }; //Arma items that will not get seized from player inventories
     seize_uniform[] = { "U_Rangemaster" }; //Any specific uniforms you want to be seized from players
     seize_vest[] = { "V_TacVest_blk_POLICE" }; //Any specific vests you want to be seized from players
     seize_headgear[] = { "H_Cap_police" }; //Any hats or helmets you want seized from players
