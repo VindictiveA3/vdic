@@ -98,10 +98,6 @@ switch (true) do {
     if(([false,_item,1] call life_fnc_handleInv)) then 
         { 
         [] spawn life_fnc_weed; 
-             for "_i" from 0 to 9 do{
-            life_hunger = life_hunger -10;
-            sleep 60;
-            };
         }; 
    }; 
  
