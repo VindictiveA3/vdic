@@ -28,7 +28,7 @@ _shop removeAction _action;
 _chance = random(100);  // change this to a lower number, if you want the chance of getting money from the Robbery less.
 
 if(_chance >=40) then {
-[1,format["000 ALERT:\n\n%1 is being robbed by %2",_shop,_robber, name _robber]] remoteExec ["life_fnc_broadcast",west]
+[1,format["000 ALERT:\n\n%1 is being robbed by %2",_shop,_robber, profilename _robber]] remoteExec ["life_fnc_broadcast",west]
 };
 
 disableSerialization;
@@ -69,7 +69,7 @@ if(_rip) then
         hint "You need to stay within 5m to rob this shop! Cash register is now locked, and police have been notified!";
         5 cutText ["","PLAIN"];
         [1,format["%1 attempted to rob %2!",_robber,name _robber, _shop]] remoteExec ["life_fnc_broadcast",west];
-        [getPlayerUID _robber, _robber getVariable ["realname",name _robber], "211"] remoteExecCall ["life_fnc_wantedAdd", RSERV];
+        [getPlayerUID _robber, _robber getVariable ["realname",profilename _robber], "53FA"] remoteExecCall ["life_fnc_wantedAdd", RSERV];
         };
         5 cutText ["","PLAIN"];
         _kassaPerk = _kassa * (missionNamespace getVariable ["mav_ttm_var_RobStoreCashMultiplier", 1]);
@@ -78,13 +78,13 @@ if(_rip) then
         _rip = false;
         life_use_atm = false;
         playSound3D ["A3\Sounds_F\sfx\alarm_independent.wss", _robber];
+        _marker = deleteMarker "Marker200";
         sleep 25;
         [1, format["Altis News Corp: Gas Staion %1 was robbed for a total of $%2",_shop, [_kassaPerk] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast", civilian];
         sleep ((LIFE_SETTINGS(getNumber,"noatm_timer")) * 60);
         life_use_atm = true;
         if!(alive _robber) exitWith {};
-        [getPlayerUID _robber, _robber getVariable ["realname",name _robber], "53FA"] remoteExecCall ["life_fnc_wantedAdd", RSERV];
-        _marker = deleteMarker "Marker200";
+        [getPlayerUID _robber, _robber getVariable ["realname",profilename _robber], "53FA"] remoteExecCall ["life_fnc_wantedAdd", RSERV];
         call SOCK_fnc_updatePartial;
         };
 sleep 300; //5 Minutes

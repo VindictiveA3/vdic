@@ -343,7 +343,7 @@ class perk_gatheramount_3{
 
 // increase gather speed
 class perk_gatherspeed_1{
-	displayName = "Gather  Speed";
+	displayName = "Gather Speed";
 	requiredPerkPoints = 3;
 	requiredLevel = 5;
 	requiredPerk = "";
@@ -355,7 +355,7 @@ class perk_gatherspeed_1{
 };
 
 class perk_gatherspeed_2{
-	displayName = "Gather  Speed 2";
+	displayName = "Gather Speed 2";
 	requiredPerkPoints = 6;
 	requiredLevel = 10;
 	requiredPerk = "perk_gatherspeed_1";
@@ -368,7 +368,7 @@ class perk_gatherspeed_2{
 
 
 class perk_gatherspeed_3{
-	displayName = "Gather  Speed 3";
+	displayName = "Gather Speed 3";
 	requiredPerkPoints = 9;
 	requiredLevel = 15;
 	requiredPerk = "perk_gatherspeed_2";
