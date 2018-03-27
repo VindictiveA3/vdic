@@ -106,6 +106,9 @@ class Life_Settings {
     revive_east = false; //true to enable opfor the ability to revive everyone or false for only medics/ems or medic/ems/cops.
     revive_fee = 3500; //Revive fee that players have to pay and medics only EMS(independent) are rewarded with this amount.
     hospital_heal_fee = 1500; //Fee to heal at a hospital NPC
+    /*Custom Code by Wolfe*/
+    /*Medic Gear*/
+    medic_allowed_items[] = {"U_Rangemaster","FirstAidKit", "Rangemaster_belt","ItemWatch","ItemCompass","ItemMap"};
 
     /* Paycheck & Bank System Configurations */
     bank_cop = 2500000; //Amount of cash in bank for new cops
@@ -122,7 +125,8 @@ class Life_Settings {
     /* Player Job System Configurations */
     delivery_points[] = { "dp_1", "dp_2", "dp_3", "dp_4", "dp_5", "dp_6", "dp_7", "dp_8", "dp_9", "dp_10", "dp_11", "dp_12", "dp_13", "dp_14", "dp_15", "dp_15", "dp_16", "dp_17", "dp_18", "dp_19", "dp_20", "dp_21", "dp_22", "dp_23", "dp_24", "dp_25" };
     fuelTank_winMultiplier = 1; //Win Multiplier in FuelTank Missions. Increase for greater payout. Default = 1
-
+    robberyMarkers = true;  //Ability to use markers or not use markers for Gas Station Robberys. Default: true
+    
     /* Search & Seizure System Configurations */
     seize_exempt[] = {"arifle_Mk20_F", "arifle_SPAR_01_blk_F", "arifle_TRG21_F", "hgun_PDW2000_F", "hgun_Pistol_heavy_01_F", "srifle_DMR_06_camo_F", "srifle_DMR_06_olive_F", "hgun_PDW2000_F", "SMG_05_F", "hgun_Pistol_heavy_02_F", "hgun_Pistol_01_F", "hgun_Rook40_F", "hgun_ACPC2_F", "Binocular", "ItemWatch", "ItemCompass", "ItemGPS", "ItemMap", "NVGoggles", "FirstAidKit", "ToolKit", "Chemlight_red", "Chemlight_yellow", "Chemlight_green", "Chemlight_blue", "optic_ACO_grn_smg", "SMG_01_F", "optic_Holosight_smg" }; //Arma items that will not get seized from player inventories
     seize_uniform[] = { "U_Rangemaster" }; //Any specific uniforms you want to be seized from players
@@ -270,9 +274,7 @@ class Life_Settings {
         {"STR_Crime_107M","1500","107M"}//Class 2 Drug Paraphernalia	//No Aggravated Crime
     };
 
-/*Custom Code by Wolfe*/
-    /*Medic Gear*/
-    medic_allowed_items[] = {"U_Rangemaster","FirstAidKit", "Rangemaster_belt","ItemWatch","ItemCompass","ItemMap"};
+
 };
 
 #include "Config_Clothing.hpp"

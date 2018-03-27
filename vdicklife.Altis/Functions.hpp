@@ -71,6 +71,7 @@ class Life_Client_Core {
         class surrender {};
         class ticketAction {};
         class unrestrain {};
+        class robShops {};
     };
 
     class Admin {
