@@ -1,3 +1,10 @@
+//medic Color rgba   0.878,0.298,0.298,1
+// medic side  GUER
+// cop Color  RGBA	 0.294,0.294,0.956,1
+//Cop side is WEST
+//CIV COLOR RGBA 	 1,1,1,1
+//Civ side is CIV
+
 // -- Weapon related perks
 class perk_gunsspecialist_lessRecoil_1 {
 	displayName = "Recoil Compensation";

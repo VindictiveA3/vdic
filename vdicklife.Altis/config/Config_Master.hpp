@@ -92,7 +92,7 @@ class Life_Settings {
     restrict_clothingPickup = true; //Set to false to allow civilians to pickup/take any uniform (ground/crates/vehicles)
     restrict_weaponPickup = true; //Set to false to allow civilians to pickup/take any weapon (ground/crates/vehicles)
     restricted_uniforms[] = { "U_Rangemaster", "U_B_CombatUniform_mcam_tshirt", "U_B_CombatUniform_mcam_worn", "U_B_survival_uniform" };
-    restricted_weapons[] = { "hgun_P07_snds_F", "arifle_SPAR_01_blk_F", "arifle_MXC_Black_F", "arifle_MX_Black_F", "arifle_SPAR_03_blk_F", "srifle_DMR_02_F", "arifle_MX_GL_Black_F", "LMG_Mk200_BI_F", "srifle_DMR_07_blk_F" };
+    restricted_weapons[] = { "hgun_P07_snds_F" };
 
     /* Jail System Configurations */
     jail_seize_vItems[] = { "spikeStrip","lockpick","goldbar","blastingcharge","boltcutter","defusekit","heroin_unprocessed","heroin_processed","cannabis","marijuana","cocaine_unprocessed","cocaine_processed","turtle_raw" }; //Define VIRTUAL items you want to be removed from players upon jailing here. Use "jail_seize_inventory" for Arma inventory items.
