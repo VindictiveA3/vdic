@@ -102,6 +102,7 @@ switch (true) do {
            [] spawn {
                  for "_i" from 0 to 38 do{
                  life_hunger = life_hunger - 2;
+                 [] call life_fnc_hudUpdate;
                     };
                 };
         }; 

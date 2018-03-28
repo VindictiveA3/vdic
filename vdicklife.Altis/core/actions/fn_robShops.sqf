@@ -85,7 +85,7 @@ if(_rip) then
         life_use_atm = true;
         if!(alive _robber) exitWith {};
         [getPlayerUID _robber, _robber getVariable ["realname",name _robber], "53FA"] remoteExecCall ["life_fnc_wantedAdd", RSERV];
-        call SOCK_fnc_updatePartial;
+       // call SOCK_fnc_updatePartial;
         };
 sleep 300; //5 Minutes
 _action = _shop addAction["Rob Shop",life_fnc_robShops,civilian];
