@@ -22,9 +22,7 @@ switch (playerSide) do {
     };
     
     //Cops
-    case west: {
-  
-    };
+    case west: { };
     //EMS
     case independent: { };
 

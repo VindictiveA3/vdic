@@ -16,12 +16,12 @@
 #define Btn8 37457
 #define Title 37401
 
-private ["_display","_curTarget","_seizeRank","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8"];
+private ["_display","_curTarget","_seizeRank","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8","_page"];
 
 disableSerialization;
 _curTarget = param [0,objNull,[objNull]];
 _seizeRank = LIFE_SETTINGS(getNumber,"seize_minimum_rank");
-
+_page = param [1,1,[0]];
 if (player getVariable ["Escorting", false]) then {
     if (isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
     if (!isPlayer _curTarget && side _curTarget isEqualTo civilian) exitWith {closeDialog 0;}; //Bad side check?
@@ -42,54 +42,120 @@ _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
 life_pInact_curTarget = _curTarget;
-
+{ _x ctrlShow true; } forEach [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7,_Btn8];
+{ _x ctrlEnable true; } forEach [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7,_Btn8];
 switch (playerSide) do {
 	case west: {
-		if (player getVariable ["isEscorting",false]) then {
-			{ _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn3,_Btn5,_Btn6,_Btn7,_Btn8];
-		};
-			
-		//Set Unrestrain Button
-		_Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
-		_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
+		
+		switch (_page) do {
+			case 1: {
 
-		//Set Check Licenses Button
-		_Btn2 ctrlSetText localize "STR_pInAct_checkLicenses";
-		_Btn2 buttonSetAction "[player] remoteExecCall [""life_fnc_licenseCheck"",life_pInact_curTarget]; closeDialog 0;";
+				if (player getVariable ["isEscorting",false]) then {
+					{ _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn3,_Btn5,_Btn6,_Btn7,_Btn8];
+				};
+				
+					if ((_curTarget getVariable ["tied",false]) OR (_curTarget getVariable ["restrained", false])) then {
+								
+								_Btn1 ctrlEnable true;
+								_Btn4 ctrlEnable true;
+								_Btn7 ctrlEnable true;
 
-		//Set Search Button
-		_Btn3 ctrlSetText localize "STR_pInAct_SearchPlayer";
-		_Btn3 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_searchAction; closeDialog 0;";
+							} else {
 
-		//Set Escort Button
-		if (player getVariable ["isEscorting",false]) then {
-			_Btn4 ctrlSetText localize "STR_pInAct_StopEscort";
-			_Btn4 buttonSetAction "[] call life_fnc_stopEscorting; closeDialog 0;";
-		} else {
-			_Btn4 ctrlSetText localize "STR_pInAct_Escort";
-			_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
-		};
+								_Btn1 ctrlEnable false;
+								_Btn4 ctrlEnable false;
+								_Btn7 ctrlEnable false;
+							};
+				//Set Unrestrain Button
+					_Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
+					_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
 
-		//Set Ticket Button
-		_Btn5 ctrlSetText localize "STR_pInAct_TicketBtn";
-		_Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
+				//Set Check Licenses Button
+					_Btn2 ctrlSetText localize "STR_pInAct_checkLicenses";
+					_Btn2 buttonSetAction "[player] remoteExecCall [""life_fnc_licenseCheck"",life_pInact_curTarget]; closeDialog 0;";
 
-		_Btn6 ctrlSetText localize "STR_pInAct_Arrest";
-		_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_arrestAction; closeDialog 0;";
-		_Btn6 ctrlEnable false;
+				//Set Search Button
+					_Btn3 ctrlSetText localize "STR_pInAct_SearchPlayer";
+					_Btn3 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_searchAction; closeDialog 0;";
 
-		_Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
-		_Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
+				//Set Escort Button
 
-		//SeizeWeapons Button
-		_Btn8 ctrlSetText localize "STR_pInAct_Seize";
-		_Btn8 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_seizePlayerAction; closeDialog 0;";
+					if (player getVariable ["isEscorting",false]) then {
+						_Btn4 ctrlSetText localize "STR_pInAct_StopEscort";
+						_Btn4 buttonSetAction "[] call life_fnc_stopEscorting; closeDialog 0;";
+						_Btn4 ctrlEnable true;
+					} else {
+						_Btn4 ctrlSetText localize "STR_pInAct_Escort";
+						_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
+					};
 
-		if (FETCH_CONST(life_coplevel) < _seizeRank) then {_Btn8 ctrlEnable false;};
+				//Set Ticket Button
+					_Btn5 ctrlSetText localize "STR_pInAct_TicketBtn";
+					_Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
+							
+					_Btn6 ctrlSetText localize "STR_pInAct_Arrest";
+					_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_arrestAction; closeDialog 0;";
+					_Btn6 ctrlEnable false;
 
-		{
-			if ((player distance (getMarkerPos _x) <30)) exitWith { _Btn6 ctrlEnable true;};
-		} forEach LIFE_SETTINGS(getArray,"sendtoJail_locations");
+					_Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
+					_Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
+						
+					_Btn8 ctrlSetText localize "STR_pInAct_nxtpg";
+					_Btn8 buttonSetAction "[life_pInact_curTarget, 2] call life_fnc_copInteractionMenu ";	
+						
+					{
+						if ((player distance (getMarkerPos _x) <30)) exitWith { _Btn6 ctrlEnable true;};
+					} forEach LIFE_SETTINGS(getArray,"sendtoJail_locations");
+
+				};
+
+						
+
+				case 2:{
+						if ((_curTarget getVariable ["tied",false]) OR (_curTarget getVariable ["restrained", false])) then {
+								
+								_Btn1 ctrlEnable true;
+								_Btn2 ctrlEnable true;
+
+							} else {
+								
+								_Btn1 ctrlEnable false;
+								_Btn2 ctrlEnable false;
+
+							};
+
+						if (player getVariable ["isEscorting",false]) then {
+							{ _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7];
+						};
+				//SeizeWeapons Button
+    						_Btn1 ctrlSetText localize "STR_pInAct_Seize"; 
+							_Btn1 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_seizePlayerAction; closeDialog 0;";
+
+						if (FETCH_CONST(life_coplevel) < _seizeRank) then {_Btn1 ctrlEnable false;};
+
+				// Gag player to stop them from talking
+
+						if ((_curTarget getVariable ["gagged", false])) then {
+							_Btn2 ctrlSetText "Remove Gag";
+							_Btn2 buttonSetAction "[] call life_fnc_removeGagAction; closeDialog 0;";
+						} else {
+								_Btn2 ctrlSetText "Gag Person";
+								_Btn2 buttonSetAction "[] call life_fnc_gagAction; closeDialog 0;";
+						};
+
+							_Btn3 ctrlShow false;
+							_Btn4 ctrlShow false;
+							_Btn5 ctrlShow false;
+							_Btn6 ctrlShow false;
+							_Btn7 ctrlShow false;
+				//Go back to Page 1
+							_Btn8 ctrlSetText localize "STR_pInAct_nxtpg";
+							_Btn8 buttonSetAction "[life_pInact_curTarget, 1] call life_fnc_copInteractionMenu ";	
+					
+					
+
+				};
+			};	
 	};
 	
 	case civilian: {

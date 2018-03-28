@@ -8192,6 +8192,9 @@
         </Key>
     </Package>
     <Package name="Player_Interaction">
+       <Key ID="STR_pInAct_nxtpg">
+            <Original>Next Page</Original>
+       </Key>
         <Key ID="STR_pInAct_Title">
             <Original>Player Interaction Menu</Original>
             <Czech>Hráč Interakce Menu</Czech>
