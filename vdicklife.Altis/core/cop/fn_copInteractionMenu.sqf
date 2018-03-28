@@ -49,25 +49,24 @@ switch (playerSide) do {
 		
 		switch (_page) do {
 			case 1: {
+
 				if (player getVariable ["isEscorting",false]) then {
 					{ _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn3,_Btn5,_Btn6,_Btn7,_Btn8];
 				};
-				//Set Unrestrain Button
+				
 					if ((_curTarget getVariable ["tied",false]) OR (_curTarget getVariable ["restrained", false])) then {
-								_Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
-								_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
+								
 								_Btn1 ctrlEnable true;
 								_Btn4 ctrlEnable true;
 								_Btn7 ctrlEnable true;
-							} else{
-								_Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
-								_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
+
+							} else {
+
 								_Btn1 ctrlEnable false;
 								_Btn4 ctrlEnable false;
-								_Btn6 ctrlEnable false;
 								_Btn7 ctrlEnable false;
 							};
-					
+				//Set Unrestrain Button
 					_Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
 					_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
 
@@ -84,6 +83,7 @@ switch (playerSide) do {
 					if (player getVariable ["isEscorting",false]) then {
 						_Btn4 ctrlSetText localize "STR_pInAct_StopEscort";
 						_Btn4 buttonSetAction "[] call life_fnc_stopEscorting; closeDialog 0;";
+						_Btn4 ctrlEnable true;
 					} else {
 						_Btn4 ctrlSetText localize "STR_pInAct_Escort";
 						_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
@@ -117,7 +117,7 @@ switch (playerSide) do {
 								_Btn1 ctrlEnable true;
 								_Btn2 ctrlEnable true;
 
-							} else{
+							} else {
 								
 								_Btn1 ctrlEnable false;
 								_Btn2 ctrlEnable false;
@@ -130,7 +130,7 @@ switch (playerSide) do {
 				//SeizeWeapons Button
     						_Btn1 ctrlSetText localize "STR_pInAct_Seize"; 
 							_Btn1 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_seizePlayerAction; closeDialog 0;";
-							_Btn1 ctrlEnable true;
+
 						if (FETCH_CONST(life_coplevel) < _seizeRank) then {_Btn1 ctrlEnable false;};
 
 				// Gag player to stop them from talking
