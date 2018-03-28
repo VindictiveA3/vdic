@@ -107,7 +107,7 @@ switch (playerSide) do {
 
 				// Gag player to stop them from talking
 
-						_if ((_curTarget getVariable ["gagged", false])) then {
+						if ((_curTarget getVariable ["gagged", false])) then {
 							_Btn2 ctrlSetText "Remove Gag";
 							_Btn2 buttonSetAction "[] call life_fnc_removeGagAction; closeDialog 0;";
 						} else {
