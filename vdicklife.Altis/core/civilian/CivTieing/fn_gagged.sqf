@@ -10,7 +10,7 @@ enableRadio false;
 5 enableChannel false;
 3 enableChannel false;
 4 enableChannel false;
-waitUntil{!(player getVariable ["gagged",false]) OR !(player getVariable ["tied",false])};
+waitUntil{!(player getVariable ["gagged",false]) OR !((player getVariable ["tied",false]) OR (player getVariable ["restrained", false]))};
 hint format["The gag was removed, you can again speak!"];
 titleText ["You're not gagged", "PLAIN"];
 enableRadio true;
