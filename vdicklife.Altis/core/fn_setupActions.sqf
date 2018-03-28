@@ -23,7 +23,7 @@ switch (playerSide) do {
     
     //Cops
     case west: {
-  
+        life_actions pushBack (player addAction["Check Licenses",life_fnc_licenseCheck,cursorTarget,0,false,false,"",'!isNull cursorTarget && !(side cursorTarget isEqualTo west) && !(side cursorTarget isEqualTo independent)']);
     };
     //EMS
     case independent: { };
