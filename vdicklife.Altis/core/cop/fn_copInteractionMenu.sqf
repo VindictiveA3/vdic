@@ -101,7 +101,7 @@ switch (playerSide) do {
 					_Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
 						
 					_Btn8 ctrlSetText localize "STR_pInAct_nxtpg";
-					_Btn8 buttonSetAction "[_curTarget, 2] call life_fnc_copInteractionMenu ";	
+					_Btn8 buttonSetAction "[life_pInact_curTarget, 2] call life_fnc_copInteractionMenu ";	
 						
 					{
 						if ((player distance (getMarkerPos _x) <30)) exitWith { _Btn6 ctrlEnable true;};
@@ -150,7 +150,7 @@ switch (playerSide) do {
 							_Btn7 ctrlShow false;
 				//Go back to Page 1
 							_Btn8 ctrlSetText localize "STR_pInAct_nxtpg";
-							_Btn8 buttonSetAction "[_curTarget, 1] call life_fnc_copInteractionMenu ";	
+							_Btn8 buttonSetAction "[life_pInact_curTarget, 1] call life_fnc_copInteractionMenu ";	
 					
 					
 
