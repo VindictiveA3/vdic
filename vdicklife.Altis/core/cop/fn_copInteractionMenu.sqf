@@ -57,7 +57,6 @@ switch (playerSide) do {
 								_Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
 								_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
 								_Btn1 ctrlEnable true;
-								_Btn1 ctrlEnable true;
 								_Btn4 ctrlEnable true;
 								_Btn7 ctrlEnable true;
 							} else{
@@ -113,6 +112,17 @@ switch (playerSide) do {
 						
 
 				case 2:{
+						if ((_curTarget getVariable ["tied",false]) OR (_curTarget getVariable ["restrained", false])) then {
+								
+								_Btn1 ctrlEnable true;
+								_Btn2 ctrlEnable true;
+
+							} else{
+								
+								_Btn1 ctrlEnable false;
+								_Btn2 ctrlEnable false;
+
+							};
 
 						if (player getVariable ["isEscorting",false]) then {
 							{ _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7];
@@ -129,16 +139,9 @@ switch (playerSide) do {
 							_Btn2 ctrlSetText "Remove Gag";
 							_Btn2 buttonSetAction "[] call life_fnc_removeGagAction; closeDialog 0;";
 						} else {
-							if ((_curTarget getVariable ["tied",false]) OR (_curTarget getVariable ["restrained", false])) then {
 								_Btn2 ctrlSetText "Gag Person";
 								_Btn2 buttonSetAction "[] call life_fnc_gagAction; closeDialog 0;";
-								_Btn2 ctrlEnable true;
-							} else {
-								_Btn2 ctrlSetText "Gag Person";
-								_Btn2 buttonSetAction "[] call life_fnc_gagAction; closeDialog 0;";
-								_Btn2 ctrlEnable false;
-							};
-						};		
+						};
 
 							_Btn3 ctrlShow false;
 							_Btn4 ctrlShow false;
