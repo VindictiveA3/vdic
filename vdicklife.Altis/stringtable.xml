@@ -8382,6 +8382,15 @@
             <Portuguese>Trancar a Casa</Portuguese>
             <Polish>Zamknij dom</Polish>
         </Key>
+        <Key ID="STR_ISTR_Jaws">
+	        <Original>Using Jaws Of Life On: %1</Original>
+        </Key>
+        <Key ID="STR_ISTR_Jaws_Success">
+	        <Original>The Jaws Of Life Where Successful!</Original>
+        </Key>	
+        <Key ID ="STR_vInAct_Jaws">
+	        <Original>Jaws Of Life</Original>		
+        </Key>	
         <Key ID="STR_pInAct_BuyHouse">
             <Original>Buy House</Original>
             <Czech>Koupit dům</Czech>
