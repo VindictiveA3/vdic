@@ -71,7 +71,7 @@ class Maverick_ConvoySidemission
 			class Vehicles
 			{
 				// Vehicle configuration
-				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","O_T_Truck_03_ammo_ghex_F","O_T_LSV_02_unarmed_F"};
+				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","B_Truck_01_box_F","O_T_LSV_02_unarmed_F"};
 				vehiclesSpawnMarkersInOrder[]	= {"mav_convoy_goldspawn1","mav_convoy_goldspawn2","mav_convoy_goldspawn3"};
 				vehiclesInheritDirection		= 1;
 				mainVehicleAtIndex				= 1;
@@ -140,7 +140,7 @@ class Maverick_ConvoySidemission
 			class Vehicles
 			{
 				// Vehicle configuration
-				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","O_T_LSV_02_unarmed_F","O_T_Truck_03_ammo_ghex_F","O_T_LSV_02_unarmed_F"};
+				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","O_T_LSV_02_unarmed_F","B_Truck_01_box_F","O_T_LSV_02_unarmed_F"};
 				vehiclesSpawnMarkersInOrder[]	= {"mav_convoy_weapon1spawn1","mav_convoy_weapon1spawn2","mav_convoy_weapon1spawn3","mav_convoy_weapon1spawn4"};
 				vehiclesInheritDirection		= 1;
 				mainVehicleAtIndex				= 2;
