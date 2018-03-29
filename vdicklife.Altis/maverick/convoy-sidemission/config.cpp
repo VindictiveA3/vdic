@@ -14,16 +14,16 @@ class Maverick_ConvoySidemission
 		TimeoutBetweenMarkers					= 300;
 		SidesNotAttackable[]					= {"GUER"};
 		AIDifficulty[] = {
-												{"aimingAccuracy", 1},
-												{"aimingShake", 1},
-												{"aimingSpeed", 1},
-												{"endurance", 1},
-												{"spotDistance", 1},
-												{"spotTime", 1},
-												{"courage", 1},
-												{"reloadSpeed", 1},
-												{"commanding", 1},
-												{"general", 1}
+												{"aimingAccuracy", 0.55000001},
+												{"aimingShake", 0.5},
+												{"aimingSpeed", 0.65},
+												{"endurance", 0.654},
+												{"spotDistance", 0.62214},
+												{"spotTime", 0.565647},
+												{"courage", 0.45},
+												{"reloadSpeed", 0.75},
+												{"commanding", 0.65},
+												{"general", 0.55000001}
 		};
 	};
 	class ConvoyConfigurationsPool
