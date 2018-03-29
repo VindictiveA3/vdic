@@ -85,6 +85,13 @@ _unit spawn {
 };
 
 [] spawn life_fnc_deathScreen;
+//Credits to Ciaran for original creation of the script
+if(life_nlrtimer_running) then
+{
+life_nlrtimer_stop = true;
+waitUntil {!life_nlrtimer_running};
+};
+[] spawn life_fnc_newLifeRule;
 
 //Create a thread to follow with some what precision view of the corpse.
 [_unit] spawn {
