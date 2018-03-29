@@ -211,7 +211,8 @@ class WeaponShops {
             { "arifle_SPAR_03_blk_F", "", 6000, 1500, "call life_coplevel >= 5" },
             { "LMG_Mk200_BI_F", "", 6000, 1500, "call life_coplevel >= 6" },
             { "srifle_DMR_07_blk_F", "", 3200, 1600, "call life_coplevel >= 7" }, //Apex DLC Sniper
-            { "arifle_AK12_F", "", 10000, 5000, "call life_coplevel >=5" } //Apex DLC Assault Rifle
+            { "arifle_AK12_F", "", 10000, 5000, "call life_coplevel >=5" }, //Apex DLC Assault Rifle
+            { "srifle_LRR_F", "LLRawr", 5000, 2500, "call life_coplevel >=8" }
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, 60, "" },
@@ -231,7 +232,8 @@ class WeaponShops {
             { "100Rnd_65x39_caseless_mag_Tracer", "", 400, 65, "call life_coplevel >= 5" },
             { "200Rnd_65x39_cased_Box_Tracer", "", 500, 65, "call life_coplevel >= 6" },
             { "20Rnd_650x39_Cased_Mag_F", "", 200, 100, "call life_coplevel >= 7" }, //Apex DLC
-            { "30Rnd_762x39_Mag_F", "", 500, 125, "call life_coplevel >= 5" } //Apex DLC
+            { "30Rnd_762x39_Mag_F", "", 500, 250, "call life_coplevel >= 5" }, //Apex DLC
+            { "7Rnd_408_Mag", "LLRawr Mag", 250, 125, "call life_coplevel >= 8"}
         };
         accs[] = {
             { "muzzle_snds_L", "", 650, 325, "" },
@@ -262,6 +264,7 @@ class WeaponShops {
             {"optic_ERCO_blk_F","",300,150,""},
             {"muzzle_snds_H_MG_blk_F","",100,50,""},
             { "muzzle_snds_H", "", 2750, 1375, "call life_coplevel >= 2" }
+
         };
     };
 
