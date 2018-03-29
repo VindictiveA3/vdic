@@ -12,7 +12,7 @@ class Maverick_ConvoySidemission
 		SleepTime								= 5;
 		MakePlayersHostileFor					= 60;
 		TimeoutBetweenMarkers					= 300;
-		SidesNotAttackable[]					= {};
+		SidesNotAttackable[]					= {"GUER"};
 		AIDifficulty[] = {
 												{"aimingAccuracy", 1},
 												{"aimingShake", 1},
@@ -72,7 +72,7 @@ class Maverick_ConvoySidemission
 			{
 				// Vehicle configuration
 				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","O_T_Truck_03_ammo_ghex_F","O_T_LSV_02_unarmed_F"};
-				vehiclesSpawnMarkersInOrder[]	= {"mav_convoy_spawn1","mav_convoy_spawn2","mav_convoy_spawn3"};
+				vehiclesSpawnMarkersInOrder[]	= {"mav_convoy_goldspawn1","mav_convoy_goldspawn2","mav_convoy_goldspawn3"};
 				vehiclesInheritDirection		= 1;
 				mainVehicleAtIndex				= 1;
 				maxSpeed						= 50;
@@ -83,7 +83,7 @@ class Maverick_ConvoySidemission
 			class Route
 			{
 				// Route configuration
-				markers[] 						= {"mav_convoy_waypoint1","mav_convoy_waypoint2","mav_convoy_waypoint3","mav_convoy_waypoint4","mav_convoy_waypoint5"};
+				markers[] 						= {"mav_convoy_goldwaypoint1","mav_convoy_goldwaypoint2","mav_convoy_goldwaypoint3","mav_convoy_goldwaypoint4"};
 			};
 
 			class Loot
@@ -126,7 +126,7 @@ class Maverick_ConvoySidemission
 
 				// Mission started announcement
 				startAnnouncementHeader			= "Weapon Transport";
-				startAnnouncementDescription	= "The local army is currently transporting larger amounts of weapons through Tanoa with ground vehicles.";
+				startAnnouncementDescription	= "The local gangs is currently transporting small amounts of weapons through Altis with ground vehicles.";
 
 				// Mission objective completed
 				stoppedAnnouncementHeader		= "Weapon Transporter disabled";
@@ -141,7 +141,7 @@ class Maverick_ConvoySidemission
 			{
 				// Vehicle configuration
 				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","O_T_LSV_02_unarmed_F","O_T_Truck_03_ammo_ghex_F","O_T_LSV_02_unarmed_F"};
-				vehiclesSpawnMarkersInOrder[]	= {"mav_convoy_spawn1","mav_convoy_spawn2","mav_convoy_spawn3","mav_convoy_spawn4"};
+				vehiclesSpawnMarkersInOrder[]	= {"mav_convoy_weapon1spawn1","mav_convoy_weapon1spawn2","mav_convoy_weapon1spawn3","mav_convoy_weapon1spawn4"};
 				vehiclesInheritDirection		= 1;
 				mainVehicleAtIndex				= 2;
 				maxSpeed						= 50;
@@ -152,7 +152,7 @@ class Maverick_ConvoySidemission
 			class Route
 			{
 				// Route configuration
-				markers[] 						= {"mav_convoy_waypoint1","mav_convoy_waypoint2","mav_convoy_waypoint3","mav_convoy_waypoint4","mav_convoy_waypoint5"};
+				markers[] 						= {"mav_convoy_weapon1waypoint1","mav_convoy_weapon1waypoint2","mav_convoy_weapon1waypoint3","mav_convoy_weapon1waypoint4","mav_convoy_weapon1waypoint5"};
 			};
 
 			class Loot
