@@ -2,3 +2,4 @@
 #include "tuning\functions.cpp"
 #include "talent-tree-modular\functions.cpp"
 #include "navigation\functions.cpp"
+#include "convoy-sidemission\functions.cpp"
