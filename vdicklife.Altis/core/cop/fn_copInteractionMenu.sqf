@@ -22,6 +22,9 @@ disableSerialization;
 _curTarget = param [0,objNull,[objNull]];
 _seizeRank = LIFE_SETTINGS(getNumber,"seize_minimum_rank");
 _page = param [1,1,[0]];
+
+if (player distance _curTarget > 5 ) exitWith {closeDialog 0;}; // Prevents menu accessing from far distances.
+
 if (player getVariable ["Escorting", false]) then {
     if (isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
     if (!isPlayer _curTarget && side _curTarget isEqualTo civilian) exitWith {closeDialog 0;}; //Bad side check?
