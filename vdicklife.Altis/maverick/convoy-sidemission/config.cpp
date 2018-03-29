@@ -7,12 +7,12 @@ class Maverick_ConvoySidemission
 {
 	class Config
 	{
-		ConfigPool[] 							= {"GoldBarTransport","WeaponTransport"};
+		ConfigPool[] 							= {"GoldBarTransportSmall","WeaponTransport","GoldBarTransportLarge"};
 		ForceConfigAtIndex 						= 1;
-		SleepTime								= 5;
+		SleepTime								= 900;
 		MakePlayersHostileFor					= 60;
 		TimeoutBetweenMarkers					= 300;
-		SidesNotAttackable[]					= {"GUER"};
+		SidesNotAttackable[]					= {"GUER","WEST"};
 		AIDifficulty[] = {
 												{"aimingAccuracy", 0.55000001},
 												{"aimingShake", 0.5},
@@ -29,7 +29,7 @@ class Maverick_ConvoySidemission
 	class ConvoyConfigurationsPool
 	{
 		/*********************** EXAMPLE TRANSPORT FOR VIRTUAL ITEMS ***********************/
-		class GoldBarTransport
+		class GoldBarTransportSmall
 		{
 			class MapConfiguration
 			{
@@ -57,7 +57,7 @@ class Maverick_ConvoySidemission
 
 				// Mission started announcement
 				startAnnouncementHeader			= "Gold Transport";
-				startAnnouncementDescription	= "The Federal Reserve's guarded transporter is currently moving larger amounts of gold.";
+				startAnnouncementDescription	= "The Federal Reserve's guarded transporter is currently moving a small amount of gold.";
 
 				// Mission objective completed
 				stoppedAnnouncementHeader		= "Gold Transporter disabled";
@@ -167,5 +167,74 @@ class Maverick_ConvoySidemission
 				};
 			};
 		};
+	
+		class GoldBarTransportLarge
+		{
+			class MapConfiguration
+			{
+				showMapMarker					= 1;
+				text							= "Gold Transport";
+			};
+
+			class AIUnits
+			{
+				gear[] = {
+												"H_MilCap_gen_F", // Headgear
+												"", // Glasses
+												"U_B_GEN_Soldier_F", // Uniform
+												"V_TacVest_gen_F", // Vest
+												"", // Backpack
+												{"arifle_SPAR_01_blk_F", "30Rnd_556x45_Stanag", 5}, // Primary weapon, ammo and how many magazines
+												{"", "", 5} // Secondary weapon, ammo and how many magazines
+				};
+			};
+
+			class Messages
+			{
+				// Enable messages?
+				enabled							= 1;
+
+				// Mission started announcement
+				startAnnouncementHeader			= "Gold Transport";
+				startAnnouncementDescription	= "The Federal Reserve's guarded transporter is currently moving larger amounts of gold.";
+
+				// Mission objective completed
+				stoppedAnnouncementHeader		= "Gold Transporter disabled";
+				stoppedAnnouncementDescription	= "The gold transporter has been disabled.";
+
+				// Mission completed announcement
+				endAnnouncementHeader			= "Gold Transport ended";
+				endAnnouncementDescription  	= "The mission has ended.";
+			};
+
+			class Vehicles
+			{
+				// Vehicle configuration
+				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","B_Truck_01_box_F","O_T_LSV_02_unarmed_F"};
+				vehiclesSpawnMarkersInOrder[]	= {"mav_convoy_goldspawn1","mav_convoy_goldspawn2","mav_convoy_goldspawn3"};
+				vehiclesInheritDirection		= 1;
+				mainVehicleAtIndex				= 1;
+				maxSpeed						= 50;
+				removeVehiclesAfterSeconds		= 600;
+				additionalUnitsAmount			= 10;
+			};
+
+			class Route
+			{
+				// Route configuration
+				markers[] 						= {"mav_convoy_goldwaypoint1","mav_convoy_goldwaypoint2","mav_convoy_goldwaypoint3","mav_convoy_goldwaypoint4"};
+			};
+
+			class Loot
+			{
+				type 							= "virtual";
+				container						= "Land_CargoBox_V1_F";
+				data[] = {
+												{"goldbar", 25}
+				};
+			};
+		};
+	
+	
 	};
 };
