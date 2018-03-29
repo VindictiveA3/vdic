@@ -169,7 +169,8 @@ class Clothing {
             { "H_MilCap_mcamo", "", 100, "call life_coplevel >= 2" },
             { "H_MilCap_gen_F", "", 1200, "call life_coplevel >= 2" }, //Apex DLC
             { "H_MilCap_tna_F", "", 1200, "call life_coplevel >= 2" }, //Apex DLC
-            { "H_MilCap_oucamo", "", 1200, "call life_coplevel >= 2" }
+            { "H_MilCap_oucamo", "", 1200, "call life_coplevel >= 2" },
+            { "H_Cap_usblack", "The Blue Line Hat", 15, "call life_coplevel >=2" }
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
