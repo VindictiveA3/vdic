@@ -143,7 +143,7 @@ class Maverick_ConvoySidemission
 				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","O_T_LSV_02_unarmed_F","O_T_Truck_03_transport_ghex_F","O_T_Truck_03_ammo_ghex_F","O_T_LSV_02_unarmed_F"};
 				vehiclesSpawnMarkersInOrder[]	= {"mav_convoy_weapon1spawn1","mav_convoy_weapon1spawn2","mav_convoy_weapon1spawn3","mav_convoy_weapon1spawn4","mav_convoy_weapon1spawn5"};
 				vehiclesInheritDirection		= 1;
-				mainVehicleAtIndex				= 2;
+				mainVehicleAtIndex				= 3;
 				maxSpeed						= 50;
 				removeVehiclesAfterSeconds		= 600;
 				additionalUnitsAmount			= 40;
