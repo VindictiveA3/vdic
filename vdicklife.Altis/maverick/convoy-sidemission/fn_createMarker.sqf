@@ -22,10 +22,10 @@ _marker = createMarker ["mav_convoy_marker",[(getPos _object) select 0,(getPos _
 _marker setMarkerType "b_unknown";
 _marker setMarkerText _text;
 
-//Create a ring around the convoy (50m)
+//Create a ring around the convoy (100m)
 _marker = createMarker ["mav_convoy_marker2",[(getPos _object) select 0,(getPos _object) select 1]];
 _marker setMarkerShape "ELLIPSE";
-_marker setMarkerSize [50,50];
+_marker setMarkerSize [100,100];
 _marker setMarkerColor "ColorRed";
 
 // Create loop until the vehicle does not exist anymore to update the marker position
