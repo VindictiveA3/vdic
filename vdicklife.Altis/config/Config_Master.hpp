@@ -18,7 +18,7 @@ class Life_Settings {
 /* Database Related Settings */
     /* Player Data Saving */
     save_virtualItems = true; //Save Virtual items (all sides)?
-    saved_virtualItems[] = { "zipties","blindfold","pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" }; //Array of virtual items that can be saved on your player.
+    saved_virtualItems[] = { "goldbar","zipties","blindfold","pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" }; //Array of virtual items that can be saved on your player.
     save_playerStats = true; //Save food, water and damage (all sides)?
     save_civilian_weapons = true; //Allow civilians to save weapons on them?
     save_civilian_position = true; //Save civilian location?
@@ -108,7 +108,7 @@ class Life_Settings {
     hospital_heal_fee = 1500; //Fee to heal at a hospital NPC
     /*Custom Code by Wolfe*/
     /*Medic Gear*/
-    medic_allowed_items[] = {"U_Rangemaster","FirstAidKit", "Rangemaster_belt","ItemWatch","ItemCompass","ItemMap"};
+    medic_allowed_items[] = {"U_Rangemaster","FirstAidKit", "Rangemaster_belt","ItemWatch","ItemCompass","ItemMap","hgun_Pistol_Signal_F","6Rnd_RedSignal_F","Medikit","MineDetector","U_C_Paramedic_01_F"};
 
     /* Paycheck & Bank System Configurations */
     bank_cop = 2500000; //Amount of cash in bank for new cops

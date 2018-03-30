@@ -72,6 +72,7 @@ class Life_Client_Core {
         class ticketAction {};
         class unrestrain {};
         class robShops {};
+        class jaws {};
     };
 
     class Admin {
@@ -306,6 +307,7 @@ class Life_Client_Core {
         class respawned {};
         class revived {};
         class revivePlayer {};
+        class newLifeRule {};
     };
 
     class Network {

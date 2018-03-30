@@ -52,6 +52,8 @@ life_markers_active = false;
 life_canpay_bail = true;
 life_storagePlacing = scriptNull;
 Life_request_timer = false;
+life_nlrtimer_running = false;
+life_nlrtimer_stop = false;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];

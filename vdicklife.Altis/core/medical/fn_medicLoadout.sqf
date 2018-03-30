@@ -18,6 +18,9 @@ player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 [true,"defibrillator",1] call life_fnc_handleInv; 
 
+if !(player getUnitTrait ["medic"]) then {
+    player setUnitTrait ["medic", true];
+};
 
 [] call life_fnc_playerSkins;
 [] call life_fnc_saveGear;

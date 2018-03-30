@@ -887,4 +887,15 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 200000;
         textures[] = {};
     };
+    //Only use for transport mission
+    class O_T_Truck_03_ammo_ghex_F {
+        vItemSpace = 450;
+        conditions = "";
+        price = 2000000;
+        textures[] = {};
+         
+         
+         //do not add below this line
+    };
+
 };
