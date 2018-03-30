@@ -18,7 +18,7 @@
 
 class ProcessAction {
     class oil {
-        MaterialsReq[] = {{"oil_unprocessed",1}};
+        MaterialsReq[] = {{"oil_unprocessed",2}};
         MaterialsGive[] = {{"oil_processed",1}};
         Text = "STR_Process_Oil";
         //ScrollText = "Process Oil";
@@ -34,7 +34,7 @@ class ProcessAction {
     };
 
     class heroin {
-        MaterialsReq[] = {{"heroin_unprocessed",1}};
+        MaterialsReq[] = {{"heroin_unprocessed",5}};
         MaterialsGive[] = {{"heroin_processed",1}};
         Text = "STR_Process_Heroin";
         //ScrollText = "Process Heroin";
@@ -42,7 +42,7 @@ class ProcessAction {
     };
 
     class copper {
-        MaterialsReq[] = {{"copper_unrefined",1}};
+        MaterialsReq[] = {{"copper_unrefined",3}};
         MaterialsGive[] = {{"copper_refined",1}};
         Text = "STR_Process_Copper";
         //ScrollText = "Refine Copper";
@@ -50,7 +50,7 @@ class ProcessAction {
     };
 
     class iron {
-        MaterialsReq[] = {{"iron_unrefined",1}};
+        MaterialsReq[] = {{"iron_unrefined",3}};
         MaterialsGive[] = {{"iron_refined",1}};
         Text = "STR_Process_Iron";
         //ScrollText = "Refine Iron";
@@ -58,7 +58,7 @@ class ProcessAction {
     };
 
     class sand {
-        MaterialsReq[] = {{"sand",1}};
+        MaterialsReq[] = {{"sand",2}};
         MaterialsGive[] = {{"glass",1}};
         Text = "STR_Process_Sand";
         //ScrollText = "Melt Sand into Glass";
@@ -74,7 +74,7 @@ class ProcessAction {
     };
 
     class cocaine {
-        MaterialsReq[] = {{"cocaine_unprocessed",1}};
+        MaterialsReq[] = {{"cocaine_unprocessed",5}}; /*Justin's idea not mine*/
         MaterialsGive[] = {{"cocaine_processed",1}};
         Text = "STR_Process_Cocaine";
         //ScrollText = "Process Cocaine";
@@ -82,7 +82,7 @@ class ProcessAction {
     };
 
     class marijuana {
-        MaterialsReq[] = {{"cannabis",1}};
+        MaterialsReq[] = {{"cannabis",5}}; /*Justin's idea not mine*/
         MaterialsGive[] = {{"marijuana",1}};
         Text = "STR_Process_Marijuana";
         //ScrollText = "Harvest Marijuana";
@@ -90,7 +90,7 @@ class ProcessAction {
     };
 
     class cement {
-        MaterialsReq[] = {{"rock",1}};
+        MaterialsReq[] = {{"rock",5}};
         MaterialsGive[] = {{"cement",1}};
         Text = "STR_Process_Cement";
         //ScrollText = "Mix Cement";
