@@ -18,3 +18,4 @@ waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be ope
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 [] call life_fnc_initPayChecks;
 setObjectViewDistance[3000,500];
+player setUnitTrait["medic",true];
