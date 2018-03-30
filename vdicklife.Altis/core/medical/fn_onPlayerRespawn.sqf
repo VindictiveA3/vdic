@@ -25,6 +25,6 @@ player playMoveNow "AmovPpneMstpSrasWrflDnon";
 [_unit,life_settings_enableSidechannel,playerSide] remoteExecCall ["TON_fnc_manageSC",RSERV];
 if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 0) then {player enableFatigue false;};
 
-if(playerSide isEqualTo independent) {
+if (playerSide isEqualTo independent) then {
     player setUnitTrait ["medic", true];
-}
+};
