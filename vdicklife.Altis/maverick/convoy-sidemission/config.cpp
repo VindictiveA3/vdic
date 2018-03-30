@@ -196,7 +196,7 @@ class Maverick_ConvoySidemission
 
 				// Mission started announcement
 				startAnnouncementHeader			= "Gold Transport";
-				startAnnouncementDescription	= "The Federal Reserve's guarded transporter is currently moving larger amounts of gold.";
+				startAnnouncementDescription	= "The Federal Reserve's guarded transporter is currently moving large amounts of gold.";
 
 				// Mission objective completed
 				stoppedAnnouncementHeader		= "Gold Transporter disabled";
