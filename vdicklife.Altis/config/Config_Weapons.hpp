@@ -279,7 +279,7 @@ class WeaponShops {
             { "FirstAidKit", "", 150, 75, "" },
             { "O_NVGoggles_urb_F", "", 1200, 600, "" },
             { "Medikit", "", 1500, 750, "call life_mediclevel >=2"},
-            { "MineDetector", "", 2000, 100, "call life_mediclevel >=2"}
+            { "MineDetector", "", 2500, 100, "call life_mediclevel >=2"}
         };
         mags[] = {};
         accs[] = {};

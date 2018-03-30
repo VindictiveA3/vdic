@@ -108,7 +108,7 @@ class Life_Settings {
     hospital_heal_fee = 1500; //Fee to heal at a hospital NPC
     /*Custom Code by Wolfe*/
     /*Medic Gear*/
-    medic_allowed_items[] = {"U_Rangemaster","FirstAidKit", "Rangemaster_belt","ItemWatch","ItemCompass","ItemMap","hgun_Pistol_Signal_F","6Rnd_RedSignal_F","Medikit","MineDetector"};
+    medic_allowed_items[] = {"U_Rangemaster","FirstAidKit", "Rangemaster_belt","ItemWatch","ItemCompass","ItemMap","hgun_Pistol_Signal_F","6Rnd_RedSignal_F","Medikit","MineDetector","U_C_Paramedic_01_F"};
 
     /* Paycheck & Bank System Configurations */
     bank_cop = 2500000; //Amount of cash in bank for new cops
