@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=525;
+	toggles=521;
 	class ItemIDProvider
 	{
 		nextID=3084;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={19918.338,150.79407,6723.0688};
-		dir[]={0.87842679,-0.46850026,-0.095231295};
-		up[]={0.46580735,0.88342696,-0.050498322};
-		aside[]={-0.10778879,1.5247497e-007,-0.99426401};
+		pos[]={20012.494,101.84304,6649.52};
+		dir[]={0.67525303,-0.52327341,-0.52001214};
+		up[]={0.41460663,0.85212958,-0.31928846};
+		aside[]={-0.61019778,2.3655593e-007,-0.79236257};
 	};
 };
 binarizationWanted=0;
@@ -183,8 +183,7 @@ addons[]=
 	"A3_Structures_F_EPB_Civ_Camping",
 	"A3_Characters_F_Exp_Headgear",
 	"A3_Structures_F_Naval_Piers",
-	"A3_Structures_F_Mil_BagFence",
-	"A3_Characters_F_Jets"
+	"A3_Structures_F_Mil_BagFence"
 };
 class AddonsMetaData
 {
@@ -533,24 +532,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -565,6 +546,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -622,7 +621,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1819;
+		items=1818;
 		class Item0
 		{
 			dataType="Marker";
@@ -719,7 +718,7 @@ class Mission
 			text="@STR_MAR_Police_Air_HQ";
 			type="mil_box";
 			colorName="Color4_FD_F";
-			angle=318.35974;
+			angle=318.35971;
 			id=11;
 		};
 		class Item11
@@ -33042,7 +33041,6 @@ class Mission
 						angles[]={0.00069053395,4.3650379,6.282495};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -33052,6 +33050,7 @@ class Mission
 					};
 					id=1023;
 					type="O_Soldier_F";
+					atlOffset=0.4006424;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37065,8 +37064,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={20035,90.615509,6639.0508};
-						angles[]={6.2272477,4.4267306,0.031991884};
+						position[]={20034.875,90.572243,6638.4248};
+						angles[]={6.2272439,4.4267306,0.031988446};
 					};
 					side="Civilian";
 					flags=4;
@@ -37079,7 +37078,7 @@ class Mission
 					};
 					id=3071;
 					type="O_Soldier_F";
-					atlOffset=-5.3405762e-005;
+					atlOffset=-0.0042648315;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -56091,7 +56090,7 @@ class Mission
 			};
 			id=2224;
 			type="CamoNet_BLUFOR_open_F";
-			atlOffset=0.5423665;
+			atlOffset=0.54235125;
 		};
 		class Item1364
 		{
@@ -68145,7 +68144,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={20027.189,90.02002,6629.0718};
+				position[]={20027.15,90.025215,6629.0439};
 				angles[]={6.2511969,4.8568645,0.022662206};
 			};
 			side="Empty";
@@ -68155,15 +68154,15 @@ class Mission
 			};
 			id=3073;
 			type="Oil_Spill_F";
-			atlOffset=7.6293945e-005;
+			atlOffset=0.0070343018;
 		};
 		class Item1814
 		{
 			dataType="Marker";
 			position[]={20013.066,91,6639.6968};
-			name="reb_v_e2";
+			name="air_v_e2";
 			type="Empty";
-			angle=163.40404;
+			angle=163.40401;
 			id=3074;
 			atlOffset=0.9434967;
 		};
@@ -68172,7 +68171,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={20013.066,91,6639.6968};
+				position[]={20013.059,90.976608,6639.7373};
 				angles[]={0,1.6807834,0};
 			};
 			side="Empty";
@@ -68181,7 +68180,7 @@ class Mission
 			};
 			id=3075;
 			type="Oil_Spill_F";
-			atlOffset=0.9434967;
+			atlOffset=0.91908264;
 		};
 		class Item1816
 		{
@@ -68189,7 +68188,7 @@ class Mission
 			position[]={20036.328,91.295357,6647.0811};
 			name="reb_v_e1";
 			type="Empty";
-			angle=253.34631;
+			angle=253.3463;
 			id=3076;
 			atlOffset=0.25908661;
 		};
@@ -68198,7 +68197,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={20036.324,91.035156,6647.0581};
+				position[]={20036.305,91.035667,6647.0728};
 				angles[]={6.2352223,3.2505779,0.017329043};
 			};
 			side="Empty";
@@ -68208,36 +68207,7 @@ class Mission
 			};
 			id=3077;
 			type="Oil_Spill_F";
-			atlOffset=4.5776367e-005;
-		};
-		class Item1818
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={20033.721,90.243523,6630.5405};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						isPlayer=1;
-					};
-					id=3083;
-					type="B_Deck_Crew_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=3082;
+			atlOffset=0.00019836426;
 		};
 	};
 };
