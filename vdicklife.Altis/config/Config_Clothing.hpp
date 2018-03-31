@@ -481,7 +481,7 @@ class Clothing {
         };
     };
 
-    class lawyer_clothing {
+    class lawyer {
         title = "STR_Shops_C_Lawyer";
         conditions = "license_civ_lawyer";
         side = "civ";
