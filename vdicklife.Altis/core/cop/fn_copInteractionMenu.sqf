@@ -159,6 +159,8 @@ switch (playerSide) do {
 
 				};
 			};	
+
+			//End of Cop menu
 	};
 	
 	case civilian: {
@@ -217,6 +219,7 @@ switch (playerSide) do {
 
 		_Btn7 ctrlShow false;
 		_Btn8 ctrlShow false;
+	// end of civ menu
 	};
 
 
@@ -243,6 +246,7 @@ switch (playerSide) do {
 			_Btn5 ctrlSetText "Gag Person";
 			_Btn5 buttonSetAction "[] call life_fnc_gagAction; closeDialog 0;";
 		};
+	// end of medic menu
 	};
 	
 	//Do not add below this line

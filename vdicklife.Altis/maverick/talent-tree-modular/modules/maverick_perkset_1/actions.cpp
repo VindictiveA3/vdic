@@ -154,7 +154,7 @@ class GasDeliveryLess1km {
 // Rewards for playing
 class PowerLevel {
     expToAdd = 200;
-	message = "Experence Reward";
+	message = "Experience Reward";
 };
 
 
