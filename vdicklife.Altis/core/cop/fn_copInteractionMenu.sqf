@@ -220,7 +220,7 @@ switch (playerSide) do {
 	};
 
 
-	case resistance: {
+	case independant: {
 		if (player getVariable ["isEscorting",false]) then {
 			{ _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn4,_Btn5,_Btn6];
 		};
