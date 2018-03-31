@@ -220,7 +220,7 @@ switch (playerSide) do {
 	};
 
 
-	case independant: {
+	case independent: {	//Let it be known Tipo can't spell independent (independant???)
 		if (player getVariable ["isEscorting",false]) then {
 			{ _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn4,_Btn5,_Btn6];
 		};
