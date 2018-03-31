@@ -18,7 +18,7 @@ player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 [true,"defibrillator",1] call life_fnc_handleInv; 
 
-if !(player getUnitTrait ["medic"]) then {
+if (player getUnitTrait ["medic",false]) then {
     player setUnitTrait ["medic", true];
 };
 

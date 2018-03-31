@@ -58,6 +58,9 @@
             <Italian>Emporio di Bruce</Italian>
             <German>Bruce's Outback Outfits</German>
         </Key>
+        <Key ID="STR_lawyer_clothing">
+            <Original>J & J lawyers</Original>
+        </Key>
         <Key ID="STR_Shops_C_Police">
             <Original>Altis Police Department Shop</Original>
             <Czech>Altis policejní oddělení Shop</Czech>

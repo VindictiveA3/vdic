@@ -206,7 +206,7 @@ class Licenses {
     //Lawyer Licenses
     class lawyer {
         variable = "Lawyer";
-        displayName = "STR_License_Lawer";
+        displayName = "STR_License_Lawyer";
         price = 200000;
         illegal = false;
         side = "civ";
