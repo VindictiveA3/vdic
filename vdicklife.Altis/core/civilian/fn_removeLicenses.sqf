@@ -17,6 +17,7 @@ switch (_state) do {
         missionNamespace setVariable [LICENSE_VARNAME("heroin","civ"),false];
         missionNamespace setVariable [LICENSE_VARNAME("marijuana","civ"),false];
         missionNamespace setVariable [LICENSE_VARNAME("cocaine","civ"),false];
+        missionNamespace setVariable [LICENSE_VARNAME("lawyer","civ"),false];
     };
 
     //Jail licenses
@@ -24,6 +25,7 @@ switch (_state) do {
         missionNamespace setVariable [LICENSE_VARNAME("gun","civ"),false];
         missionNamespace setVariable [LICENSE_VARNAME("driver","civ"),false];
         missionNamespace setVariable [LICENSE_VARNAME("rebel","civ"),false];
+        missionNamespace setVariable [LICENSE_VARNAME("lawyer","civ"),false];
     };
 
     //Remove motor vehicle licenses
@@ -44,4 +46,21 @@ switch (_state) do {
             hint localize "STR_Civ_LicenseRemove_2";
         };
     };
+
+    // Buying Lawyer License while having rebel
+    case 4:{
+        if (missionNamespace getVariable LICENSE_VARNAME("rebel","civ")) then {
+            missionNamespace setVariable [LICENSE_VARNAME("rebel","civ"),false];
+            hint localize "STR_Civ_LicenseRemove_lawyer";
+        };
+    };
+
+    //Buying rebel while having lawyer license
+    case 5:{
+        if (missionNamespace getVariable LICENSE_VARNAME("lawyer","civ")) then {
+            missionNamespace setVariable [LICENSE_VARNAME("lawyer","civ"),false];
+            hint localize "STR_Civ_LicenseRemove_reb";
+        };
+    };
+    //do not add below this line
 };

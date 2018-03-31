@@ -457,7 +457,7 @@ class Clothing {
     };
 
     class news {
-        title = "STR_Shops_C_Kart";
+        title = "STR_Shops_C_news";
         conditions = "license_civ_news";
         side = "civ";
         uniforms[] = {
@@ -481,5 +481,30 @@ class Clothing {
         };
     };
 
+    class lawyer_clothing {
+        title = "STR_Shops_C_Lawyer";
+        conditions = "license_civ_lawyer";
+        side = "civ";
+        uniforms[] = {
+            { "NONE", $STR_C_Remove_uniforms, 0, "" },
+            { "U_NikosBody", "", 3000, "" },
+            { "U_NikosAgedBody", $STR_C_Civ_Niko, 5000, "" }
+        };
+        headgear[] = {
+            { "NONE", $STR_C_Remove_headgear, 0, "" },
+            { "H_StrawHat","", 5000, "" }
+        };
+        goggles[] = {
+            { "NONE", $STR_C_Remove_goggles, 0, "" }
+        };
+        vests[] = {
+            { "NONE", $STR_C_Remove_vests, 0, "" },
+            { "V_Rangemaster_belt", "", 1900, "" }
+        };
+        backpacks[] = {
+            { "NONE", $STR_C_Remove_backpacks, 0, "" }
+        };
+    };
 
+//Dont add below this line
 };

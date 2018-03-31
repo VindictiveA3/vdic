@@ -202,4 +202,15 @@ class Licenses {
         illegal = false;
         side = "med";
     };
+
+    //Lawyer Licenses
+    class lawyer {
+        variable = "Lawyer";
+        displayName = "STR_License_Lawer";
+        price = 200000;
+        illegal = false;
+        side = "civ";
+    
+    };
+// do not add below this line
 };

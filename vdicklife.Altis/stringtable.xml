@@ -135,6 +135,12 @@
             <Portuguese>Mercado</Portuguese>
             <Polish>Market Altis</Polish>
         </Key>
+         <Key ID="STR_Shops_news">
+            <Original>News Clothing Shop</Original>
+        </Key>
+        <Key ID="STR_Shops_C_Lawyer">
+            <Original>News Clothing Shop</Original>
+        </Key>
         <Key ID="STR_Shops_Rebel">
             <Original>Rebel Market</Original>
             <Czech>Rebel Market</Czech>
@@ -4850,6 +4856,12 @@
             <Portuguese>Você perdeu suas licenças de porte de arma por cometer homicídio.</Portuguese>
             <Polish>Straciłeś pozwolenie na broń z uwagi na zabijanie ludzi z broni palnej</Polish>
         </Key>
+        <Key ID="STR_Civ_LicenseRemove_lawyer">
+            <Original>You have lost your Rebel license to be a Lawyer.</Original>
+        </Key>
+        <Key ID="STR_Civ_LicenseRemove_reb">
+            <Original>You have lost your Lawyer license to be a Rebel.</Original>
+        </Key>
         <Key ID="STR_Civ_RobFail">
             <Original>They didn't have any cash...</Original>
             <Czech>Oni neměli žádnou hotovost ...</Czech>
@@ -7251,8 +7263,11 @@
         </Key>
         <Key ID="STR_License_cor">
             <Original>Council Of Ryan's</Original>
-        </Key>        
-
+        </Key>  
+        </Key>
+         <Key ID="STR_License_lawyer">
+            <Original>Vindictive Lawyer License</Original>
+        </Key>   
     </Package>
     <Package name="More_Item_Strings">
         <Key ID="STR_ISTR_Blast_VaultOnly">

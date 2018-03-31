@@ -247,10 +247,10 @@ switch (playerSide) do {
 	
 	//Do not add below this line
 	
-	case east: {
+	/* case east: {
 
 		exitWith { "East?" hintC "why?";};
 
-	};
+	}; */
 	
 	};
