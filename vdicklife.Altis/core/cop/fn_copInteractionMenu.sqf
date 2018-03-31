@@ -220,7 +220,7 @@ switch (playerSide) do {
 	};
 
 
-	/* case independent: {	//Let it be known Tipo can't spell independent (independant???)
+	case independent: {	//Let it be known Tipo can't spell independent (independant???)
 		if (player getVariable ["isEscorting",false]) then {
 			{ _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn4,_Btn5,_Btn6];
 		};
@@ -243,7 +243,7 @@ switch (playerSide) do {
 			_Btn5 ctrlSetText "Gag Person";
 			_Btn5 buttonSetAction "[] call life_fnc_gagAction; closeDialog 0;";
 		};
-	}; */
+	};
 	
 	//Do not add below this line
 	
