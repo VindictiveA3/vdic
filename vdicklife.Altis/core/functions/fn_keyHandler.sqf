@@ -147,6 +147,9 @@ switch (_code) do {
                 life_action_inUse = false;
             };
         };
+        if(_ctrlKey) then {
+            [] call life_fnc_playerSkins;
+        };
     };
 
     //Restraining (Shift + R)
