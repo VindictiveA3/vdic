@@ -18,7 +18,7 @@ player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 [true,"defibrillator",1] call life_fnc_handleInv; 
 
-if (player getUnitTrait "medic") then { //ATTN: Everyone; Look up BIS functions BEFORE overwriting other's work.
+if (!(player getUnitTrait "medic")) then { //ATTN: Everyone; Look up BIS functions BEFORE overwriting other's work.
     player setUnitTrait ["medic", true];
 };
 
