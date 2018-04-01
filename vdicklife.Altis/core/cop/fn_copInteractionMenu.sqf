@@ -25,13 +25,15 @@ _page = param [1,1,[0]];
 
 life_pInact_curTarget = _curTarget;
 
-// if (player distance life_pInact_curTarget > 5 ) exitWith {closeDialog 0;}; // Prevents menu accessing from far distances.
 
-if (player getVariable ["isEscorting", false]) then {
+
+if ((player getVariable ["isEscorting", false]) || player distance life_pInact_curTarget > 5) then {
     if (isNull life_pInact_curTarget) exitWith {closeDialog 0;}; //Bad target
     if (!isPlayer life_pInact_curTarget && side life_pInact_curTarget isEqualTo civilian) exitWith {closeDialog 0;}; //Bad side check?
-    if (player distance life_pInact_curTarget > 4 ) exitWith {closeDialog 0;}; // Prevents menu accessing from far distances.
+    if (player distance life_pInact_curTarget > 5 ) exitWith {closeDialog 0;}; // Prevents menu accessing from far distances.
 };
+
+
 
 if (!dialog) then {
     createDialog "pInteraction_Menu";
