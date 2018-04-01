@@ -5022,15 +5022,15 @@
             <Polish>Wybrałeś zły numer</Polish>
         </Key>
         <Key ID="STR_Cop_TicketOver100">
-            <Original>Tickets can not be more than $200,000!</Original>
-            <Czech>Vstupenky nemůže být více než 200.000 $!</Czech>
-            <Spanish>Los tiquetes no pueden ser mas de $200,000!</Spanish>
+            <Original>Tickets can not be more than $500,000!</Original>
+            <Czech>Vstupenky nemůže být více než 500.000 $!</Czech>
+            <Spanish>Los tiquetes no pueden ser mas de $500,000!</Spanish>
             <Russian></Russian>
-            <German>Strafzettel können nicht mehr als $200.000 betragen!</German>
-            <French>Les amendes ne peuvent pas dépasser plus de $200,000 !</French>
-            <Italian>La multa non può essere più di $200.000!</Italian>
-            <Portuguese>A multa não pode ser maior que R$200.000!</Portuguese>
-            <Polish>Mandat nie może być wyższy niż $200.000!</Polish>
+            <German>Strafzettel können nicht mehr als 5200.000 betragen!</German>
+            <French>Les amendes ne peuvent pas dépasser plus de $500,000 !</French>
+            <Italian>La multa non può essere più di $500.000!</Italian>
+            <Portuguese>A multa não pode ser maior que R$500.000!</Portuguese>
+            <Polish>Mandat nie może być wyższy niż $500.000!</Polish>
         </Key>
         <Key ID="STR_Cop_TicketGive">
             <Original>%1 gave a ticket of $%2 to %3</Original>
