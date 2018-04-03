@@ -21,6 +21,16 @@ class SpyGlass {
     };
 };
 
+class logging {
+
+        tag = "log";
+        class log {
+
+            file ="core\functions\logging";
+            class logger {}; 
+        };
+    };
+
 class Life_Client_Core {
     tag = "life";
 

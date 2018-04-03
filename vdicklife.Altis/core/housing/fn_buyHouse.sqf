@@ -47,6 +47,18 @@ if (_action) then {
         publicVariableServer "advanced_log";
     };
 
+    if (LIFE_SETTINGS(getNumber,"player_ExtDebugLog") isEqualTo 1) then {
+        if (LIFE_SETTINGS(getNumber,"player_ExtDebugTerm") isEqualTo 1) then {
+           advanced_log = format [localize "STR_DL_AL_boughtHouse_BEF",[(_houseCfg select 0)] call life_fnc_numberText,[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
+                [advanced_log,1,true,2]remoteExec ["log_fnc_logger",RANY]
+
+        }else{
+            advanced_log = format [localize "STR_DL_AL_boughtHouse",profileName,(getPlayerUID player),[(_houseCfg select 0)] call life_fnc_numberText,[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
+                [advanced_log]remoteExec ["log_fnc_logger",RANY]
+
+        };
+    };
+
     _house setVariable ["house_owner",[_uid,profileName],true];
     _house setVariable ["locked",true,true];
     _house setVariable ["containers",[],true];
