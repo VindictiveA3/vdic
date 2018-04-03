@@ -60,3 +60,15 @@ if (LIFE_SETTINGS(getNumber,"player_advancedLog") isEqualTo 1) then {
     };
     publicVariableServer "advanced_log";
 };
+
+if (LIFE_SETTINGS(getNumber,"player_ExtDebugLog") isEqualTo 1) then {
+    if (LIFE_SETTINGS(getNumber,"player_ExtDebugTerm") isEqualTo 1) then {
+        advanced_log = format [localize "STR_DL_AL_pickedUp_BEF",_diff,_itemName];
+            [advanced_log,1,true,4]remoteExec ["log_fnc_logger",RANY]
+
+    }else{
+        advanced_log = format [localize "STR_DL_AL_pickedUp",profileName,(getPlayerUID player),_diff,_itemName];
+            [advanced_log]remoteExec ["log_fnc_logger",RANY]
+
+    };
+};
