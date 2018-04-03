@@ -1,5 +1,4 @@
 #include "..\..\script_macros.hpp"
-#include "..\..\debug_console.hpp"
 /*
     File: fn_fuelSupply.sqf
     Author: Ulrich "Zero" Werren
@@ -152,12 +151,9 @@ if (LIFE_SETTINGS(getNumber,"player_fueldeliveredLog") isEqualTo 1) then {
             [fuel_deliver_Log,2,true,5] remoteExec["log_fnc_logger",RANY];
         }else {
             fuel_deliver_Log = format ["Fuel Delivery Mission Log Player %1-%2 Date & Time %3 - Distance From Oil Marker %4Km - Money Rewarded $%5",profileName,(getPlayerUID player),missionStart,_meters,_win];
-            [fuel_deliver_Log,0,true] remoteExec [" log_fnc_logger"RANY];
+            [fuel_deliver_Log,0,true] remoteExec ["log_fnc_logger",RANY];
         };
     };
-
-
-
 
 // format to send to server for logging
 //  [textTosend,type,TimeStamp,color]
