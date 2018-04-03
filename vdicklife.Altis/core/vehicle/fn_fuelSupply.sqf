@@ -143,11 +143,15 @@ if (LIFE_SETTINGS(getNumber,"player_fueldeliveredLog") isEqualTo 1) then {
     }; 
        publicVariableServer "fuel_deliver_Log";
 };
+    
+    
 
  if (LIFE_SETTINGS(getNumber,"player_ExtDebugLog") isEqualTo 1) then {
         if (LIFE_SETTINGS(getNumber,"player_ExtDebugTerm") isEqualTo 1) then {
+           fuel_deliver_Log = format ["Fuel Delivery Mission Log Player %1-%2 Date & Time %3 - Distance From Oil Marker %4Km - Money Rewarded $%5",profileName,(getPlayerUID player),missionStart,_meters,_win];
             conPurpleTime(fuel_deliver_Log);
         }else {
+            fuel_deliver_Log = format ["Fuel Delivery Mission Log Player %1-%2 Date & Time %3 - Distance From Oil Marker %4Km - Money Rewarded $%5",profileName,(getPlayerUID player),missionStart,_meters,_win];
             conFile(fuel_deliver_Log);
             conFileTime(fuel_deliver_Log);
         };
