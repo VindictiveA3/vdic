@@ -539,6 +539,7 @@ F: Vehicle siren.<br/>
 L: Speed radar (police only and weapon is P07 Suppressed).<br/>
 Left Shift + L: Activates siren lights.<br/>
 Left Shift + R: Restrain (police only).<br/><br/>
+Windows + Ctrl: Re-skin a 'Broken' uniform.
                 "
         ]
     ];
