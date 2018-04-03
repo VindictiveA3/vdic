@@ -9,10 +9,11 @@
 */
 private ["_curObject","_isWater","_CrateModelNames","_crate","_fish","_animal","_whatIsIt","_handle"];
 _curObject = cursorObject;
+_curTarget = cursorTarget;
 if (life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
 if (life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (visiblePositionASL player);
-
+/*
 if (playerSide isEqualTo west && {player getVariable ["isEscorting",false]}) exitWith {
     [] call life_fnc_copInteractionMenu;
 };
@@ -20,7 +21,7 @@ if (playerSide isEqualTo west && {player getVariable ["isEscorting",false]}) exi
 if (playerSide isEqualTo civilian && {player getVariable ["isEscorting",false]} && (!(_curObject getVariable ["restrained",false]))) exitWith {
     [] call life_fnc_copInteractionMenu;
 };
-
+*/
 if (LIFE_SETTINGS(getNumber,"global_ATM") isEqualTo 1) then{
     //Check if the player is near an ATM.
     if ((call life_fnc_nearATM) && {!dialog}) exitWith {
@@ -95,20 +96,24 @@ if (_curObject isKindOf "Man" && !(_curObject isKindOf "Animal") && {!alive _cur
 };
 
 //If target is a player then check if we can use the cop menu.
-if (isPlayer _curObject && _curObject isKindOf "Man") then {
+if (isPlayer _curTarget && _curTarget isKindOf "Man") then {
+    systemChat "check 6";
     if (/* (_curObject getVariable ["restrained",false]) && */ !dialog && playerSide isEqualTo west) then {
-        [_curObject] call life_fnc_copInteractionMenu;
-    };
+        [_curTarget] call life_fnc_copInteractionMenu;
+        systemChat "check 7";
+    } else { systemChat "check 7-1";};
     
-    if ((!(_curObject getVariable ["restrained",false])) && !dialog && playerSide isEqualTo civilian) then {
-        [_curObject] call life_fnc_copInteractionMenu;
-    };
+    if ((!(_curTarget getVariable ["restrained",false])) && !dialog && playerSide isEqualTo civilian) then {
+        [_curTarget] call life_fnc_copInteractionMenu;
+        systemChat "check 8";
+    } else { systemChat "check 8-1";};
 
-    if ((!(_curObject getVariable ["restrained",false])) && !dialog && playerSide isEqualTo resistance) then {
-        [_curObject] call life_fnc_copInteractionMenu;
-    };
+     if ((!(_curTarget getVariable ["restrained",false])) && !dialog && playerSide isEqualTo resistance) then {
+        [_curTarget] call life_fnc_copInteractionMenu;
+        systemChat "check 9";
+    } else { systemChat "check 9-1";}; 
 
-} else {
+} else { systemChat "check 6-1";
     //OK, it wasn't a player so what is it?
     private ["_isVehicle","_miscItems","_money","_list"];
 

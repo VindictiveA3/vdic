@@ -23,13 +23,18 @@ _curTarget = param [0,objNull,[objNull]];
 _seizeRank = LIFE_SETTINGS(getNumber,"seize_minimum_rank");
 _page = param [1,1,[0]];
 
-if (player distance _curTarget > 5 ) exitWith {closeDialog 0;}; // Prevents menu accessing from far distances.
+life_pInact_curTarget = _curTarget;
 
-if (player getVariable ["Escorting", false]) then {
-    if (isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
-    if (!isPlayer _curTarget && side _curTarget isEqualTo civilian) exitWith {closeDialog 0;}; //Bad side check?
-    if (player distance _curTarget > 4 ) exitWith {closeDialog 0;}; // Prevents menu accessing from far distances.
+
+
+if (((player getVariable ["isEscorting", false]) && player distance life_pInact_curTarget <= 5)) then {
+	systemChat "check 1";
+    if (isNull life_pInact_curTarget) exitWith {closeDialog 0; systemChat "check 2";}; //Bad target
+    if (!isPlayer life_pInact_curTarget && side life_pInact_curTarget isEqualTo civilian) exitWith {closeDialog 0; systemChat "check 3";}; //Bad side check?
+    if (player distance life_pInact_curTarget > 5 ) exitWith {closeDialog 0; systemChat "check 4";}; // Prevents menu accessing from far distances.
 };
+
+if (player distance life_pInact_curTarget >= 5) exitWith { systemChat "check 5"; };
 
 if (!dialog) then {
     createDialog "pInteraction_Menu";
@@ -44,7 +49,7 @@ _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
-life_pInact_curTarget = _curTarget;
+
 { _x ctrlShow true; } forEach [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7,_Btn8];
 { _x ctrlEnable true; } forEach [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7,_Btn8];
 switch (playerSide) do {
@@ -159,6 +164,8 @@ switch (playerSide) do {
 
 				};
 			};	
+
+			//End of Cop menu
 	};
 	
 	case civilian: {
@@ -217,10 +224,11 @@ switch (playerSide) do {
 
 		_Btn7 ctrlShow false;
 		_Btn8 ctrlShow false;
+	// end of civ menu
 	};
 
 
-	case resistance: {
+	case independent: {	//Let it be known Tipo can't spell independent (independant???)
 		if (player getVariable ["isEscorting",false]) then {
 			{ _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn4,_Btn5,_Btn6];
 		};
@@ -243,14 +251,15 @@ switch (playerSide) do {
 			_Btn5 ctrlSetText "Gag Person";
 			_Btn5 buttonSetAction "[] call life_fnc_gagAction; closeDialog 0;";
 		};
+	// end of medic menu
 	};
 	
 	//Do not add below this line
 	
-	case east: {
+	/* case east: {
 
 		exitWith { "East?" hintC "why?";};
 
-	};
+	}; */
 	
 	};

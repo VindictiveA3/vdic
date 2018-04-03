@@ -151,6 +151,19 @@ if (LIFE_SETTINGS(getNumber,"player_advancedLog") isEqualTo 1) then {
     };
     publicVariableServer "advanced_log";
 };
+
+    if (LIFE_SETTINGS(getNumber,"player_ExtDebugLog") isEqualTo 1) then {
+        if (LIFE_SETTINGS(getNumber,"player_ExtDebugTerm") isEqualTo 1) then {
+        advanced_log = format [localize "STR_DL_AL_boughtVehicle",profileName,(getPlayerUID player),_className,[_purchasePrice] call life_fnc_numberText,[CASH] call life_fnc_numberText,[BANK] call life_fnc_numberText];
+                [advanced_log,2,true,2]remoteExec ["log_fnc_logger",RANY]
+
+        }else{
+        advanced_log = format [localize "STR_DL_AL_boughtVehicle",profileName,(getPlayerUID player),_className,[_purchasePrice] call life_fnc_numberText,[CASH] call life_fnc_numberText,[BANK] call life_fnc_numberText];
+                [advanced_log]remoteExec ["log_fnc_logger",RANY]
+
+        };
+    };  
+
 ["VehiclePurchased"] spawn mav_ttm_fnc_addExp; 
 closeDialog 0; //Exit the menu.
 true;

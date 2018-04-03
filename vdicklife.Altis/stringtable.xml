@@ -58,6 +58,9 @@
             <Italian>Emporio di Bruce</Italian>
             <German>Bruce's Outback Outfits</German>
         </Key>
+        <Key ID="STR_lawyer_clothing">
+            <Original>Lawyer Clothes</Original>
+        </Key>
         <Key ID="STR_Shops_C_Police">
             <Original>Altis Police Department Shop</Original>
             <Czech>Altis policejní oddělení Shop</Czech>
@@ -134,6 +137,12 @@
             <French>Marché d'Altis</French>
             <Portuguese>Mercado</Portuguese>
             <Polish>Market Altis</Polish>
+        </Key>
+         <Key ID="STR_Shops_news">
+            <Original>News Clothing Shop</Original>
+        </Key>
+        <Key ID="STR_Shops_C_Lawyer">
+            <Original>News Clothing Shop</Original>
         </Key>
         <Key ID="STR_Shops_Rebel">
             <Original>Rebel Market</Original>
@@ -4850,6 +4859,12 @@
             <Portuguese>Você perdeu suas licenças de porte de arma por cometer homicídio.</Portuguese>
             <Polish>Straciłeś pozwolenie na broń z uwagi na zabijanie ludzi z broni palnej</Polish>
         </Key>
+        <Key ID="STR_Civ_LicenseRemove_lawyer">
+            <Original>You have lost your Rebel license to be a Lawyer.</Original>
+        </Key>
+        <Key ID="STR_Civ_LicenseRemove_reb">
+            <Original>You have lost your Lawyer license to be a Rebel.</Original>
+        </Key>
         <Key ID="STR_Civ_RobFail">
             <Original>They didn't have any cash...</Original>
             <Czech>Oni neměli žádnou hotovost ...</Czech>
@@ -5007,15 +5022,15 @@
             <Polish>Wybrałeś zły numer</Polish>
         </Key>
         <Key ID="STR_Cop_TicketOver100">
-            <Original>Tickets can not be more than $200,000!</Original>
-            <Czech>Vstupenky nemůže být více než 200.000 $!</Czech>
-            <Spanish>Los tiquetes no pueden ser mas de $200,000!</Spanish>
+            <Original>Tickets can not be more than $500,000!</Original>
+            <Czech>Vstupenky nemůže být více než 500.000 $!</Czech>
+            <Spanish>Los tiquetes no pueden ser mas de $500,000!</Spanish>
             <Russian></Russian>
-            <German>Strafzettel können nicht mehr als $200.000 betragen!</German>
-            <French>Les amendes ne peuvent pas dépasser plus de $200,000 !</French>
-            <Italian>La multa non può essere più di $200.000!</Italian>
-            <Portuguese>A multa não pode ser maior que R$200.000!</Portuguese>
-            <Polish>Mandat nie może być wyższy niż $200.000!</Polish>
+            <German>Strafzettel können nicht mehr als 5200.000 betragen!</German>
+            <French>Les amendes ne peuvent pas dépasser plus de $500,000 !</French>
+            <Italian>La multa non può essere più di $500.000!</Italian>
+            <Portuguese>A multa não pode ser maior que R$500.000!</Portuguese>
+            <Polish>Mandat nie może być wyższy niż $500.000!</Polish>
         </Key>
         <Key ID="STR_Cop_TicketGive">
             <Original>%1 gave a ticket of $%2 to %3</Original>
@@ -7251,8 +7266,10 @@
         </Key>
         <Key ID="STR_License_cor">
             <Original>Council Of Ryan's</Original>
-        </Key>        
-
+        </Key>  
+         <Key ID="STR_License_lawyer">
+            <Original>Vindictive Lawyer License</Original>
+        </Key>   
     </Package>
     <Package name="More_Item_Strings">
         <Key ID="STR_ISTR_Blast_VaultOnly">

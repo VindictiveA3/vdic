@@ -28,7 +28,7 @@ if (life_action_inUse) exitWith {
     if (!life_interrupted && _code in _interruptionKeys) then {life_interrupted = true;};
     _handled;
 };
-
+/*
 //Hotfix for Interaction key not being able to be bound on some operation systems.
 if (!(count (actionKeys "User10") isEqualTo 0) && {(inputAction "User10" > 0)}) exitWith {
     //Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
@@ -41,7 +41,7 @@ if (!(count (actionKeys "User10") isEqualTo 0) && {(inputAction "User10" > 0)}) 
         };
     };
     true;
-};
+}; */
 
 if (life_container_active) exitwith {
     //ignore movement actions
@@ -88,9 +88,7 @@ if (life_container_active) exitwith {
     };
     true;
 };
-
-switch (_code) do {
-    // -- Disable commander/tactical view
+ // -- Disable commander/tactical view
     if (LIFE_SETTINGS(getNumber,"disableCommanderView") isEqualTo 1) then {
         private _CommandMode = actionKeys "tacticalView";
 
@@ -99,7 +97,8 @@ switch (_code) do {
             _handled = true;
         };
     };
-
+switch (_code) do {
+   
     //Space key for Jumping
     case 57: {
         if (isNil "jumpActionTime") then {jumpActionTime = 0;};
@@ -146,6 +145,9 @@ switch (_code) do {
                 waitUntil {scriptDone _handle};
                 life_action_inUse = false;
             };
+        };
+        if(_ctrlKey) then {
+            [] call life_fnc_playerSkins;
         };
     };
 

@@ -139,14 +139,24 @@ if (LIFE_SETTINGS(getNumber,"player_fueldeliveredLog") isEqualTo 1) then {
         fuel_deliver_Log = format ["Fuel Delivery Mission Log Player %1-%2 Date & Time %3 - Distance From Oil Marker %4Km - Money Rewarded $%5",profileName,(getPlayerUID player),missionStart,_meters,_win];
          } else {
         fuel_deliver_Log = format ["Fuel Delivery Mission Log Player %1-%2 Date & Time %3 - Distance From Oil Marker %4Km - Money Rewarded $%5",profileName,(getPlayerUID player),missionStart,_meters,_win];
-
-    };     
-     
-      publicVariableServer "fuel_deliver_Log";
+    }; 
+       publicVariableServer "fuel_deliver_Log";
 };
+    
+    
 
+ if (LIFE_SETTINGS(getNumber,"player_ExtDebugLog") isEqualTo 1) then {
+        if (LIFE_SETTINGS(getNumber,"player_ExtDebugTerm") isEqualTo 1) then {
+           fuel_deliver_Log = format ["Fuel Delivery Mission Log Player %1-%2 - Distance From Oil Marker %3Km - Money Rewarded $%4",profileName,(getPlayerUID player),_meters,_win];
+            [fuel_deliver_Log,2,true,5] remoteExec["log_fnc_logger",RANY];
+        }else {
+            fuel_deliver_Log = format ["Fuel Delivery Mission Log Player %1-%2 Date & Time %3 - Distance From Oil Marker %4Km - Money Rewarded $%5",profileName,(getPlayerUID player),missionStart,_meters,_win];
+            [fuel_deliver_Log,0,true] remoteExec ["log_fnc_logger",RANY];
+        };
+    };
 
-
+// format to send to server for logging
+//  [textTosend,type,TimeStamp,color]
 [0] call SOCK_fnc_updatePartial;
 
 titleText [format [localize "STR_FuelTank_Money", _win], "PLAIN"];

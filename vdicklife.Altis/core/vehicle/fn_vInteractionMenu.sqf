@@ -54,6 +54,13 @@ if (playerSide isEqualTo west) then {
     _Btn5 ctrlSetText localize "STR_vInAct_Impound";
     _Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction; closeDialog 0;";
 	
+    /*
+        Right here is gonna be some cool page work just like with the player one. 
+        We want to check licenses and be able to ticket players without
+        having them hop out the vehicle. 
+    */
+
+
     if (_curTarget isKindOf "Ship") then {
         _Btn6 ctrlSetText localize "STR_vInAct_PushBoat";
         _Btn6 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
