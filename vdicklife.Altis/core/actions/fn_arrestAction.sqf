@@ -38,8 +38,8 @@ if (LIFE_SETTINGS(getNumber,"player_advancedLog") isEqualTo 1) then {
 
 if (LIFE_SETTINGS(getNumber,"player_ExtDebugLog") isEqualTo 1) then {
     if (LIFE_SETTINGS(getNumber,"player_ExtDebugTerm") isEqualTo 1) then {
-        advanced_log = format [localize "STR_DL_AL_Arrested_BEF",_unit getVariable ["realname",name _unit]];
-            [advanced_log,1,true,3]remoteExec ["log_fnc_logger",RANY]
+        advanced_log = format [localize "STR_DL_AL_Arrested",profileName,(getPlayerUID player),_unit getVariable ["realname",name _unit]];
+            [advanced_log,2,true,3]remoteExec ["log_fnc_logger",RANY]
    }else{
         advanced_log = format [localize "STR_DL_AL_Arrested",profileName,(getPlayerUID player),_unit getVariable ["realname",name _unit]];
             [advanced_log]remoteExec ["log_fnc_logger",RANY]
