@@ -27,13 +27,14 @@ life_pInact_curTarget = _curTarget;
 
 
 
-if ((player getVariable ["isEscorting", false]) || player distance life_pInact_curTarget > 5) then {
-    if (isNull life_pInact_curTarget) exitWith {closeDialog 0;}; //Bad target
-    if (!isPlayer life_pInact_curTarget && side life_pInact_curTarget isEqualTo civilian) exitWith {closeDialog 0;}; //Bad side check?
-    if (player distance life_pInact_curTarget > 5 ) exitWith {closeDialog 0;}; // Prevents menu accessing from far distances.
+if (((player getVariable ["isEscorting", false]) && player distance life_pInact_curTarget <= 5)) then {
+	systemChat "check 1";
+    if (isNull life_pInact_curTarget) exitWith {closeDialog 0; systemChat "check 2";}; //Bad target
+    if (!isPlayer life_pInact_curTarget && side life_pInact_curTarget isEqualTo civilian) exitWith {closeDialog 0; systemChat "check 3";}; //Bad side check?
+    if (player distance life_pInact_curTarget > 5 ) exitWith {closeDialog 0; systemChat "check 4";}; // Prevents menu accessing from far distances.
 };
 
-
+if (player distance life_pInact_curTarget >= 5) exitWith { systemChat "check 5"; };
 
 if (!dialog) then {
     createDialog "pInteraction_Menu";

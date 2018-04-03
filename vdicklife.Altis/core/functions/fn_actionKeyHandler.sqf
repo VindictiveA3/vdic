@@ -96,19 +96,23 @@ if (_curObject isKindOf "Man" && !(_curObject isKindOf "Animal") && {!alive _cur
 
 //If target is a player then check if we can use the cop menu.
 if (isPlayer _curObject && _curObject isKindOf "Man") then {
+    systemChat "check 6";
     if (/* (_curObject getVariable ["restrained",false]) && */ !dialog && playerSide isEqualTo west) then {
         [_curObject] call life_fnc_copInteractionMenu;
-    };
+        systemChat "check 7";
+    } else { systemChat "check 7-1";};
     
     if ((!(_curObject getVariable ["restrained",false])) && !dialog && playerSide isEqualTo civilian) then {
         [_curObject] call life_fnc_copInteractionMenu;
-    };
+        systemChat "check 8";
+    } else { systemChat "check 8-1";};
 
-   /*  if ((!(_curObject getVariable ["restrained",false])) && !dialog && playerSide isEqualTo resistance) then {
+     if ((!(_curObject getVariable ["restrained",false])) && !dialog && playerSide isEqualTo resistance) then {
         [_curObject] call life_fnc_copInteractionMenu;
-    }; */ 
+        systemChat "check 9";
+    } else { systemChat "check 9-1";}; 
 
-} else {
+} else { systemChat "check 6-1";
     //OK, it wasn't a player so what is it?
     private ["_isVehicle","_miscItems","_money","_list"];
 
