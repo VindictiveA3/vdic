@@ -53,8 +53,8 @@ if (_action) then {
 
     if (LIFE_SETTINGS(getNumber,"player_ExtDebugLog") isEqualTo 1) then {
         if (LIFE_SETTINGS(getNumber,"player_ExtDebugTerm") isEqualTo 1) then {
-            advanced_log = format [localize "STR_DL_AL_soldHouse_BEF",(round((_houseCfg select 0)/2)),[BANK] call life_fnc_numberText];
-                [advanced_log,1,true,2]remoteExec ["log_fnc_logger",RANY]
+            advanced_log = format [localize "STR_DL_AL_soldHouse",profileName,(getPlayerUID player),(round((_houseCfg select 0)/2)),[BANK] call life_fnc_numberText];
+                [advanced_log,2,true,2]remoteExec ["log_fnc_logger",RANY]
 
         }else{
             advanced_log = format [localize "STR_DL_AL_soldHouse",profileName,(getPlayerUID player),(round((_houseCfg select 0)/2)),[BANK] call life_fnc_numberText];

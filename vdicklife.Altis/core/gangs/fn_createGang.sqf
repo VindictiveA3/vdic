@@ -36,8 +36,8 @@ if (LIFE_SETTINGS(getNumber,"player_advancedLog") isEqualTo 1) then {
 
 if (LIFE_SETTINGS(getNumber,"player_ExtDebugLog") isEqualTo 1) then {
     if (LIFE_SETTINGS(getNumber,"player_ExtDebugTerm") isEqualTo 1) then {
-        advanced_log = format [localize "STR_DL_AL_createdGang_BEF",_gangName,(LIFE_SETTINGS(getNumber,"gang_price"))];
-            [advanced_log,1,true,6]remoteExec ["log_fnc_logger",RANY]
+        advanced_log = format [localize "STR_DL_AL_createdGang",profileName,(getPlayerUID player),_gangName,(LIFE_SETTINGS(getNumber,"gang_price"))];
+            [advanced_log,2,true,6]remoteExec ["log_fnc_logger",RANY]
 
     }else{
         advanced_log = format [localize "STR_DL_AL_createdGang",profileName,(getPlayerUID player),_gangName,(LIFE_SETTINGS(getNumber,"gang_price"))];
