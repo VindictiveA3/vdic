@@ -92,6 +92,59 @@ switch (_type) do {
 			};
 		};
 	}; 
+	case 2 : { //To File and Console 
+		if (_stamp) then {
+			conFileTime(("LogToFile: " + _textToLog));
+			switch (_color) do {
+				case 0: { //White
+					conWhiteTime(_textToLog);
+				};
+				case 1: { //Red
+					conRedTime(_textToLog);
+				};
+				case 2: { //Green
+					conGreenTime(_textToLog);
+				};
+				case 3: { //Blue
+					conBlueTime(_textToLog);
+				};
+				case 4: { //Yellow
+					conYellowTime(_textToLog);
+				};
+				case 5: { //Purple
+					conPurpleTime(_textToLog);
+				};
+				case 6: { //Cyan
+					conCyanTime(_textToLog);
+				};
+			};
+		} else {
+			conFile(("LogToFile: " + _textToLog));
+			switch (_color) do {
+				case 0: { //White
+					conWhite(_textToLog);
+				};
+				case 1: { //Red
+					conRed(_textToLog);
+				};
+				case 2: { //Green
+					conGreen(_textToLog);
+				};
+				case 3: { //Blue
+					conBlue(_textToLog);
+				};
+				case 4: { //Yellow
+					conYellow(_textToLog);
+				};
+				case 5: { //Purple
+					conPurple(_textToLog);
+				};
+				case 6: { //Cyan
+					conCyan(_textToLog);
+				};
+			};
+		};
+	}; 
 	default {
 		_failed = 'Error: Incorrect "type" received. | LogToFile: ';
 		_extIUN = _failed + _textToLog;
