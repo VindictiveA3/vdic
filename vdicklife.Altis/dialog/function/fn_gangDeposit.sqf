@@ -41,3 +41,13 @@ if (LIFE_SETTINGS(getNumber,"player_moneyLog") isEqualTo 1) then {
     };
     publicVariableServer "money_log";
 };
+
+if (LIFE_SETTINGS(getNumber,"player_ExtDebugLog") isEqualTo 1) then {
+    if (LIFE_SETTINGS(getNumber,"player_ExtDebugTerm") isEqualTo 1) then {
+        money_log = format [localize "STR_DL_ML_depositeGang",profileName,(getPlayerUID player),_value,[_gFund] call life_fnc_numberText,[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
+            [money_log,2,true,6]remoteExec ["log_fnc_logger",RANY]
+    }else{
+        money_log = format [localize "STR_DL_ML_depositeGang",profileName,(getPlayerUID player),_value,[_gFund] call life_fnc_numberText,[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
+            [money_log]remoteExec ["log_fnc_logger",RANY]
+    };
+};
